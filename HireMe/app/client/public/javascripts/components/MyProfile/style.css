@@ -1,0 +1,9 @@
+#myProfile {
+    font-size: 2.1em;
+        padding-left: 4%;
+}
+
+#myProfile input {
+    height: 2em;
+    border-radius: 1px;
+}

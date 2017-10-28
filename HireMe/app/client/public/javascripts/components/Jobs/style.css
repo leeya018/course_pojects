@@ -1,0 +1,104 @@
+h1{
+    color:green
+}
+
+#filter{
+    font-size: 194%;
+    position: fixed;
+    background-color: gray;
+    width: 100%;
+    z-index: 1;
+}   
+
+
+#filterPick{
+    background-color: white;
+
+}
+#filterPick>li{
+    font-size:20px;
+
+    border:1px solid black;
+}
+#addSkill{
+    display:flex;
+    flex-direction: column;
+    padding-right: 2em;
+}
+
+#searchBtn{
+    align-self: flex-end;
+    padding-bottom: 10px;
+    
+}
+
+
+#map1{
+    width:400px;
+    height: 400px
+}
+
+
+
+
+#jobs{
+    grid-area:jobs;
+}
+
+
+#jobDetails{
+
+    margin: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
+    /*top right bottom left*/
+    grid-area:jobDetails;
+    font-size: 22px;
+    /*position: fixed;    */
+}
+/*
+#filter{
+    top:400px;
+  position: sticky;
+}*/
+#jobDetailsContent{
+    /*top:15vw;*/
+    
+  position: sticky;
+}
+
+    #jobsData{
+         position: relative;
+        top: 4em;       
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "jobs jobDetails";
+
+        /*align-items:start;*/
+    }
+
+#skillFilter{
+    display: flex;
+    flex-direction: row
+}
+
+
+#endLi{
+    width:100%;
+    background-color: gray;
+}
+
+.filterLi:hover{
+    background-color: gray;
+}
+
+.filterLi{
+    font-size: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.distScale{
+    display: inline-block;
+}

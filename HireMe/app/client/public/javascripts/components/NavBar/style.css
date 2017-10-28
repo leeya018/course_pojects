@@ -1,0 +1,41 @@
+  #nav {
+      font-size: 30px;
+      background-color: lightblue;
+      position: fixed;
+      width: 100%;
+      padding-top: 0px;
+      margin-top: 0px;
+       z-index: 1;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+
+  #headLine{
+      padding-left: 20px;
+      height: 100%
+}
+  #nav a:hover {
+    color: plum
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .active {
+    background-color: #4CAF50;
+  }

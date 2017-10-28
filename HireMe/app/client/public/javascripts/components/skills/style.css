@@ -1,0 +1,19 @@
+/*nth-child(2n+1)*/
+
+
+ #skill{
+     margin: 5px;
+        padding:10px;
+        font-size: 25px;
+        background-color: gray;
+
+    }
+
+
+#skillList{
+   /*sits on the same lime*/
+   display: inline-block; 
+
+}
+
+

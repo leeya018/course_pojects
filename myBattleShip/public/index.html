@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Archivo|Just+Another+Hand" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/board.js"></script>
+    <script src="/js/gameClient.js"></script>
+    <script src="/js/calculation.js"></script>
+    <script src="/js/draw.js"></script>
+
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="loginDivClassItem">
+            <h1>BattleShip Game</h1>
+
+            <div class="loginDivClass" id="loginDiv">
+                <label for="userName" class="log">user : </label><input class="log" id="userName" type="text" autofocus>
+                <input class="log" id="loginInput" type="submit" value="login" focus>
+                <select class="log" id="userSelection"></select>
+                <button class='log' id='playBtn'>play</button>
+
+            </div>
+            <button class='log' id='lobbyBtn'>Lobby</button>
+        </div>
+        <div id="msgDiv">
+        </div>
+        <div id="chatDiv" class="flex-item">
+            <h2>chat : </h2>
+            <div class="flex-chat">
+                <textarea id="chatBox" rows="5" cols="60"></textarea>
+                <button id="sendChat">send</button>
+            </div>
+        </div>
+    </div>
+
+
+    <canvas id="shipCanvas"></canvas>
+    <script>
+
+    </script>
+</body>
+
+</html>

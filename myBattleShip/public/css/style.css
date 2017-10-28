@@ -1,0 +1,104 @@
+body{
+     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e4/The_wadden_sea.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+#loginInput,button{
+ background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+label{
+    font-size: 20px;
+}
+
+
+#loginDiv,input,button{
+   font-family: 'Just Another Hand', cursive;
+    font-family: 'Archivo', sans-serif; 
+}
+
+h1{
+   font-family: 'Just Another Hand', cursive;
+    font-family: 'Archivo', sans-serif; 
+}
+
+select{
+    visibility: hidden;
+       border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+   width: 141px;
+   border-radius: 3px;
+}
+
+
+#msgDiv{
+    
+    width:200px;    
+    height:54px;
+    font-size: 30px;
+
+
+}
+
+#userName{
+padding: 7px 2px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 200px;
+}
+/*
+#playBtn{
+    visibility: hidden;
+}*/
+
+
+#lobbyBtn,#playBtn{
+    display: none;
+}
+
+
+.flex-container{
+    display: flex;
+}
+.loginDivClassItem{
+    width:800px;
+}
+
+.flex-chat{
+    /*display: flex;*/
+    flex-direction:column;
+}
+
+.flex-chat>button{
+    height: 40px;
+    
+}
+#chatDiv{
+
+    display: none;
+}
+#chatBox{
+font-size: 20px;
+    font-family: 'Just Another Hand', cursive;
+    font-family: 'Archivo', sans-serif; 
+}
+    
+/*
+#loginDiv{
+
+}*/

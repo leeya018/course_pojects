@@ -1,0 +1,16 @@
+<div id="job" >
+    <div id="jobData">
+        <div id="jobTitle" ng-click="vm.sendData()">
+            <!--<h2>{{vm.job['_id']}}</h2>-->
+            <h1>{{vm.job.jobName}}</h1>
+            <h3>{{vm.job['pub_date']}}</h3>
+            <p>{{vm.job.locationName}}</p>
+            <button ng-click="vm.applyJob()" ng-show="!appliedSuccess && vm.checkJobsScreen() && checkLogin()">apply job</button>
+            <div id="applied" ng-show="appliedSuccess">applied</div>
+
+        </div>
+
+    </div>
+
+
+</div>

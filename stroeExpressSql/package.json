@@ -1,0 +1,19 @@
+{
+  "name": "stroeexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serverExpress.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "events": "^1.1.1",
+    "express": "^4.15.3",
+    "jQuery": "^1.7.4",
+    "mysql": "^2.15.0",
+    "socket.io": "^2.0.3"
+  }
+}

@@ -1,0 +1,36 @@
+<div>
+    <a id="pubJobRef" href="#!publishJob" ng-click="">publish job</a>
+
+
+    <div id="jobsData">
+        <div id="jobs">
+            <div ng-repeat="job in myJobs">
+                <job job="job"></job>
+            </div>
+        </div>
+
+        <div id="jobDetails">
+            <div id="jobDetailsContent">
+                <div ng-if="jobDetailsShow">
+
+                    <p>{{vm.jobDetails.description}}</p>
+                    <!--<p>{{vm.jobDetails.jobApplicants}}</p>-->
+                    <skills skills="vm.jobDetails.skillNames"></skills>
+
+
+                    <button ng-show="vm.jobDetails.jobApplicants.length>0 && !hideBtn" ng-click="vm.invokeGetApplicant()">show applicants</button>
+                    <button ng-show="hideBtn" ng-click="vm.toggleHideBtn()">hide applicants</button>
+                    
+                    <div ng-show="hideBtn">
+                        <div ng-repeat="user in jobApplicants track by $index">
+                            <user user-data="user"></user>
+                        </div>
+                    </div>
+
+                </div>
+                    <map></map>
+                
+            </div>
+        </div>
+    </div>
+</div>

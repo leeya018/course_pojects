@@ -1,0 +1,274 @@
+body{
+    background-color: beige;
+    height: 980px;    
+}
+.allStore{
+    font-family: Arial, Helvetica, sans-serif;
+    display:grid;
+    grid-template-columns: 55% 5% 40%;
+     grid-template-rows: auto;
+    grid-template-areas: 
+    "main main main"
+    "storeContainer . cartContainer";
+    min-width: 450px;
+    position:relative;
+}
+
+.allStore>h1{
+    grid-area: main;
+    background-color: beige;
+    text-align: center;height: 100px;
+    margin-top: 0;
+    background-size: 40% 113%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e7/Logo_Lee_Cooper.jpg);
+    width: 50%;
+    position: relative;
+    left: 25%;
+    background-repeat: no-repeat;}
+
+.allStore>.storeContainer{
+    grid-area: storeContainer;
+    display: grid;
+    /*border: 1px solid yellow;*/
+    grid-row-gap:10px;
+    
+}
+
+.scrollClass{
+    top: 130px;
+    position:fixed;
+    right:0% ;
+    width:46%;
+}
+
+/*
+
+.topClass{
+    top: 130px;
+    position:fixed;
+    right:0% ;
+    width:46%;
+}*/
+/*//category*/
+.allStore>.storeContainer>div{
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-column-gap:10px;
+    grid-row-gap:10px;
+    
+    
+}
+/*item*/
+.allStore>.storeContainer>div>div{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /*grid-template-rows: auto;*/
+    grid-template-rows: 16vh  18vh 5vh;
+    grid-template-areas:
+      "photo photo"
+      "title title"
+      "price buyButton";
+    box-shadow: 1px -1px 4px black;
+    border-radius: 20% 0% 0% 0%;
+}
+
+.allStore>.storeContainer>div>div:hover{
+    box-shadow: 5px -4px 16px black;
+}
+
+
+.allStore>.storeContainer>div>div>img{
+    grid-area:photo;
+    width:100px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    left: 21%;
+    top: 10%;
+    box-shadow: 2px -1px 4px 3px black;
+}
+
+.allStore>.storeContainer>div>div>img:hover{
+    width: 102%;
+    height: 237%;
+    position: relative;
+    top: 2%;
+    left: 0%;
+    z-index: 1;
+    opacity: 0.6;
+}
+.allStore>.storeContainer>div>div>h1{
+    grid-area:title;
+    position: relative;
+    left: 3%;
+}
+
+.allStore>.storeContainer>div>div>span{
+    grid-area:price;
+    font-size: 23px;
+    position: relative;
+    bottom: -15px;
+    left: 6px;
+}
+
+.allStore>.storeContainer>div>div>button{
+    grid-area:buyButton;
+    border-radius: 10% -2% 10% 10%;
+    background-image: url(http://healthfoodpost.com/wp-content/uploads/2013/05/BuyButton.jpg);
+    background-repeat: no-repeat;
+    border: none;
+    background-size: 200% 268%;
+    background-position: center;
+    z-index: 1000;
+}
+
+.allStore>.storeContainer>div>div>button:hover{
+    position:relative;
+    transform: scale(1.2) translate(0px,-5px);
+}
+
+.allStore>.cartContainer{
+    
+    grid-area: cartContainer;
+    border: 1px solid green;
+    display: grid;
+    background-color:deepskyblue;
+    
+}
+
+/*table*/
+.allStore>.cartContainer>table{
+    text-align: center;
+    width:100%;
+    font-size: 20px;
+}
+
+/*rows*/
+.allStore>.cartContainer>table tr{
+    border: 1px solid black;
+}
+
+/*thead*/
+.allStore>.cartContainer>table thead{
+    border: 1px solid black;
+    width: 48%;
+    font-size: 30px;
+}
+/*input in table*/
+.allStore>.cartContainer>table input{
+    position: relative;
+    width: 69%;
+    height: 24px;
+    text-align: center;
+    font-size:86%;
+}
+
+.allStore>.cartContainer>table img{
+    position: relative;
+    width: 48%;
+}
+
+
+.allStore>.cartContainer>table .total{
+    width:23%;
+}
+
+.allStore>.cartContainer>table tbody .xIcon{
+    position:relative;
+    background-size: 26px 31px;
+    width: 27px;
+    height: 29px;
+    top:64px;
+    left:7px;
+    /*background-repeat: no-repeat;*/
+}
+
+
+.allStore>.cartContainer>table tbody{
+    font-size: 30px;
+}
+.allStore>.cartContainer>table thead .cartImg{
+    position:relative;
+    background-size: 90px 90px;
+    width: 90px;
+    height: 90px;
+}
+
+.allStore>.cartContainer>table thead>tr:first-child{
+    border: none;
+}
+
+
+.coinBtnDiv{
+    /*width:400px;
+    height: 100px;*/
+}
+
+.coinBtnDiv>button{
+
+    width:100px;
+    height: 30px;
+}
+/**********************************************MEDIA******************************************/
+@media screen and (max-width: 1272px) {
+
+.allStore{
+    display:grid;
+    grid-template-columns: 55% 45%;
+     grid-template-rows: auto;
+    grid-template-areas: 
+    "main main"
+    "storeContainer cartContainer";
+}
+.allStore>.storeContainer>div{
+    grid-template-columns: 48% 48% ;
+    }    
+}
+/*
+@media screen and (max-width: 1000px) {
+
+.allStore>.storeContainer>div{
+    grid-template-columns: 36% 36% ;
+    }    
+}*/
+
+@media screen and (max-width: 880px) {
+   .allStore{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "main"
+        "cartContainer"    
+        "storeContainer";
+        grid-row-gap:10px;
+        
+}
+.allStore>.storeContainer>div{
+    grid-template-columns: 48% 48% ;
+    }    
+}
+@media screen and (max-width: 480px) {
+    .allStore{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "main"
+        "cartContainer"    
+        "storeContainer";
+}
+
+    .allStore>.storeContainer>div{   
+       grid-template-columns: 95% ;
+    }    
+
+
+}
+
+/*
+@media screen and (min-width: 480px) {
+
+}
+scrollClass*/

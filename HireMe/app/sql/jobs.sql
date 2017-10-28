@@ -1,0 +1,111 @@
+create table jobs (
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	title VARCHAR(50) NOT NULL,
+	pub_date DATE NOT NULL,
+	pub_id INT NOT NULL,
+	description TEXT NOT NULL,
+	locationId INT NOT NULL,
+    UNIQUE(id)
+
+);
+
+insert into jobs (title, pub_date, pub_id, description, locationId) values ('Senior Financial Analyst', '2017-03-22', 11, 'Morbi non lectus.', 47);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ('Community Outreach Specialist', '2016-10-09', 11, 'Curabitur gravida nisi at nibh.', 5);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ('Chemical Engineer', '2017-01-24', 13, 'In quis justo.', 97);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ('Systems Administrator III', '2016-11-21', 6, 'Donec ut dolor.', 92);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ('Analog Circuit Design manager', '2017-05-16', 18, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.', 91);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ('Sales Associate', '2016-10-09', 8, 'Vestibulum ac est lacinia nisi venenatis tristique.', 49);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ('Project Manager', '2017-05-05', 16, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.', 37);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ('Quality Engineer', '2017-07-06', 6, 'Sed ante.', 64);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ('Research Associate', '2017-01-31', 17, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', 91);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Marketing Manager', '2017-05-02', 18, 'Pellentesque eget nunc.', 78);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Executive Secretary', '2017-01-08', 18, 'Quisque ut erat.', 99);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Information Systems Manager', '2017-06-25', 15, 'Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 57);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Chief Design Engineer', '2017-03-05', 20, 'Nam tristique tortor eu pede.', 9);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'VP Sales', '2016-12-01', 6, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.', 89);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Pharmacist', '2017-03-04', 18, 'Cras in purus eu magna vulputate luctus.', 16);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Budget/Accounting Analyst I', '2017-07-21', 3, 'Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.', 28);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Help Desk Technician', '2017-04-05', 11, 'Cras in purus eu magna vulputate luctus.', 99);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Help Desk Technician', '2017-02-25', 20, 'Quisque porta volutpat erat.', 31);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Accounting Assistant I', '2017-05-05', 14, 'Cras pellentesque volutpat dui.', 59);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Quality Engineer', '2016-11-11', 3, 'Aliquam quis turpis eget elit sodales scelerisque.', 84);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Software Consultant', '2017-08-09', 4, 'Nullam porttitor lacus at turpis.', 14);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Civil Engineer', '2017-08-31', 17, 'Curabitur in libero ut massa volutpat convallis.', 8);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Web Designer III', '2017-03-04', 2, 'Vestibulum sed magna at nunc commodo placerat.', 43);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Recruiter', '2016-09-24', 13, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', 53);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'VP Product Management', '2017-04-12', 8, 'Nunc purus.', 94);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'VP Product Management', '2017-05-14', 13, 'Mauris sit amet eros.', 36);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Recruiter', '2017-04-21', 4, 'Etiam faucibus cursus urna.', 6);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Administrative Assistant III', '2017-06-25', 5, 'Nam nulla.', 99);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Tax Accountant', '2017-02-07', 8, 'Fusce consequat.', 21);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Civil Engineer', '2017-05-06', 1, 'Aliquam sit amet diam in magna bibendum imperdiet.', 37);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Budget/Accounting Analyst IV', '2017-01-18', 12, 'Duis at velit eu est congue elementum.', 28);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Programmer II', '2017-05-19', 13, 'Donec vitae nisi.', 35);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Database Administrator II', '2017-08-21', 1, 'Morbi porttitor lorem id ligula.', 99);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Chief Design Engineer', '2017-05-31', 5, 'Duis ac nibh.', 81);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'General Manager', '2016-12-20', 18, 'In hac habitasse platea dictumst.', 4);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Legal Assistant', '2017-05-03', 6, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.', 95);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Graphic Designer', '2016-09-20', 8, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 28);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Automation Specialist I', '2017-01-01', 3, 'Morbi non quam nec dui luctus rutrum.', 57);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Professor', '2017-07-03', 9, 'Donec posuere metus vitae ipsum.', 22);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Assistant Manager', '2017-04-18', 13, 'In est risus, auctor sed, tristique in, tempus sit amet, sem.', 83);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Health Coach I', '2017-05-13', 15, 'Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.', 14);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Marketing Assistant', '2016-10-06', 14, 'Duis consequat dui nec nisi volutpat eleifend.', 11);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Internal Auditor', '2016-10-01', 20, 'Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.', 8);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Design Engineer', '2017-04-14', 2, 'Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.', 5);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Environmental Specialist', '2017-03-24', 10, 'Mauris sit amet eros.', 52);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Project Manager', '2016-12-25', 11, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.', 91);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Assistant Professor', '2017-06-15', 4, 'Morbi porttitor lorem id ligula.', 44);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Dental Hygienist', '2016-09-28', 19, 'Vivamus in felis eu sapien cursus vestibulum.', 47);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Sales Representative', '2017-04-02', 7, 'Vivamus in felis eu sapien cursus vestibulum.', 77);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Statistician I', '2016-11-09', 12, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', 1);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Nurse', '2017-05-29', 19, 'Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.', 21);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Sales Representative', '2017-08-24', 16, 'Suspendisse potenti.', 35);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Financial Analyst', '2016-09-05', 1, 'Donec vitae nisi.', 68);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Business Systems Development Analyst', '2017-06-02', 8, 'Nullam varius.', 45);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Accounting Assistant III', '2017-03-31', 1, 'Mauris sit amet eros.', 60);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Civil Engineer', '2016-12-06', 14, 'Aenean sit amet justo.', 61);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Budget/Accounting Analyst II', '2017-07-16', 1, 'Duis ac nibh.', 19);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Electrical Engineer', '2016-11-26', 1, 'Nulla justo.', 76);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Chief Design Engineer', '2017-08-12', 1, 'Donec quis orci eget orci vehicula condimentum.', 34);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Cost Accountant', '2017-05-07', 15, 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.', 16);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Research Assistant I', '2017-03-15', 6, 'Phasellus id sapien in sapien iaculis congue.', 65);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Pharmacist', '2017-06-25', 8, 'Nulla facilisi.', 26);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Human Resources Assistant II', '2016-11-10', 8, 'In hac habitasse platea dictumst.', 49);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Environmental Tech', '2016-12-09', 3, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', 23);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Administrative Officer', '2016-12-22', 12, 'Morbi porttitor lorem id ligula.', 55);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Design Engineer', '2017-06-14', 17, 'Pellentesque ultrices mattis odio.', 85);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Administrative Assistant II', '2017-07-27', 2, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', 96);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Technical Writer', '2016-10-20', 3, 'Morbi quis tortor id nulla ultrices aliquet.', 71);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Assistant Media Planner', '2017-04-13', 16, 'Maecenas rhoncus aliquam lacus.', 61);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Human Resources Assistant II', '2017-08-04', 14, 'Donec dapibus.', 66);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Sales Associate', '2016-09-21', 10, 'Sed sagittis.', 56);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Senior Developer', '2017-04-09', 5, 'Maecenas rhoncus aliquam lacus.', 71);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Administrative Officer', '2017-06-23', 18, 'Integer a nibh.', 55);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Associate Professor', '2017-06-03', 18, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.', 99);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Assistant Media Planner', '2017-05-25', 8, 'Nulla ac enim.', 50);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Quality Engineer', '2017-02-05', 3, 'In hac habitasse platea dictumst.', 94);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'General Manager', '2016-10-20', 3, 'Duis bibendum.', 2);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Engineer I', '2016-09-14', 18, 'Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 17);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Clinical Specialist', '2017-04-07', 14, 'Nulla tempus.', 95);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Recruiter', '2017-05-08', 17, 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.', 77);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Database Administrator I', '2017-07-16', 2, 'Vestibulum ac est lacinia nisi venenatis tristique.', 100);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Computer Systems Analyst I', '2016-11-08', 20, 'Morbi non lectus.', 46);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Quality Control Specialist', '2016-10-19', 4, 'Proin eu mi.', 70);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'VP Accounting', '2016-12-04', 10, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.', 18);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Analyst Programmer', '2017-04-12', 6, 'Vestibulum rutrum rutrum neque.', 71);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Nurse Practicioner', '2017-02-17', 2, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.', 72);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Human Resources Assistant IV', '2017-01-09', 7, 'Duis ac nibh.', 97);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Pharmacist', '2016-09-09', 6, 'Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.', 87);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Sales Representative', '2017-08-19', 12, 'Suspendisse potenti.', 79);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Marketing Manager', '2016-09-12', 15, 'In sagittis dui vel nisl.', 18);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Teacher', '2017-03-07', 11, 'Duis bibendum.', 32);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Database Administrator IV', '2017-04-01', 18, 'Morbi a ipsum.', 37);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Director of Sales', '2016-11-12', 5, 'Donec quis orci eget orci vehicula condimentum.', 16);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Social Worker', '2016-11-30', 6, 'Proin eu mi.', 20);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Actuary', '2016-09-18', 14, 'Aenean sit amet justo.', 50);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Speech Pathologist', '2017-02-14', 6, 'Nulla mollis molestie lorem.', 15);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Software Consultant', '2017-04-04', 10, 'Ut at dolor quis odio consequat varius.', 17);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Computer Systems Analyst II', '2017-07-01', 1, 'Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', 95);
+insert into jobs (title, pub_date, pub_id, description, locationId) values ( 'Programmer Analyst II', '2016-09-06', 12, 'Pellentesque viverra pede ac diam.', 81);
+insert into jobs (title, pub_date, pub_id, description, locationId) values (, 'Administrative Officer', '2016-09-13', 6, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 13);

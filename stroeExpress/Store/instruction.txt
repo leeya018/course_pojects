@@ -1,0 +1,123 @@
+instruction for the plugin :
+the user need to operate the Shop pluing on a div container like thiis:
+    $('.storeContainer').shop(products1, cartsSelector);
+
+$('.storeContainer') - this is the selector which you operate the plugin on
+
+shop - this is the plugin name
+
+product1 is the list of the products
+
+cartsSelector - is the selector of the div cart
+
+your html should look klike this:
+
+    <h1>My Shop</h1>
+    <div class="allStore">
+        
+        <div class="storeContainer">
+
+        </div>
+        <div class="cartContainer">
+        </div>
+    </div>
+
+also add the file of the css:
+    <link href="style.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Products are defined in an array of objects in a separate JS file.
+Product fields: { name: product display name, image: url, price: number }.
+Create at least 32 products. You can use https://www.mockaroo.com/ - to create the products images use avatar (you can determine the image size).
+
+The page contains a div for the products and a right sidebar for the cart.
+Make sure that the page is responsive.
+
+The products are created in the products div on the page load. 4 items in a row.
+Each product includes: image, name, side by side: price and "add to cart" botton.
+
+The cart has a title, items table with captions and summary of items and price.
+The table contains the following fields: Product, Quantity, Price, Total.
+Each product in the cart has a delete button ("X") next to it.
+The quantity is a spin input (minimum value = 1.).
+User adds product to cart by clicking the "add to cart" botton. If you add an existing product, it adds one to the quantity and updates line total and cart total. When changing the quantity in the cart, totals should update too.
+User can remove line items from cart by clicking the 'X' button.
+
+Recommended steps:
+1. Create HTML
+2. Add products to page
+3. Create cart HTML + cart JS object.
+4. Write cart JS function addToCart(productObj) which adds new products only.
+5. Update addToCart to receive existing products - updates the line total too.
+6. Add private method updateCartTotal()
+7. Listen to spinner change and update all totals.
+8. Listen to delete icon and delete the product - do not forget to update the total.
+
+Stage 2:
+Make the cart follow while user scrolls the page - whan the page is at the top, the cart should be in place. When scrolling to a point that the cart could start disappearing up, than the cart should stick to the browser top.
+Add animation when user clicks on a product - animate it's image to fly into cart.
+When user deletes a product from the cart, animate a fade effect. (edited)
+
+
+use input event instead of change event -better
+
+
+
+/////////////////////////////////section 2 =====================================+
+The goals of this project is to create a jQuery plugin which loads the products from backend server. The name of the plugin is: shopcart.
+The plugin should be used as following:
+productsContainerObj.shopcart(cartContainer, options);
+productsContainerObj is a jQuery object of div where the products will be placed.
+cartContainer is either a selector of div where the cart will be placed or the jQuery object of this div.
+options is an object with the following fields:
+{
+    add_to_cart_image_url: default is the image which you used previously
+    products_load_json: JSON of products to load - default: ''
+    products_load_url: url loading the products from, using AJAX (instead of the JSON)
+    url_load_page_count: How many items to load from the server each load request.
+    paypal: {
+        currency_code: Three letters currency code - default: "USD"
+        lc: Localization - the laguage to show in PayPal - default: 'en_US'
+        business: The PayPal account email. MUST BE FILLED.
+        image_url: Logo url which will be displayed in PayPal. Default: ''
+        return: Return url - On success, PayPal will redirect to here. Default: ''
+        cancel_return: On cancelation, PayPal will redirect to here. Default: ''
+    }
+}
+Use jQuery $.extend() to merge the options.
+
+We will talk about loading products using AJAX from backend server on Thursday.
+
+plugin
+
+
+target selector  of the divsItem container
+option (not need Ajax and Paypl)
+options- products selector,items in obj\Url with Ajax
+create the $ sign with currency_code - function in js that using country code it reveal the proper sign
+the Shop will be jQuery plugin

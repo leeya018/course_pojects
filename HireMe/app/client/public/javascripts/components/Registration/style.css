@@ -1,0 +1,13 @@
+#registration {
+    font-size: 2.1em;
+        padding-left: 4%;
+}
+
+#registration input {
+    height: 2em;
+    border-radius: 1px;
+}
+
+#registerMsg{
+    color:red;
+}

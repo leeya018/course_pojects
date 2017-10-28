@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <script src="consts.js"></script>
+    <script src="function.js"></script>
+    <script src="toolbarEvents.js"></script>
+
+
+</head>
+
+<body>
+    <div id="header">
+        <h1>Painter</h1>
+        <button id="rectangleBtn">rectangle</button>
+        <button id="ovalBtn">oval</button>
+        <button id="ovalColorBtn">color</button>
+        <button id="deleteBtn">delete</button>
+        <button id="saveBtn">save</button>
+        <button id="loadBtn">load</button>
+
+
+
+        <table>
+            <tr>
+                <td class="colorItem" style="background-color:yellow"></td>
+                <td class="colorItem" style="background-color:red"></td>
+                <td class="colorItem" style="background-color:blue"></td>
+            </tr>
+            <tr>
+
+                <td class="colorItem" style="background-color:green"></td>
+                <td class="colorItem" style="background-color:white"></td>
+                <td class="colorItem" style="background-color:purple"></td>
+            </tr>
+            <tr>
+
+                <td class="colorItem" style="background-color:violet"></td>
+                <td class="colorItem" style="background-color:peru"></td>
+                <td class="colorItem" style="background-color:powderblue"></td>
+            </tr>
+        </table>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="canvas">
+
+
+
+    </div>
+
+    <!--//save-->
+    <div id="saveMode" class="hideSaveMode">
+        <div id="saveWindow" class="vanishWindow">
+            <h2>file save</h2>
+            <div>
+                <label for="">enter a file name :<input autofocus type="" name="fileName" value=""></label><br>
+                <button id="saveFile">save file</button>
+            </div>
+        </div>
+
+        <div class="showSaveMassage hideSaveMassage">
+            <h1>Saved</h1>
+        </div>
+
+    </div>
+
+    <!--//load-->
+    <div id="loadMode" class="hideSaveMode">
+        <div id="loadWindow" class="vanishWindow1">
+            <h2>load file</h2>
+
+            <select>
+                
+                </select>
+            <button id="loadFile">load file</button>
+
+        </div>
+    </div>
+</body>
+
+
+
+</html>

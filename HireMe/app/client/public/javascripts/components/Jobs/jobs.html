@@ -1,0 +1,75 @@
+<div ng-show="showJobs" ng-init="vm.getUserDetails()">
+    <div id="filter">
+        <div>
+            <span>filter:</span>
+            <ul id="filterPick" ng-click="vm.resetFilters()">
+                <li class="filterLi" ng-click="vm.nameFilterClick()">name</li>
+                <li class="filterLi" ng-click="vm.locationFilterClick()">location</li>
+                <li class="filterLi" ng-click="vm.skillFilterClick()">skills</li>
+                <li class="filterLi" ng-click="vm.distanceFilterClick()">distance</li>
+
+                <li id="endLi"></li>
+            </ul>
+
+        </div>
+        <div ng-show="filterName==='nameFilter'">
+            <p>job name : <input ng-model="searchText.jobName" placeholder="job name" autofocus></p>
+        </div>
+        <div ng-show="filterName==='locationFilter'">
+            <p> location : <input ng-model="searchText.locationName" placeholder="location" autofocus></p>
+        </div>
+        <div ng-show="filterName==='skillsFilter'">
+            <div id="skillFilter">
+                <div id="addSkill">
+                    <select multiple ng-init="vm.getSkills()" ng-model="selectedSkill" ng-selected="Angular" ng-options="skill as skill.skillName for skill in vm.skills"></select>
+
+                    <button ng-click="vm.addSkillsToTextArea(selectedSkill)">add skill</button>
+                </div>
+                <div>
+                    <div id="txtAreaAndBtn">
+                        <textarea ng-disabled="true" id="areaSkills" rows="10" cols="10"></textarea>
+                    </div>
+                    <div id="searchBtn">
+                        <button ng-click="vm.getJobsByChosenSkills()">search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-show="filterName==='distanceFilter'">
+            <div>
+                <input class="distScale" id="distScale" ng-model="limDist" type="range" min="0.1" max="1000" step="1">
+                <p class="distScale">{{limDist -0.1}} km</p>
+                <!--<p>distance : <input type="number" ng-model="limDist" autofocus></p>-->
+            </div>
+        </div>
+
+
+        <div>
+
+        </div>
+    </div>
+
+
+
+    <div id="jobsData">
+        <div id="jobs">
+            <div ng-repeat="job in jobs |filter:searchText | filter:distFilter(limDist)">
+                <job job="job"></job>
+            </div>
+        </div>
+        <div id="jobDetails">
+            <div id="jobDetailsContent">
+                <div ng-if="jobDetailsShow">
+
+                    <p>{{vm.jobDetails.description}}</p>
+                    <!--<p>{{vm.jobDetails.jobApplicants}}</p>-->
+                    <skills skills="vm.jobDetails.skillNames"></skills>
+
+
+                </div>
+                <map></map>
+            </div>
+        </div>
+    </div>
+
+</div>

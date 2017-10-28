@@ -1,0 +1,16 @@
+{
+  "name": "stroeexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "express1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "jQuery": "^1.7.4"
+  }
+}

@@ -1,0 +1,27 @@
+<!--<div>
+
+    <div ng-repeat="job in jobs |filter:searchText">
+      <job job="job"></job>
+</div>-->
+
+
+    <div id="jobsData">
+        <div id="jobs">
+            <div ng-repeat="job in jobs">
+                <job job="job"></job>
+            </div>
+        </div>
+        <div id="jobDetails">
+            <div id="jobDetailsContent">
+                <div ng-if="jobDetailsShow">
+
+                    <p>{{vm.jobDetails.description}}</p>
+                    <!--<p>{{vm.jobDetails.jobApplicants}}</p>-->
+                    <skills skills="vm.jobDetails.skillNames"></skills>
+
+
+                </div>
+                <map></map>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,26 @@
+<div ng-init="vm.showAgentJobs()">
+
+    <!--<div ng-repeat="job in agentJobs track by $index">
+        <job job="job"></job>
+    </div>-->
+
+    <div id="jobsData">
+        <div id="jobs">
+            <div ng-repeat="job in agentJobs">
+                <job job="job"></job>
+            </div>
+        </div>
+        <div id="jobDetails">
+            <div id="jobDetailsContent">
+                <div ng-if="jobDetailsShow">
+
+                    <p>{{vm.jobDetails.description}}</p>
+                    <skills skills="vm.jobDetails.skillNames"></skills>
+         
+
+                </div>
+                <map></map>
+
+            </div>
+        </div>
+    </div>
