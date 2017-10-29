@@ -1,0 +1,35 @@
+.avelablity{
+    display: flex;
+}
+
+.titleDate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleDate h3{
+    margin: 0;
+}
+
+.days{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputDates{
+    display: flex;
+    flex-direction: column;
+     padding-left: 5%;
+}
+
+.inputDates input{
+    height: 3em;
+    width: 96%;
+}
+
+.cal{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding-left: 1%;
+}

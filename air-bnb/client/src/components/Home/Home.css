@@ -1,0 +1,46 @@
+.home{
+   text-align: left;
+} 
+
+.details{
+  width:100%;
+  margin-left: 15%;
+}
+
+.detailsBook{
+    display: flex;  
+}
+
+.homeBook{
+  display: flex;
+}
+
+.sumReviewLocation{
+  width:60%
+}
+
+@media only screen and  (max-width:1025px){
+  .homeBook{
+      display: flex;
+      flex-direction: column;  
+  }
+  
+  .details{
+      width:100%;
+      margin-left: 5%;
+  }
+  
+  .sumReviewLocation{
+    width:87%
+  }
+}
+
+@media only screen and (max-width:768px){
+  .details{
+        margin-left: 5%;
+  }
+
+  .sumReviewLocation{
+    width:97%
+  }
+}

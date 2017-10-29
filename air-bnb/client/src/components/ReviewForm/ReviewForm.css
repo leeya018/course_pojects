@@ -1,0 +1,51 @@
+.formReviewMain{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    padding-top:1%;
+}
+
+.formReview{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:100%;
+    height: 10em;   
+    height: 15em;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.formReview input,textarea{
+    border-radius: 5px;
+}
+
+.formReview input{
+    height: 3em;
+}
+
+.formReview .formReviewElem {
+    width: 80%;
+}
+
+.formReview>div{
+    margin:0.3%;
+}
+
+button{
+    background-color:rgb(15.9%, 57.7%, 133.2%)
+}
+
+.postReview{
+    height: 3em;
+}
+.postReview>button {
+    height: 3em;
+}
+.descArec>textarea {
+    width: 100%;
+}
+
+.formReview h2{
+    margin: 0;
+}

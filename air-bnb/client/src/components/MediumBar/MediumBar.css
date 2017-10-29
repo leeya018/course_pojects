@@ -1,0 +1,21 @@
+.mediumBar{
+    width: 53%;
+    display: flex;
+    font-size: 15px;
+    margin-left: 6%;
+}
+
+.mediumBar>ul{
+    width:80%;
+    display: flex;
+}
+
+.mediumBar>ul>li{
+    list-style-type:none;
+}
+
+@media only screen and (max-width:1025px){
+    .mediumBar{
+        display: none;
+    }
+}

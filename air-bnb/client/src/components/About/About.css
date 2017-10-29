@@ -1,0 +1,128 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.pulishImg{
+    width:2em;
+    height: 2em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    padding: 0.3em;
+    margin: 1em;
+}
+
+.owner{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.first{
+    display: flex;    
+    justify-content: space-between;
+}
+
+
+.titleType{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.type{
+    margin-right: 1em;    
+}
+
+
+.theSpace{
+    display: flex;
+    flex-direction: column;
+}
+
+.theSpaceNoDesc{
+    display: flex;
+    justify-content: space-between;
+    margin:1em 1em 1em 0; 
+}
+
+.description{
+    text-align:left;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+}
+
+h4{
+    margin: 0.4em 0.4em 0.4em  0;
+}
+.constactHost{
+    text-align:left;
+    margin: 0.4em 0.4em 0.4em  0;
+    color:rgb(37.7%, 50.2%, 79.2%) ;  
+}
+
+ .constactHost:hover{
+    text-decoration:underline;
+}
+
+.moreInfo{
+    color:rgb(37.7%, 50.2%, 79.2%) ;  
+}
+
+.moreInfo:hover{
+    text-decoration:underline;
+}
+
+.generalA{
+    display: flex;
+    flex-direction: column;
+}
+
+.general{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.general>div{
+    margin-top:1em;
+}
+
+.aboutName{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-star{
+    color:rgb(255, 180, 0);
+}
+
+@media only screen and  (max-width:1025px){
+    .theSpaceNoDesc{
+        display: flex;
+        margin:1em 1em 1em 0; 
+        width:54%;
+    }
+}
+
+@media only screen and  (max-width:880px){
+    .theSpaceNoDesc{
+        display: flex;
+        margin:1em 1em 1em 0; 
+        width:60%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .theSpaceNoDesc{
+        display: flex;
+        margin:1em 1em 1em 0; 
+        width:62%;
+    }
+}
+
+

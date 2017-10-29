@@ -1,0 +1,29 @@
+.homePrevirew{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 9%;
+    list-style-type:none;
+}
+
+.previewImage{
+    height: 10em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.previewBed{
+    color:rgb(120, 120, 120);
+}
+
+.previewTitle{
+    color:black;
+}
+
+.previewPrice{
+    color:rgb(120, 120, 120);
+}
+
+.previewTitle>h2{
+    margin:0.3em 0.3em 0.3em 0;
+}
+

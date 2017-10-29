@@ -1,0 +1,50 @@
+.review{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.reviewHead{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewHeadNoRating{
+    display: flex;
+}
+
+.reviewNameDate{
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewImage{
+    width:3em;
+    height: 3em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-bottom: 0.3em;
+}
+
+.reviewNameDate {
+    margin-left: 1.5em;
+    height: 30%;
+}
+
+.reviewName{
+    padding: 0.2em;
+    height: 30%;
+    
+}
+.reviewContent{
+    margin-bottom: 1em;
+}
+
+.reviewDate{
+    padding-top: 18%;
+}
+
+.reviewTitle>h3{
+    margin:0;
+}

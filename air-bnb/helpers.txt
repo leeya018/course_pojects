@@ -1,0 +1,74 @@
+Thinking like a programmer is simple. The key is to know how to break problems down into smaller ones.
+Important mail: 
+https://mail.google.com/mail/u/0/#inbox/15f116552afecc4e
+
+
+
+https://dcc.godaddy.com/manage/leeyahav.online/dns/hosts
+18.220.241.86
+
+db.homes.update({},{$set:{'occupancy':[]}},{multi:true})
+
+axios is instead of fetch
+
+
+http://localhost:3002/api/homes/59de4a0aef452538e498d91e
+
+
+
+const location = await Locations.findById({ _id: req.params.locationId }, '-__v').populate([
+               { path: 'userId' },
+               { path: 'reviews', populate: { path: 'userId' } }
+
+
+               
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const LocationSchema = new Schema({
+   title: String,
+   type: String,
+   generalDesc: String,
+   guestAccess: String,
+   price: Number,
+   currency: String,
+   amenities: [
+       {
+           type: String
+       }
+   ],
+   imageUrl: {
+       type: String
+   },
+   address: {
+       country: String,
+       city: String,
+       street: String,
+       number: Number,
+       lat: Number,
+       lng: Number
+   },
+   theSpace: {
+       description: String,
+       guests: Number,
+       beds: Number,
+       bedrooms: Number
+   },
+   userId: {
+       type: Schema.Types.ObjectId,
+       ref: 'user'
+   },
+   reviews: [
+       {
+           type: Schema.Types.ObjectId,
+           ref: 'review'
+       }
+   ],
+   occupancy: {
+       type: String
+   }
+});
+
+const location = mongoose.model('location', LocationSchema);
+
+module.exports = location;

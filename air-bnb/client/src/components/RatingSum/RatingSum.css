@@ -1,0 +1,12 @@
+.rate{
+    display: flex;
+}
+
+.typeRate{
+    display: flex;
+}
+
+.reviewsLen{
+    margin-left: 0.5em;
+    color: black;
+}

@@ -1,0 +1,66 @@
+.mainFilter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.filter input{
+    height: 3.5em;
+}
+
+.filter button{    
+    height: 3.8em;
+    border-color: #e00007;
+    background-color: #e00007;
+    width: 8em;
+}
+
+.searchBar{
+    width:100%;
+}
+
+.searchBar input{
+    width: 95%;
+    height: 4em;
+}
+
+
+
+
+
+@media only screen and (max-width:1025px){
+.filter input{
+    width:11em
+}
+
+.searchBar{
+    padding-left: 6px;
+}
+
+}
+
+
+@media only screen and (max-width:900px){
+
+.filter input{
+    width:9em
+}
+
+}
+
+
+
+@media only screen and (max-width:768px){
+ .filter input{
+    width:8em
+}   
+}
+

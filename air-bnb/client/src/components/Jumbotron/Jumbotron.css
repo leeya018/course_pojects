@@ -1,0 +1,24 @@
+.Jumbotron{
+    width:100%;
+    height: 32em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and  (max-width:1300px){
+    .Jumbotron{
+        height: 30em;
+    }
+}
+
+@media only screen and  (max-width:1025px){
+    .Jumbotron{
+        height: 25em;
+    }
+}
+
+@media only screeb and (max-width:768px){
+    .Jumbotron{
+        height: 20em;
+    }
+}
