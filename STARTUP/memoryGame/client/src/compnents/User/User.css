@@ -1,0 +1,7 @@
+.user{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* background-color: green */
+} 

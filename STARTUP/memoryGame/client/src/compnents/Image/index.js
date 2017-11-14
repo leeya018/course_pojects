@@ -21,7 +21,7 @@ class Image extends Component {
     let { url } = this.state;
     let { imageUrl } = this.props;
     return (
-      <div class="imageContainer">
+      <div className="imageContainer">
         <img src={url} onClick={this.openImage} className="image" />
       </div>
     );

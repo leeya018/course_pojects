@@ -12,14 +12,17 @@ const dataLoader = {
   4: 10,
   5: 15
 };
+
 class Images extends Component {
   constructor(props) {
     super(props);
     this.state = { images: [], openCards: 0, card1: null, card2: null };
-    this.getData();
+    
     this.checkGame = this.checkGame.bind(this);
   }
-
+  componentDidUpdate() {
+    this.getData();
+  }
   checkGame(card) {
     let { card1, card2 } = this.state;
     if (!card1) {
@@ -34,6 +37,8 @@ class Images extends Component {
     if (card1 && card2) {
       if (card1.src !== card2.src) {
         this.closeBothCards(card1, card2);
+      } else {
+        this.props.inceasePoints();
       }
       this.setState({ card1: null, card2: null });
     }
@@ -48,8 +53,8 @@ class Images extends Component {
 
   getData() {
     let { openCards } = this.state;
-    let { level } = this.props;
-    api.getData().then(data => {
+    let { level,category } = this.props;
+    api.getData(category).then(data => {
       shuffle(data);
       data = data.splice(0, dataLoader[level]);
       let dupData = [...data, ...data];

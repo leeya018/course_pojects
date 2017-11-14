@@ -1,6 +1,6 @@
 
-async function getData(){
-    let response = await fetch('http://localhost:3001/memory')
+async function getData(category){
+    let response = await fetch(`http://localhost:3001/${category}`)
     return await response.json()
 }
 
