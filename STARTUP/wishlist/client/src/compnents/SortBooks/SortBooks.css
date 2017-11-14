@@ -1,0 +1,17 @@
+.sortItems{
+    display: flex;
+    justify-content: center;
+}
+.sortTitle{
+
+}
+.sortItems>h2{
+    padding:1em;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.sortItems>h2:hover{
+    color: white;
+    background-color: rgb(13.3%, 54.5%, 13.3%);
+}

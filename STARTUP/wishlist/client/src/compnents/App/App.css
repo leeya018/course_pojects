@@ -1,0 +1,37 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #D0D0D0;
+}
+.sortWithPreview{
+  display: flex;
+ flex-direction: column; 
+}
+.appSubContainer{
+  display: flex;
+  padding:8em;
+  background-color: #D0D0D0;
+  padding: 4em 2em 0em 18em;
+  
+}
+
+.appSubContainer>div{
+  margin: 1em;
+  
+  
+}
+.bookItem{
+  background-color: white;
+  
+  flex: 2;
+  
+}
+.previewItem{
+  flex: 2;
+  background-color: #D0D0D0;
+}
+
+.appContainer{
+  display: flex;
+  flex-direction: column;
+}

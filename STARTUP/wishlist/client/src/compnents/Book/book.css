@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 7em;
+    height: 13em;
+    flex:1;
+}
+
+.bookContainer{
+    display: flex;
+    height: 30%;
+}
+
+
+.book{
+    border: 1px solid black;
+    padding: 1em;
+    /* flex: 2; */
+    width:33em;
+    height: 36em;
+    background-color: white;
+    box-shadow: 10px 10px 5px #888888;
+    
+    
+}
+
+.description{
+    overflow-y: scroll;
+    height: 14em;
+    font-size: 20px;
+}
+
+.bookAuthor{
+    color:rgb(12.7%, 93.7%, 87.6%)
+}
+.bookPrice{
+    color: rgb(17.6%, 54.1%, 96%)   
+}
