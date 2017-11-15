@@ -1,34 +1,40 @@
 import styled from 'styled-components';
 
 const boardHelper = {
+  0:{
+    columns:0,
+    rows:0,    
+    cellWidth:'200px',
+    cellHeight:'300px'
+  },
   1:{
     columns:2,
     rows:2,    
-    cellWidth:'30%',
+    cellWidth:'200px',
     cellHeight:'300px'
   },
   2:{
     columns:3,
     rows:2,    
-    cellWidth:'20%',
+    cellWidth:'160px',
     cellHeight:'250px'
   },
   3:{
     columns:4,
     rows:3,    
-    cellWidth:'15%',
+    cellWidth:'140px',
     cellHeight:'200px'
   },
   4:{
     columns:5,
     rows:4,    
-    cellWidth:'12%',
+    cellWidth:'130px',
     cellHeight:'180px'
   },
   5:{
     columns:6,
     rows:5,    
-    cellWidth:'10%',
+    cellWidth:'100px',
     cellHeight:'140px'
   }
 }

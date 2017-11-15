@@ -6,18 +6,16 @@ const { Option } = Select;
 
 export default props => {
   const gameTitle = 'Memory Game';
-  let {showMenu }= props;
+  let { showMenu, category, level, updateGame } = props;
 
-  
   return (
-    <Menu showMenu ={showMenu }>
+    <Menu showMenu={showMenu}>
       <GameTitle>{gameTitle}</GameTitle>
-      
       <Select
         showSearch
         style={{ width: 200 }}
         onChange={value => {
-          props.updateCategory(value);
+          category = value;
         }}
         placeholder="Select Category"
         optionFilterProp="children"
@@ -29,13 +27,11 @@ export default props => {
         <Option value="4">4</Option>
         <Option value="5">5</Option>
       </Select>
-
-
       <Select
         showSearch
         style={{ width: 200 }}
         onChange={value => {
-          props.updateLevel(parseInt(value));
+          level = parseInt(value);
         }}
         placeholder="Select your level"
         optionFilterProp="children"
@@ -47,8 +43,15 @@ export default props => {
         <Option value="4">4</Option>
         <Option value="5">5</Option>
       </Select>
-      <Button type="primary">primary</Button>
-i
+      <Button
+        type="primary"
+        onClick={() => {  
+          updateGame( level,category);
+        }}
+      >
+        Start Game
+      </Button>
+      i
     </Menu>
   );
 };

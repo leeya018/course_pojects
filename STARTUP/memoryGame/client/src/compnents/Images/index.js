@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import shuffle from 'shuffle-array';
-import api from './api';
 import Image from '../Image';
 import Grid from './Images.styled';
 
@@ -16,31 +15,30 @@ const dataLoader = {
 class Images extends Component {
   constructor(props) {
     super(props);
-    this.state = { images: [], openCards: 0, card1: null, card2: null };
-    
+    this.state = { images: [], openCards: 0, card1: null };
     this.checkGame = this.checkGame.bind(this);
   }
-  componentDidUpdate() {
-    this.getData();
+
+  componentDidMount() {
+    this.createData();
   }
   checkGame(card) {
     let { card1, card2 } = this.state;
     if (!card1) {
       this.setState({ card1: card });
     } else {
-      this.setState({ card2: card });
+      this.checkMatch(card1,card);
     }
   }
 
-  checkMatch() {
-    let { card1, card2 } = this.state;
+  checkMatch(card1,card2) {
     if (card1 && card2) {
       if (card1.src !== card2.src) {
         this.closeBothCards(card1, card2);
       } else {
-        this.props.inceasePoints();
+        this.props.increasePoints();
       }
-      this.setState({ card1: null, card2: null });
+      this.setState({ card1: null});
     }
   }
 
@@ -51,25 +49,22 @@ class Images extends Component {
     }, 1000);
   }
 
-  getData() {
+  createData() {
     let { openCards } = this.state;
-    let { level,category } = this.props;
-    api.getData(category).then(data => {
-      shuffle(data);
-      data = data.splice(0, dataLoader[level]);
-      let dupData = [...data, ...data];
-      shuffle(dupData);
-      let images = dupData.map((image, index) => (
-        <Image key={index} imageUrl={image.src} openCards={openCards} checkGame={this.checkGame} />
-      ));
-      this.setState({ images });
-    });
+    let { level, category, data } = this.props;
+    shuffle(data);
+    data = data.splice(0, dataLoader[level]);
+    let dupData = [...data, ...data];
+    shuffle(dupData);
+    let images = dupData.map((image, index) => (
+      <Image key={index} imageUrl={image.src} openCards={openCards} checkGame={this.checkGame} />
+    ));
+    this.setState({ images });
   }
 
   render() {
     let { level } = this.props;
     let { images } = this.state;
-    this.checkMatch();
     return <Grid level={level}>{images}</Grid>;
   }
 }
