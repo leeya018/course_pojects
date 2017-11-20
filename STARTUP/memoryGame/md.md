@@ -1,4 +1,4 @@
-json-server -p 3001 --watch db.jsonjson-server -p 3001 --watch db.json
+json-server -p 3001 --watch db.json
 
 componentWillMount - only on time before the render,will be call before render and will not create another 
 render after

@@ -1,4 +1,7 @@
 import 'antd/lib/select/style/css';
+import 'antd/lib/button/style/css';
+import { Link } from 'react-router-dom';
+
 import { Button, Select } from 'antd';
 import React, { Component } from 'react';
 import { Menu, GameTitle } from './Menu.styled';
@@ -6,10 +9,11 @@ const { Option } = Select;
 
 export default props => {
   const gameTitle = 'Memory Game';
-  let { showMenu, category, level, updateGame } = props;
+  
+  let { updateGame, level, category } = props;
 
   return (
-    <Menu showMenu={showMenu}>
+    <Menu>
       <GameTitle>{gameTitle}</GameTitle>
       <Select
         showSearch
@@ -43,15 +47,16 @@ export default props => {
         <Option value="4">4</Option>
         <Option value="5">5</Option>
       </Select>
-      <Button
-        type="primary"
-        onClick={() => {  
-          updateGame( level,category);
-        }}
-      >
-        Start Game
-      </Button>
-      i
+      <Link to="/game">
+        <Button
+          type="primary"
+          onClick={() => {
+            updateGame(level, category);
+          }}
+        >
+          Start Game
+        </Button>
+      </Link>
     </Menu>
   );
 };

@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import './User.css'
+// import './User.css';
+import User from './User.styled'
 
-
-export default ({points})=>{
-
-  return(
-    <div className="user">
-      user  :{points}
-    </div>
-  )
-}
+export default ({ points }) => {
+  return <User>   Points :{points}</User>;
+};

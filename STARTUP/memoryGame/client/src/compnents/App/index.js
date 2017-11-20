@@ -1,51 +1,42 @@
 import React, { Component } from 'react';
-import Images from '../Images';
-import User from '../User';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { browserHistory } from 'react-router';
+
 import api from './api';
-import { MemoryGame, Game } from './App.style';
-import { Select } from 'antd';
-import 'antd/lib/select/style/css';
 import Menu from '../Menu';
-const Option = Select.Option;
+import MemoGame from '../MemoGame';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props, context) {
+    super(props, context);
     this.state = {
-      level: 1,
-      points: 0,
       category: 'animalls',
-      showGame: 'none',
-      showMenu: 'block',
+      level: 1,
       data: []
     };
-    this.increasePoints = this.increasePoints.bind(this);
     this.updateGame = this.updateGame.bind(this);
-  }
-
-  increasePoints() {
-    let { points } = this.state;
-    points++;
-    this.setState({ points });
   }
 
   updateGame(level, category) {
     api.getData(category).then(data => {
-      this.setState({ data, level, category, showGame: 'block', showMenu: 'none' });
+      this.setState({ data, level, category });
     });
   }
   render() {
-    let { level, points, showGame, showMenu, category, data } = this.state;
+    let { level, category, data } = this.state;
+    let i = 0;
     return (
-      <MemoryGame>
-        {<Menu showMenu={showMenu} level={level} category={category} updateGame={this.updateGame} />}
-        {data.length > 0 && (
-          <Game showGame={showGame}>
-            <User points={points} />
-            <Images increasePoints={this.increasePoints} data={data} level={level} category={category} />
-          </Game>
-        )}
-      </MemoryGame>
+      <Router>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={props => <Menu updateGame={this.updateGame} level={level} category={category} />}
+          />
+          <Route path="/game" render={props => <MemoGame level={level} category={category} data={data} />} />
+          <Route component={() => <h1>Oops.. page not found</h1>} />
+        </Switch>
+      </Router>
     );
   }
 }
