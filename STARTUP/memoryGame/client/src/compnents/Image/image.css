@@ -4,10 +4,16 @@
 .imageContainer:hover{
     box-shadow: 5px 5px 5px 5px #888888; 
 }
+.imageContainer{
+ 
+    
+}
+
 .image{
     border:1px solid black;
     width:100%;
     height:100%;
+    object-fit: cover;
 }
 
 @media (max-width:500px){

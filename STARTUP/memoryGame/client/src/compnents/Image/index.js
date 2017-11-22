@@ -5,23 +5,29 @@ const defaultSrc = 'http://myfirstchat.com/bookcity2/covers9/f9e6f8d44613a684b90
 class Image extends Component {
   constructor(props) {
     super(props);
-    this.state = { url: defaultSrc };
+    this.state = { url: '', style: {} };
     this.openImage = this.openImage.bind(this);
+  }
+  componentWillMount() {
+    this.setState({ url: defaultSrc });
   }
 
   openImage({ target }) {
     if (target.src === defaultSrc) {
       target.src = this.props.imageUrl;
       this.props.checkGame(target);
+      // let style = {
+      //   transitionDuration: '1s',
+      //   transform: 'rotate3d(0,1,0,180deg)'
+      // };
       this.setState({ url: [this.props.imageUrl] });
     }
   }
 
   render() {
-    let { url } = this.state;
-    let { imageUrl } = this.props;
+    let { url, style } = this.state;
     return (
-      <div className="imageContainer">
+      <div className="imageContainer" style={style}>
         <img src={url} onClick={this.openImage} className="image" />
       </div>
     );

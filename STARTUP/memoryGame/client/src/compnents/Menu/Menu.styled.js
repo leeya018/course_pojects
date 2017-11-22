@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
-export const Menu = styled.div`
-  display: ${({ showMenu }) => {
-    return showMenu;
-  }};
-  flex-direction:column;  
+export const MenuContainer = styled.div`
+  display:flex; 
+  justify-content: center;
 `;
-export const GameTitle = styled.h1``;
+export const Menu = styled.div`
+  display: flex;
+  flex-direction: column;
+  `;
+export const GameTitle = styled.h1`
+  text-align:center;
+`;
