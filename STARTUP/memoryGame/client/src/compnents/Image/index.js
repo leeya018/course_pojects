@@ -8,7 +8,7 @@ class Image extends Component {
     this.state = { url: '', style: {} };
     this.openImage = this.openImage.bind(this);
   }
-  componentWillMount() {
+  componentDidMount() {
     this.setState({ url: defaultSrc });
   }
 

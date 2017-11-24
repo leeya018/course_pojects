@@ -4,46 +4,45 @@ import { TimerContainer } from './Timer.style';
 class Timer extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      seconds: 0,
-      minutes: 0,
-      delay:1000
-    };
   }
-  componentDidMount() {
-    let { delay,seconds, minutes } = this.state;
-    setInterval(() => {
+
+  startTimer() {
+    let seconds = 0;
+    let minutes = 0;
+    this.intervalId = setInterval(() => {
       seconds++;
       if (seconds === 60) {
         seconds = 0;
         minutes++;
+        this.props.updateMinutes(minutes);
       }
-    this.setState({delay, seconds, minutes });      
-    }, delay);
+      this.props.updateSeconds(seconds);
+    }, 1000);
+  }
+  componentDidMount() {
+    this.startTimer();
   }
 
-  stopTimerFunc(){
-    this.setState({ seconds:0,minutes:0 });
-    
+  componentWillUnmount() {
+    clearInterval(this.intervalId);
   }
 
   componentWillReceiveProps(nextProps) {
-    // if (nextProps.stopTimer === true) {
-    //   debugger
-    //   this.stopTimerFunc()
-    //   this.props.updateStopTime()
-    // }
-    // if (nextProps.resetTimer === true) {
-    //   this.props.updateResetTime()
-    //   debugger
-    //   this.stopTimerFunc()
-    // }
+    let { seconds, minutes } = this.props;
+    if (nextProps.seconds === 0) {
+      clearInterval(this.intervalId);
+      this.startTimer();
+    }
+    if (nextProps.stopTimer === true) {
+      clearInterval(this.intervalId);
+      this.props.updateMinutes(minutes);
+      this.props.updateSeconds(seconds);
+      this.props.updateStopTime(false);
+    }
   }
 
   render() {
-    let {delay, seconds, minutes } = this.state;
-    console.log(delay)
-
+    let { seconds, minutes } = this.props;
     return (
       <TimerContainer>
         Timer:{minutes}:{seconds}
