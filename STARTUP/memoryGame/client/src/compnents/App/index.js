@@ -19,11 +19,6 @@ class App extends Component {
     this.updateGame = this.updateGame.bind(this);
   }
 
-  // updateGame(level, category) {
-  //   api.getData(category).then(data => {
-  //     this.setState({ data, level, category });
-  //   });
-  // }
   updateGame(level, category, name) {
     this.setState({ name, level, category });
   }
@@ -47,8 +42,8 @@ class App extends Component {
           />
           Table
           <Route
-            path="/game"
-            render={({ history }) => <MemoGame level={level} name={name} category={category} history={history} />}
+            path="/game/:level"
+            render={({ history,match }) => <MemoGame name={name} category={category} match={match} history={history} />}
           />
           <Route component={() => <h1>Oops.. page not found</h1>} />
         </Switch>

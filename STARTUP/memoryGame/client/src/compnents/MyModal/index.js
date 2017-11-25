@@ -12,7 +12,12 @@ class MyModal extends React.Component {
   }
   componentWillReceiveProps(nextProps) {
     if (nextProps.newRecordModal) {
+      // let modalObj = JSON.parse(nextProps.modalTxt);
+      debugger
+      let {modalTxt,modalTitle} = nextProps
+      this.setState({ ModalText:modalTxt ,title:modalTitle});
       this.showModal();
+
       this.props.updateNewRecordModal(false);
     }
   }
@@ -38,11 +43,11 @@ class MyModal extends React.Component {
     });
   };
   render() {
-    const { visible, confirmLoading, ModalText } = this.state;
+    const { visible, confirmLoading, ModalText,title } = this.state;
     return (
       <div>
         <Modal
-          title="Title"
+          title={title}
           visible={visible}
           onOk={this.handleOk}
           confirmLoading={confirmLoading}

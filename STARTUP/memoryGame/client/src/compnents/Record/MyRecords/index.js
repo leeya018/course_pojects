@@ -1,26 +1,10 @@
 import 'antd/lib/table/style/css';
 import React, { Component } from 'react';
+
 import { Table } from 'antd';
 import { TableContainer, MyRecordsTitle, ColTab } from '../Records.style';
 import axios from 'axios';
 import api from '../../App/api';
-
-const dataSource = [
-  {
-    key: '1',
-    name: 'Mike',
-    level: 1,
-    category: 'Animalls',
-    time: '11;22'
-  },
-  {
-    key: '2',
-    name: 'John',
-    age: 2,
-    category: 'Socker',
-    time: '11;22'
-  }
-];
 
 const columns = [
   {
@@ -58,9 +42,15 @@ class MyRecords extends Component {
     this.state = { myRecs: [] };
   }
   componentDidMount() {
-    debugger;
     let { name } = this.props;
     api.getMyRecords(name).then(myRecs => {
+      debugger;
+      myRecs = myRecs.map(rec => {
+        let { time } = rec;
+        time = `${time.minutes}:${time.seconds}`;
+        rec.time = time;
+        return rec;
+      }, this);
       console.log(myRecs);
       this.setState({ myRecs });
     });
@@ -71,6 +61,7 @@ class MyRecords extends Component {
 
   render() {
     let { myRecs } = this.state;
+    let code = 'GIB';
     return (
       <TableContainer>
         <ColTab>

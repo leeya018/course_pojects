@@ -1,17 +1,27 @@
 import 'antd/lib/select/style/css';
 import 'antd/lib/button/style/css';
 import { Link } from 'react-router-dom';
-import { Input, AutoComplete,Button, Select } from 'antd';
+import ReactFlagsSelect from 'react-flags-select';
+import 'react-flags-select/css/react-flags-select.css';
+import 'react-flags-select/scss/react-flags-select.scss';
+import { countries } from 'country-data';
+import { Input, AutoComplete, Button, Select } from 'antd';
 import React, { Component } from 'react';
-import {Signature, MenuContainer, MenuS, GameTitle } from './Menu.styled';
+import { Signature, MenuContainer, MenuS, GameTitle } from './Menu.styled';
 const { Option } = Select;
 
 const gameTitle = 'Memory Game';
 
-export default class Menu extends Component {
+class Menu extends Component {
   constructor(props) {
     super(props);
+    this.state = { country: 'USA' };
+    this.updateCountry = this.updateCountry.bind(this);
+  }
 
+  updateCountry(countryCode) {
+    let country = countries[countryCode].name;
+    this.setState({ country });
   }
 
   render() {
@@ -52,7 +62,7 @@ export default class Menu extends Component {
             <Option value="4">4</Option>
             <Option value="5">5</Option>
           </Select>
-          <Link to="/game">
+          <Link to={`game/${level}`}>
             <Button
               style={{ width: '100%' }}
               type="primary"
@@ -68,10 +78,12 @@ export default class Menu extends Component {
               Records
             </Button>
           </Link>
-      
+          <ReactFlagsSelect defaultCountry="US" onSelect={this.updateCountry} />
         </MenuS>
         <Signature>kfskjafjkdsahkjhsakj </Signature>
       </MenuContainer>
     );
   }
 }
+
+export default Menu;

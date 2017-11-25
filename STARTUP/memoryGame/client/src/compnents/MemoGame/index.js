@@ -23,16 +23,19 @@ const defaultSrc = 'http://myfirstchat.com/bookcity2/covers9/f9e6f8d44613a684b90
 class MemoGame extends Component {
   constructor(props) {
     super(props);
+    debugger
     this.state = {
       score: 0,
-      currLevel: props.level,
+      currLevel: props.match.params.level,
       images: [],
       openCards: 0,
       card1: null,
       stopTimer: false,
       seconds: 0,
       minutes: 0,
-      newRecordModal: false
+      newRecordModal: false,
+      modalTxt: '',
+      modalTitle: 'bla'
     };
     this.increaseScore = this.increaseScore.bind(this);
     this.navigateHome = this.navigateHome.bind(this);
@@ -44,9 +47,14 @@ class MemoGame extends Component {
     this.updateNewRecordModal = this.updateNewRecordModal.bind(this);
   }
   sendScoreAndTime(name, level, category, score, time) {
+    let self = this;
     api.sendMyResult(name, level, category, score, time).then(response => {
       if (Object.keys(response.data).length !== 0) {
-        this.setState({ newRecordModal: true });
+        let modalTxt = JSON.stringify(response.data);
+        self.setState({ newRecordModal: true, modalTxt, modalTitle: 'New Record' });
+      } else {
+        let timeTxt = `Your time is: ${JSON.stringify(time)}`;
+        self.setState({ newRecordModal: true, modalTxt: timeTxt, modalTitle: 'Your Time' });
       }
     });
   }
@@ -68,12 +76,13 @@ class MemoGame extends Component {
   }
 
   increaseScore() {
-    let { score, seconds, minutes } = this.state;
-    let { level, name, category } = this.props;
+    let {currLevel, score, seconds, minutes } = this.state;
+    let { name, category } = this.props;
     let time = { minutes, seconds };
     score++;
-    if (score === dataLoader[level]) {
-      this.sendScoreAndTime(name, level, category, score, time);
+    debugger
+    if (score === dataLoader[currLevel]) {
+      this.sendScoreAndTime(name, currLevel, category, score, time);
       this.setState({ stopTimer: true });
     }
     this.setState({ score });
@@ -132,11 +141,16 @@ class MemoGame extends Component {
   }
 
   render() {
-    let { score, currLevel, images, stopTimer, seconds, minutes, newRecordModal } = this.state;
+    let { score, currLevel, images, stopTimer, seconds, minutes, newRecordModal, modalTxt, modalTitle } = this.state;
     let { category } = this.props;
     return (
       <MemoryGame>
-        <MyModal newRecordModal={newRecordModal} updateNewRecordModal={this.updateNewRecordModal} />
+        <MyModal
+          newRecordModal={newRecordModal}
+          updateNewRecordModal={this.updateNewRecordModal}
+          modalTxt={modalTxt}
+          modalTitle={modalTitle}
+        />
         <Game>
           <User score={score} />
           <GridContainer>
