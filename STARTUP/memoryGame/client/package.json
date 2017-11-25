@@ -7,6 +7,7 @@
     "axios": "^0.17.1",
     "country-data": "0.0.31",
     "react": "^16.0.0",
+    "react-country-flag": "^0.1.12",
     "react-dom": "^16.0.0",
     "react-flags": "^0.1.12",
     "react-flags-select": "^1.1.0",

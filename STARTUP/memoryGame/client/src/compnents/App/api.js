@@ -9,14 +9,21 @@ class Api {
     return await response.json();
   }
 
-  async sendMyResult(name, level, category, score,time) {
-    let data = { name, level, category, score,time };
+  async sendMyResult(name, level, category, score,time,countryCode) {
+    let data = { name, level, category, score,time ,countryCode};
     return   axios.post('/api/myRecords', data);
   }
   async getMyRecords(name) {
     let response = await fetch(`/api/myRecords/${name}`);
     return await response.json();
   }
+
+  async getWorldRecords() {
+    let response = await fetch(`/api/worldRecords`);
+    return await response.json();
+  }
 }
+
+
 
 export default new Api();

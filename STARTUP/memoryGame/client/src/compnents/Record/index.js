@@ -25,8 +25,8 @@ class Records extends Component {
     this.showModal = this.showModal.bind(this);
   }
   componentWillMount() {
-    // let { name } = this.props;
-    let name = 'lee';
+    let { name } = this.props;
+    // let name = 'lee';
     this.setState({ name });
     if (name === '') {
       // this.showModal();
