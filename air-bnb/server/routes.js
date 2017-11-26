@@ -1,8 +1,8 @@
 var express = require('express');
-// var jobModel = require('../models/homes.js');
 var router = express.Router();
 
 
+var table = require('./db/dataMongo.js')
 
 var authMiddleware = require('./controllers/auth.controller.js');
 var home = require('./controllers/home.controller.js')
@@ -17,8 +17,8 @@ router.post('/homes/review/:homeId',  home.addReview)
 
 
 
-
 router.post('/login', login,createSecretToken)
+
 router.post('/users', addUser)
 
 module.exports = router;
