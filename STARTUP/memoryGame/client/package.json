@@ -4,11 +4,17 @@
   "private": true,
   "dependencies": {
     "antd": "^2.13.10",
+    "axios": "^0.17.1",
+    "country-data": "0.0.31",
     "react": "^16.0.0",
+    "react-country-flag": "^0.1.12",
     "react-dom": "^16.0.0",
+    "react-flags": "^0.1.12",
+    "react-flags-select": "^1.1.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
     "react-timer": "^1.0.2",
+    "react-world-flags": "0.0.3",
     "shuffle-array": "^1.0.1",
     "styled-components": "^2.2.3"
   },
@@ -17,5 +23,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "proxy": "http://127.0.0.1:2222",
+  "devDependencies": {
+    "concurrently": "^3.5.0"
   }
 }

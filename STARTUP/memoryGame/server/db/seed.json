@@ -1,0 +1,11 @@
+[
+  { "name": "Widget 1", "desc": "This is Widget 1" },
+  { "name": "Widget 2", "desc": "This is Widget 2" }
+
+  // λ mongoimport --port 27017 --db memo --collection users --type json --file c:\Users\leeya\Desktop\web\course_pojects\STARTUP\memoryGame\server\db\seed.json
+//mongoimport --host=127.0.0.1 -d memo -c users --file seed.json
+ ]  
+ 
+
+
+ db.myRecords.save({"name":"lee","level":1,"category":"animall","score":33})
