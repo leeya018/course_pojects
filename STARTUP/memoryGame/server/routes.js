@@ -2,12 +2,17 @@ var express = require('express');
 var router = express.Router();
 
 // var createSecretToken = require('./controllers/createToken.controller.js')
-var records = require('./controllers/controller.records.js');
+var myRecords = require('./controllers/controller.myRecords.js');
+var worldRecords = require('./controllers/controller.worldRecords.js');
 
-router.post('/myRecords', records.addMyRecord);
-router.get('/myRecords/:name', records.getMyRecord);
-router.get('/myRecords/', records.getAllRecords);
-router.delete('/myRecords/', records.deleteAllRecords);
+
+router.post('/myRecords', myRecords.addMyRecord);
+router.get('/myRecords/:name', myRecords.getMyRecord);
+router.get('/myRecords/', myRecords.getAllRecords);
+router.delete('/myRecords/', myRecords.deleteAllRecords);
+router.get('/worldRecords/', worldRecords.getWorldRecords);
+router.delete('/worldRecords/', worldRecords.deleteAllRecords);
+
 
 
 

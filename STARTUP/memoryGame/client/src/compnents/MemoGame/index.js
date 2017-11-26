@@ -46,9 +46,9 @@ class MemoGame extends Component {
     this.updateMinutes = this.updateMinutes.bind(this);
     this.updateNewRecordModal = this.updateNewRecordModal.bind(this);
   }
-  sendScoreAndTime(name, level, category, score, time) {
+  sendScoreAndTime(name, level, category, score, time,countryCode) {
     let self = this;
-    api.sendMyResult(name, level, category, score, time).then(response => {
+    api.sendMyResult(name, level, category, score, time,countryCode).then(response => {
       if (Object.keys(response.data).length !== 0) {
         let modalTxt = JSON.stringify(response.data);
         self.setState({ newRecordModal: true, modalTxt, modalTitle: 'New Record' });
@@ -77,12 +77,12 @@ class MemoGame extends Component {
 
   increaseScore() {
     let {currLevel, score, seconds, minutes } = this.state;
-    let { name, category } = this.props;
+    let { name, category,countryCode } = this.props;
     let time = { minutes, seconds };
     score++;
     debugger
     if (score === dataLoader[currLevel]) {
-      this.sendScoreAndTime(name, currLevel, category, score, time);
+      this.sendScoreAndTime(name, currLevel, category, score, time,countryCode);
       this.setState({ stopTimer: true });
     }
     this.setState({ score });

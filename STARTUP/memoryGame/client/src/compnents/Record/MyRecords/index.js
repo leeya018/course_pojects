@@ -66,7 +66,7 @@ class MyRecords extends Component {
       <TableContainer>
         <ColTab>
           {<MyRecordsTitle>{myRecTitle}</MyRecordsTitle>}
-          <Table dataSource={myRecs} columns={columns} style={tableStyle} />;
+          <Table dataSource={myRecs} columns={columns} rowKey={rec=>rec["_id"]} style={tableStyle} />;
         </ColTab>
       </TableContainer>
     );
