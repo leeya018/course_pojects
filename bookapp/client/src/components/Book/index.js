@@ -13,9 +13,7 @@ import dateFormat from 'dateformat';
 class Book extends Component {
   constructor(props) {
     super(props);
-    let { title, author, date } = this.props.book;
-    date = dateFormat(new Date(date), 'dddd, mmmm dS, yyyy');
-    this.state = { title, author, date, dialog: false };
+    this.state = { dialog: false };
     this.updateDialog = this.updateDialog.bind(this);
     this.openDialog = this.openDialog.bind(this);
     this.updateBook = this.updateBook.bind(this);
@@ -33,7 +31,6 @@ class Book extends Component {
 
   updateBook(book) {
     let { title, author, date } = book;
-    this.setState({ title, author, date });
     this.props.updateBook(book);
   }
 
@@ -44,7 +41,10 @@ class Book extends Component {
   render() {
     let self = this;
     let { dialog } = this.state;
-    let { title, author, date } = this.state;
+    let { book } = this.props;
+    let { date } = book;
+    date = dateFormat(new Date(date), 'dddd, mmmm dS, yyyy');
+
     return (
       <ListItem rightIconButton={rightIconMenu(self)} style={{ width: '50%' }}>
         {this.props.book && (
@@ -59,9 +59,18 @@ class Book extends Component {
           />
         )}
         <Content>
-          <p><strong>Title:</strong>{title}</p>
-          <p><strong>author:</strong>{author}</p>
-          <p><strong>Date:</strong>{date}</p>
+          <p>
+            <strong>Title:</strong>
+            {book.title}
+          </p>
+          <p>
+            <strong>author:</strong>
+            {book.author}
+          </p>
+          <p>
+            <strong>Date:</strong>
+            {date}
+          </p>
         </Content>
       </ListItem>
     );
@@ -69,7 +78,7 @@ class Book extends Component {
 }
 
 export default Book;
-//================================
+
 const iconButtonElement = (
   <IconButton touch={true} tooltip="more" tooltipPosition="bottom-left">
     <MoreVertIcon color={grey400} />

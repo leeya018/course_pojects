@@ -19,11 +19,6 @@ class MyDialog extends Component {
   updateDate(e, value) {
     let { clName } = this.props;
     this.setState({ date: new Date(value) });
-    // if (clName === 'Book') {
-    //   this.setState({ date: value });
-    // }
-    // if (clName === 'App') {
-    // }
   }
   handleOpen = () => {
     this.setState({ open: true });
@@ -40,15 +35,14 @@ class MyDialog extends Component {
     this.setState({ open: false });
     let { clName } = this.props;
     let book;
+    date = date.toString();
     if (clName === 'Book') {
       let { id } = this.props.book;
       book = { id, title, author, date };
-      debugger
       this.props.updateBook(book);
     }
     if (clName === 'App') {
       book = { title, author, date };
-      debugger      
       this.props.addBook(book);
     }
 

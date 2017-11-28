@@ -7,18 +7,11 @@ import Book from '../Book';
 class Books extends Component {
   constructor(props) {
     super(props);
-    this.state = { books: props.books, dialog: false };
-    this.removeBook = this.removeBook.bind(this);
-    this.updateBook = this.updateBook.bind(this);
-    this.addBook = this.addBook.bind(this);
+    this.state = { dialog: false };
     this.openDialog = this.openDialog.bind(this);
     this.updateDialog = this.updateDialog.bind(this);
   }
-  addBook(book) {
-    let { books } = this.state;
-    books.push(book);
-    this.setState({ books });
-  }
+
   updateDialog(dialog) {
     this.setState({ dialog });
   }
@@ -26,30 +19,10 @@ class Books extends Component {
   openDialog() {
     this.setState({ dialog: true });
   }
-  removeBook(id) {
-    let books = this.state.books.filter(book => book.id !== id);
-    this.setState({ books });
-  }
 
-  updateBook(bookToEdit) {
-    let books = this.state.books.map(book => {
-      return book.id === bookToEdit.id ? bookToEdit : book;
-    });
-    debugger;
-    
-    this.setState({ books });
-  }
-
-  addBook(bookToAdd) {
-    let { books } = this.state;
-    let idForBook = books[books.length - 1].id++;
-    bookToAdd.id = idForBook;
-    books.push(bookToAdd);
-    this.setState({ books });
-  }
   createBooks() {
-    return this.state.books.map((book, index) => (
-      <Book updateBook={this.updateBook} removeBook={this.removeBook} addBook={this.addBook} book={book} key={index} />
+    return this.props.books.map((book, index) => (
+      <Book updateBook={this.props.updateBook} removeBook={this.props.removeBook} book={book} key={index} />
     ));
   }
   render() {
@@ -63,7 +36,7 @@ class Books extends Component {
           titleDialog={'Add Book'}
           buttonTxt={'Add'}
           dialog={dialog}
-          addBook={this.addBook}
+          addBook={this.props.addBook}
           updateDialog={this.updateDialog}
         />
         <List>{books}</List>;
@@ -73,11 +46,3 @@ class Books extends Component {
 }
 
 export default Books;
-
-// removeBook(idToDel) {
-//   let books = this.state.books.map(book => {
-//     if (book.id !== idToDel) {
-//       return book;
-//     }
-//   });
-// }
