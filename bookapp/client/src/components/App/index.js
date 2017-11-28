@@ -3,11 +3,13 @@ import Books from '../Books';
 import Filter from '../Filter';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import api from './api';
+import { AppTitle, AppContainer, AppContent } from './App.style';
 
+const title = 'My Book App';
 class App extends Component {
   constructor() {
     super();
-    this.state = { books: undefined, filteredBooks: [] };
+    this.state = { books: undefined, booksDup: [], filteredBooks: [] };
     this.updateFilteredBooks = this.updateFilteredBooks.bind(this);
     this.removeBook = this.removeBook.bind(this);
     this.updateBook = this.updateBook.bind(this);
@@ -16,7 +18,7 @@ class App extends Component {
   componentDidMount() {
     let self = this;
     api.getData().then(books => {
-      self.setState({ books, filteredBooks: books });
+      self.setState({ books, booksDup: books, filteredBooks: books });
     });
   }
 
@@ -24,42 +26,45 @@ class App extends Component {
     this.setState({ filteredBooks: books });
   }
   removeBook(id) {
-    let books = this.state.books.filter(book => book.id !== id);
-    this.setState({ filteredBooks: books });
+    let books = this.state.booksDup.filter(book => book.id !== id);
+    this.setState({ booksDup: books, filteredBooks: books });
   }
 
   updateBook(bookToEdit) {
-    let books = this.state.books.map(book => {
+    let books = this.state.booksDup.map(book => {
       return book.id === bookToEdit.id ? bookToEdit : book;
     });
-    this.setState({ filteredBooks: books });
+    this.setState({ booksDup: books, filteredBooks: books });
   }
 
   addBook(bookToAdd) {
-    let { books } = this.state;
-    let idForBook = books[books.length - 1].id++;
+    let { booksDup } = this.state;
+    let idForBook = booksDup[booksDup.length - 1].id + 1;
     bookToAdd.id = idForBook;
-    books.push(bookToAdd);
-    this.setState({ filteredBooks: books });
+    debugger;
+    booksDup.push(bookToAdd);
+
+    this.setState({ booksDup, filteredBooks: booksDup });
   }
 
   render() {
-    let { books, filteredBooks } = this.state;
+    let { books, booksDup, filteredBooks } = this.state;
     return (
       <MuiThemeProvider>
-        <div>
+        <AppContainer>
           {books !== undefined && (
-            <div>
-              <Filter books={books} updateFilteredBooks={this.updateFilteredBooks} />
+            <AppContent>
+              <AppTitle>{title}</AppTitle>
+              <Filter books={booksDup} updateFilteredBooks={this.updateFilteredBooks} />
               <Books
                 books={filteredBooks}
                 addBook={this.addBook}
                 updateBook={this.updateBook}
                 removeBook={this.removeBook}
               />
-            </div>
+            </AppContent>
           )}
-        </div>
+        </AppContainer>
       </MuiThemeProvider>
     );
   }

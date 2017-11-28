@@ -3,7 +3,7 @@ import TextField from 'material-ui/TextField';
 
 const fixVal = value => {
   value = value.replace(/[^a-zA-Z ]/g, '');
-  value = value.charAt(0).toUpperCase() + value.slice(1);
+  value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
   return value;
 };
 class Filter extends Component {

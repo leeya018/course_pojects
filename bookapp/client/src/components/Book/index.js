@@ -46,7 +46,7 @@ class Book extends Component {
     date = dateFormat(new Date(date), 'dddd, mmmm dS, yyyy');
 
     return (
-      <ListItem rightIconButton={rightIconMenu(self)} style={{ width: '50%' }}>
+      <ListItem rightIconButton={rightIconMenu(self)} style={{ width: '100%' }}>
         {this.props.book && (
           <MyDialog
             dialog={dialog}

@@ -39,7 +39,7 @@ class Books extends Component {
           addBook={this.props.addBook}
           updateDialog={this.updateDialog}
         />
-        <List>{books}</List>;
+        <List>{books}</List>
       </div>
     );
   }

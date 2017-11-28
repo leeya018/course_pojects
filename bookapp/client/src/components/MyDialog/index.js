@@ -28,7 +28,11 @@ class MyDialog extends Component {
       date = new Date(date);
       this.setState({ title, author, date });
     }
-  };
+    if (clName === 'App') {
+      this.setState({ title:'', author:'', date:new Date() });
+      
+    }      
+  }
 
   handleClose = () => {
     let { title, author, date } = this.state;
