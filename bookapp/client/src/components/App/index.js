@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Books from '../Books';
+import Filter from '../Filter';
+
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import MyDialog from '../MyDialog';
 import FlatButton from 'material-ui/FlatButton';
@@ -9,11 +11,12 @@ import api from './api';
 class App extends Component {
   constructor() {
     super();
-    this.state = { books: [], dialog: false };
+    this.state = { books: [],filteredBooks: [], dialog: false };
     this.removeBook = this.removeBook.bind(this);
     this.openDialog = this.openDialog.bind(this);
     this.updateDialog = this.updateDialog.bind(this);
     this.addBook = this.addBook.bind(this);
+    this.updateBooks = this.updateBooks.bind(this);
   }
   componentDidMount() {
     this.getBooks();
@@ -21,7 +24,7 @@ class App extends Component {
   getBooks() {
     let self = this;
     api.getData().then(books => {
-      self.setState({ books });
+      self.setState({ books,filteredBooks:books });
     });
   }
   addBook(book) {
@@ -42,8 +45,12 @@ class App extends Component {
     this.setState({ books });
   }
 
+  updateBooks(books) {
+    this.setState({ filteredBooks:books });
+  }
+
   render() {
-    let { books, dialog } = this.state;
+    let { books, dialog,filteredBooks } = this.state;
     return (
       <MuiThemeProvider>
         <FlatButton label="Add" primary={true} keyboardFocused={true} onClick={this.openDialog} />
@@ -55,7 +62,8 @@ class App extends Component {
           addBook={this.addBook}
           updateDialog={this.updateDialog}
         />
-        <Books books={books} removeBook={this.removeBook} />
+        {books.length>0 && <Filter books={books} updateBooks={this.updateBooks} />}
+        <Books books={filteredBooks} removeBook={this.removeBook} />
       </MuiThemeProvider>
     );
   }

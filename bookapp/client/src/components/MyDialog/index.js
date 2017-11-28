@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TextField from 'material-ui/TextField';
-import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
+import Dialog from 'material-ui/Dialog';
 import RaisedButton from 'material-ui/RaisedButton';
 import DatePicker from 'material-ui/DatePicker';
 
@@ -9,15 +9,34 @@ class MyDialog extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false
+      open: false,
+      title: '',
+      author: '',
+      date: new Date()
     };
+    this.updateDate = this.updateDate.bind(this);
   }
-
+  updateDate(e, value) {
+    let { clName } = this.props;
+    this.setState({ date: new Date(value) });
+    // if (clName === 'Book') {
+    //   this.setState({ date: value });
+    // }
+    // if (clName === 'App') {
+    // }
+  }
   handleOpen = () => {
     this.setState({ open: true });
+    let { clName } = this.props;
+    if (clName === 'Book') {
+      let { title, author, date } = this.props.book;
+      date = new Date(date);
+      this.setState({ title, author, date });
+    }
   };
 
-  handleClose = (title, author, date) => {
+  handleClose = () => {
+    let { title, author, date } = this.state;
     this.setState({ open: false });
     let { clName } = this.props;
     let book;
@@ -33,6 +52,10 @@ class MyDialog extends Component {
 
     this.props.updateDialog(false);
   };
+  justClose = () => {
+    this.setState({ open: false });
+    this.props.updateDialog(false);
+  };
   componentWillReceiveProps(nextProps) {
     if (nextProps.dialog === true) {
       this.handleOpen();
@@ -40,15 +63,11 @@ class MyDialog extends Component {
   }
 
   render() {
-    debugger;
-    let { title, author, date, titleDialog, buttonTxt } = this.props;
+    let { clName, titleDialog, buttonTxt } = this.props;
+    var { title, author, date } = this.state;
+
     const actions = [
-      <FlatButton
-        label={buttonTxt}
-        primary={true}
-        keyboardFocused={true}
-        onClick={() => this.handleClose(title, author, date)}
-      />
+      <FlatButton label={buttonTxt} primary={true} keyboardFocused={true} onClick={() => this.handleClose()} />
     ];
     return (
       <div>
@@ -57,28 +76,13 @@ class MyDialog extends Component {
           actions={actions}
           modal={false}
           open={this.state.open}
-          onRequestClose={this.handleClose}
+          onRequestClose={this.justClose}
         >
           <br />
-          <TextField
-            hintText="title"
-            onChange={(e, value) => {
-              title = value;
-            }}
-          />
+          <TextField hintText="title" value={title} onChange={(e, title) => this.setState({ title })} />
           <br />
-          <TextField
-            hintText="author"
-            onChange={(e, value) => {
-              author = value;
-            }}
-          />
-          <DatePicker
-            hintText="Date Picker"
-            onChange={(e, value) => {
-              date = JSON.stringify(value);
-            }}
-          />
+          <TextField hintText="author" value={author} onChange={(e, author) => this.setState({ author })} />
+          <DatePicker hintText="Date Picker" value={date} onChange={this.updateDate} />
         </Dialog>
       </div>
     );

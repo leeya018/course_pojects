@@ -14,9 +14,7 @@ class Book extends Component {
   constructor(props) {
     super(props);
     let { title, author, date } = this.props.book;
-    // debugger
-    // date =dateFormat(date, "dddd, mmmm dS, yyyy, h:MM:ss TT");
-    // debugger;
+    date = dateFormat(new Date(date), 'dddd, mmmm dS, yyyy');
     this.state = { title, author, date, dialog: false };
     this.updateDialog = this.updateDialog.bind(this);
     this.openDialog = this.openDialog.bind(this);
@@ -27,7 +25,7 @@ class Book extends Component {
   deleteBook() {
     let { id } = this.props.book;
     api.deleteBook(id);
-    this.props.removeBook(id)
+    this.props.removeBook(id);
   }
 
   updateDialog(dialog) {
@@ -50,19 +48,21 @@ class Book extends Component {
     let { title, author, date } = this.state;
     return (
       <ListItem rightIconButton={rightIconMenu(self)} style={{ width: '50%' }}>
-        <MyDialog
-          dialog={dialog}
-          updateBook={this.updateBook}
-          book={this.props.book}
-          updateDialog={this.updateDialog}
-          clName={"Book"}
-          titleDialog={"Update Book"}
-          buttonTxt={"Update"}
-        />
+        {this.props.book && (
+          <MyDialog
+            dialog={dialog}
+            updateBook={this.updateBook}
+            book={this.props.book}
+            updateDialog={this.updateDialog}
+            clName={'Book'}
+            titleDialog={'Update Book'}
+            buttonTxt={'Update'}
+          />
+        )}
         <Content>
-          <p>{title}</p>
-          <p>author:{author}</p>
-          <p>{date}</p>
+          <p><strong>Title:</strong>{title}</p>
+          <p><strong>author:</strong>{author}</p>
+          <p><strong>Date:</strong>{date}</p>
         </Content>
       </ListItem>
     );
