@@ -4,16 +4,21 @@ import Filter from '../Filter';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import api from './api';
 import { AppTitle, AppContainer, AppContent } from './App.style';
+import AlertDialog from '../AlertDialog';
 
 const title = 'My Book App';
+
 class App extends Component {
   constructor() {
     super();
-    this.state = { books: undefined, booksDup: [], filteredBooks: [] };
+    this.state = { alertDialog: false, books: undefined, booksDup: [], filteredBooks: [] };
     this.updateFilteredBooks = this.updateFilteredBooks.bind(this);
     this.removeBook = this.removeBook.bind(this);
     this.updateBook = this.updateBook.bind(this);
     this.addBook = this.addBook.bind(this);
+    this.updateDialog = this.updateDialog.bind(this);
+    
+    
   }
   componentDidMount() {
     let self = this;
@@ -39,19 +44,33 @@ class App extends Component {
 
   addBook(bookToAdd) {
     let { booksDup } = this.state;
-    let idForBook = booksDup[booksDup.length - 1].id + 1;
-    bookToAdd.id = idForBook;
-    debugger;
-    booksDup.push(bookToAdd);
-
-    this.setState({ booksDup, filteredBooks: booksDup });
+    let found = booksDup.find(book => book.title === bookToAdd.title);
+    if (!found) {
+      let idForBook = booksDup[booksDup.length - 1].id + 1;
+      bookToAdd.id = idForBook;
+      booksDup.push(bookToAdd);
+      this.setState({ booksDup, filteredBooks: booksDup });
+    } else {
+      this.setState({ alertDialog: true });
+    }
+  }
+  updateDialog(alertDialog) {
+    this.setState({ alertDialog });
   }
 
+  
   render() {
-    let { books, booksDup, filteredBooks } = this.state;
+    let { alertDialog,books, booksDup, filteredBooks } = this.state;
     return (
       <MuiThemeProvider>
         <AppContainer>
+          <AlertDialog
+            titleDialog={'Alert'}
+            buttonTxt={'Ok'}
+            textDialog={'Titles are the same'}
+            alertDialog={alertDialog}
+            updateDialog={this.updateDialog}
+          />
           {books !== undefined && (
             <AppContent>
               <AppTitle>{title}</AppTitle>
