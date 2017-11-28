@@ -1,22 +1,26 @@
 import React, { Component } from 'react';
 import TextField from 'material-ui/TextField';
 
-class Filter extends Component {  
+const fixVal = value => {
+  value = value.replace(/[^a-zA-Z ]/g, '');
+  value = value.charAt(0).toUpperCase() + value.slice(1);
+  return value;
+};
+class Filter extends Component {
   constructor(props) {
     super(props);
-    this.state = { title: '' ,originBooks:props.books};
+    this.state = { title: '' };
     this.updateFilter = this.updateFilter.bind(this);
   }
   updateFilter(e, value) {
-    let { originBooks } = this.state;
-    debugger
-    this.setState({title:value})
-    let filteredBooks = originBooks.filter(book => book.title.includes(value));
-    this.props.updateBooks(filteredBooks);
+    let { books } = this.props;
+    this.setState({ title: value });
+    let filteredBooks = books.filter(book => book.title.includes(fixVal(value)));
+    this.props.updateFilteredBooks(filteredBooks);
   }
 
   render() {
-    let { title } = this.state; 
+    let { title } = this.state;
     return (
       <div>
         <TextField hintText="filter title" value={title} onChange={this.updateFilter} />
