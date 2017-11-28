@@ -43,10 +43,12 @@ class MyDialog extends Component {
     if (clName === 'Book') {
       let { id } = this.props.book;
       book = { id, title, author, date };
+      debugger
       this.props.updateBook(book);
     }
     if (clName === 'App') {
       book = { title, author, date };
+      debugger      
       this.props.addBook(book);
     }
 

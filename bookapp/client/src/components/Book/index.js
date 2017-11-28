@@ -24,7 +24,6 @@ class Book extends Component {
 
   deleteBook() {
     let { id } = this.props.book;
-    api.deleteBook(id);
     this.props.removeBook(id);
   }
 
@@ -35,7 +34,7 @@ class Book extends Component {
   updateBook(book) {
     let { title, author, date } = book;
     this.setState({ title, author, date });
-    api.updateBook(book);
+    this.props.updateBook(book);
   }
 
   openDialog() {
