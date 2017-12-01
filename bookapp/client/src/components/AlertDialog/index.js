@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import TextField from 'material-ui/TextField';
 import FlatButton from 'material-ui/FlatButton';
 import Dialog from 'material-ui/Dialog';
-import RaisedButton from 'material-ui/RaisedButton';
-import DatePicker from 'material-ui/DatePicker';
 
 class AlertDialog extends Component {
   constructor(props) {

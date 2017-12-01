@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import TextField from 'material-ui/TextField';
 import FlatButton from 'material-ui/FlatButton';
 import Dialog from 'material-ui/Dialog';
-import RaisedButton from 'material-ui/RaisedButton';
 import DatePicker from 'material-ui/DatePicker';
 
 class MyDialog extends Component {
@@ -17,7 +16,6 @@ class MyDialog extends Component {
     this.updateDate = this.updateDate.bind(this);
   }
   updateDate(e, value) {
-    let { clName } = this.props;
     this.setState({ date: new Date(value) });
   }
   handleOpen = () => {
@@ -63,7 +61,7 @@ class MyDialog extends Component {
   }
 
   render() {
-    let { clName, titleDialog, buttonTxt } = this.props;
+    let {  titleDialog, buttonTxt } = this.props;
     var { title, author, date } = this.state;
 
     const actions = [

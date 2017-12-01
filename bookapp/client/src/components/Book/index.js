@@ -7,7 +7,6 @@ import { Content } from './Book.style';
 import IconMenu from 'material-ui/IconMenu';
 import React, { Component } from 'react';
 import MyDialog from '../MyDialog';
-import api from '../App/api';
 import dateFormat from 'dateformat';
 
 class Book extends Component {
@@ -30,7 +29,6 @@ class Book extends Component {
   }
 
   updateBook(book) {
-    let { title, author, date } = book;
     this.props.updateBook(book);
   }
 
