@@ -1,0 +1,18 @@
+/*.moviesContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.movies{
+    display: grid;
+    grid-template-columns:32% 32% 32%;
+    grid-gap:1%;
+}*/
+.movies{
+    background-color: white;
+    grid-area:main;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-gap: 1rem;
+}
+

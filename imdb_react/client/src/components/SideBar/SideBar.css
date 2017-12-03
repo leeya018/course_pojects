@@ -1,0 +1,24 @@
+.aside{
+    background-color: black;
+    grid-area:side;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+
+}
+
+.actor,.director{
+    padding:4px;
+}
+
+.directorTitle{
+    position: relative;
+    left: -24px;
+}
+
+.actorTitle{
+    position: relative;
+    left: -46px;
+}
