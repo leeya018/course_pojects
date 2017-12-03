@@ -1,4 +1,4 @@
-
+const PORT=3007;
 
 
 class Api {
@@ -7,13 +7,13 @@ class Api {
     }
 
     async getMovies() {
-        let response = await fetch('http://localhost:3001/movies')
+        let response = await fetch(`http://localhost:${PORT}/movies`)
         return await response.json()
     }   
 
 
     async getMovie(id) {
-        let response = await fetch(`http://localhost:3001/movies/${id}`)
+        let response = await fetch(`http://localhost:${PORT}/movies/${id}`)
         let movie = await response.json()
         return movie
     }
@@ -26,7 +26,7 @@ class Api {
             headers: headers,
             body: JSON.stringify(movie)
         }
-        let response = fetch('http://localhost:3001/movies', options).then((res) =>
+        let response = fetch('http://localhost:${PORT}/movies', options).then((res) =>
             console.log(res)
         ).catch((err) =>
             console.log(err))
@@ -34,7 +34,7 @@ class Api {
 
 
     async deleteMovie(id) {
-        let response = fetch(`http://localhost:3001/movies/${id}`, { method: 'DELETE' }).then((res) =>
+        let response = fetch(`http://localhost:${PORT}/movies/${id}`, { method: 'DELETE' }).then((res) =>
             console.log(res)).catch((err) => console.log(err))
     }
 }
