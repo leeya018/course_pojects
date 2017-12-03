@@ -19,7 +19,7 @@ class Books extends Component {
   openDialog() {
     this.setState({ dialog: true });
   }
-
+  
   createBooks() {
     return this.props.books.map((book, index) => (
       <Book updateBook={this.props.updateBook} removeBook={this.props.removeBook} book={book} key={index} />
