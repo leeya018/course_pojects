@@ -1,0 +1,76 @@
+{
+  "stores": [
+    {
+      "title": "nadia",
+      "location": "sadadas",
+      "lat": 35.323432,
+      "lon": 35.543543
+    },
+    {
+      "title": "nadia",
+      "location": "afula",
+      "lat": 34.3423432,
+      "lon": 34.42432432
+    },
+    {
+      "title": "nadia",
+      "location": "afula",
+      "lat": 34.34232423,
+      "lon": 34.423423
+    },
+    {
+      "title": "ramilevi",
+      "location": "beer sheva",
+      "lat": 34.7987988,
+      "lon": 34.423423
+    },
+    {
+      "title": "ramilevi",
+      "location": "ramat gan",
+      "lat": 36.34232423,
+      "lon": 32.6876876
+    },
+    {
+      "title": "ramilevi",
+      "location": "kiriat gat",
+      "lat": 36.65657675,
+      "lon": 34.423423
+    },
+    {
+      "title": "shufersal",
+      "location": "afula",
+      "lat": 34.34232423,
+      "lon": 34.565655454
+    },
+    {
+      "title": "shufersal",
+      "location": "afula",
+      "lat": 34.777777,
+      "lon": 34.4545455
+    },
+    {
+      "title": "shufersal",
+      "location": "afula",
+      "lat": 34.87878798,
+      "lon": 34.24323243
+    },
+    {
+      "title": "mega",
+      "location": "afula",
+      "lat": 34.6776767687,
+      "lon": 34.889898989
+    },
+    {
+      "title": "mega",
+      "location": "tsfat",
+      "lat": 34.6786767,
+      "lon": 34.64832
+    },
+    {
+      "title": "mega",
+      "location": "fdsfsdf",
+      "lat": 34.232432,
+      "lon": 34.42343
+    }
+  ]
+}

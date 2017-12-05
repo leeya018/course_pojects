@@ -1,0 +1,23 @@
+.container {
+  /* text-align: center;
+ */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stores {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-gap: 1%;
+}
+
+.header {
+  display: flex;
+}
+
+.winner {
+  padding: 8px;
+  font-size: 24px;
+  color: blue;
+}

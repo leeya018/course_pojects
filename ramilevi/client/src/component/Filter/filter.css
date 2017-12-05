@@ -1,0 +1,17 @@
+
+.filter{
+    display: flex;
+}
+
+button{
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+    height: 3em;
+    width: 10em;
+}
+
+.autoComplete{
+    width:40%;
+}
