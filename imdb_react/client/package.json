@@ -11,13 +11,9 @@
     "start": "^5.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=3002 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "proxy": "http://127.0.0.1:3001",
-  "devDependencies": {
-    "concurrently": "^3.5.0"
   }
 }
