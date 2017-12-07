@@ -2,16 +2,38 @@ import React, { Component } from 'react';
 import Books from '../Books';
 import Filter from '../Filter';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import api from './api';
 import { AppTitle, AppContainer, AppContent } from './App.style';
 import AlertDialog from '../AlertDialog';
 
 const title = 'My Book App';
 
+
+
+const books =  [
+  {
+    "title": "x",
+    "author": "s",
+    "date": "2017-10-31T22:00:00.000Z",
+    "id": 6
+  },
+  {
+    "title": "Qc",
+    "author": "z",
+    "date": "2017-10-31T22:00:00.000Z",
+    "id": 7
+  },
+  {
+    "title": "DDD",
+    "author": "zsdsa",
+    "date": "2017-11-31T22:00:00.000Z",
+    "id": 8
+  }
+]
+
 class App extends Component {
   constructor() {
     super();
-    this.state = { alertDialog: false, books: undefined, booksDup: [], filteredBooks: [] };
+    this.state = { alertDialog: false, books:  books , booksDup:books, filteredBooks:books };
     this.updateFilteredBooks = this.updateFilteredBooks.bind(this);
     this.removeBook = this.removeBook.bind(this);
     this.updateBook = this.updateBook.bind(this);
@@ -20,13 +42,6 @@ class App extends Component {
     
     
   }
-  componentDidMount() {
-    let self = this;
-    api.getData().then(books => {
-      self.setState({ books, booksDup: books, filteredBooks: books });
-    });
-  }
-
   updateFilteredBooks(books) {
     this.setState({ filteredBooks: books });
   }

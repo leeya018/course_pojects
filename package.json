@@ -1,0 +1,23 @@
+{
+  "name": "d",
+  "version": "1.0.0",
+  "description": "/home/leeya/Desktop/gitHub/.gitignore",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeya018/course_pojects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leeya018/course_pojects/issues"
+  },
+  "homepage": "https://github.com/leeya018/course_pojects#readme",
+  "scripts": {
+    "forever" : "forever start -c "npm start" ./    && forever start www/www-server.js && forever start upload/upload-server.js && forever start static/static-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+}
+}
