@@ -1,3 +1,6 @@
+
+#run command  :npm install , node server.js
+
 # this is a BattleShip game 
 ##operate the server with the commad of nodemon server.js
 ##then open 2 tabs in chrome with url of localhost://3333
@@ -19,3 +22,6 @@
 ![Alt Text](img/port_num1.png)
 
 ###have a nice game
+
+
+

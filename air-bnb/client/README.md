@@ -1,3 +1,7 @@
+
+
+
+
 ##Wellcome to AirBbn
 ##
 ##start:
@@ -5,4 +9,5 @@
 ##cd client - >npm install
 ##[the mongo should be load automaticlly to your computer, take care to install mongoDB premature]
 ##
-#
+#npm start
+##width need to be 60%

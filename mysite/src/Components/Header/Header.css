@@ -1,0 +1,29 @@
+.header{
+  width:100%;
+  background-color: black;
+  height: 30px;
+  vertical-align:middle;  
+  display: flex;
+  justify-content: space-between
+}
+
+.header>div{
+  display: flex;
+  align-items: center;
+  padding:1em;
+}
+
+.headerList{
+  list-style-type: none;
+  
+}
+
+
+.headerList>li{
+  display: inline ;
+  vertical-align: middle;
+}
+.header a{
+  color:white;
+  text-decoration:none ;  
+}

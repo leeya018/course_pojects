@@ -1,5 +1,6 @@
 json-server -p 3001 --watch db.json
 
+##open it on 75%
 
 ## this game is for babies and small kids that want to improve their memeory and be in the top of the best clever babies in the world .
 ##throw this game they will be developing their memory ans will learn the voices animalls,instruments,vehicals views
