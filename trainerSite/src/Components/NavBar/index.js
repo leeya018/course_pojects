@@ -4,6 +4,11 @@ import Links from '../Links';
 
 import Main from '../Main';
 import About from '../About';
+import WhyWe from '../WhyWe';
+import ForWho from '../ForWho';
+import PracticeProgram from '../PracticeProgram';
+
+
 
 // import './NavBar.css';
 
@@ -16,8 +21,14 @@ class NavBar extends Component {
           <div>
           <Links/>
           <Switch>
-            <Route exact path="/about" render={()=>< Main />}/>
-            <Route path="/" render={()=>< About />}/>
+            <Route  path="/main" render={()=>< Main />}/>
+            <Route path="/about" render={()=>< About />}/>
+            <Route  path="/whywe" render={()=>< WhyWe />}/>
+            <Route  path="/forwho" render={()=>< ForWho />}/>
+            <Route exact path="/" render={()=>< PracticeProgram />}/>
+            {/* practiceProgram */}
+
+            
             <Route component={() => <h1>Oops.. page not found</h1>}/>
           </Switch>
           </div>

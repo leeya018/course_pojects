@@ -12,19 +12,19 @@ class Links extends Component {
   render() {
     return (
       <div className="links">
-        <Link to={``}>
+        <Link to={`main`}>
           <div>ראשי</div>
         </Link>
         <Link to={`about`}>
           <div>אודות</div>
         </Link>
-        <Link to={`about`}>
+        <Link to={`whywe`}>
           <div>למה אנחנו</div>
         </Link>
-        <Link to={`about`}>
+        <Link to={`forwho`}>
           <div>למי זה מתאים</div>
         </Link>
-        <Link to={`about`}>
+        <Link to={``}>
           <div>תוכנית אימונים</div>
         </Link>
         <Link to={`about`}>

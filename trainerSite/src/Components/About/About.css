@@ -7,9 +7,6 @@
   display: flex;
 }
 
-/* .aboutContent p{
-  padding-right: 0;
-} */
 
 .aboutContent>div:nth-child(1){
   flex: 2

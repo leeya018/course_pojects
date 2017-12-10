@@ -1,0 +1,18 @@
+.ForWho{
+  display: flex;
+  flex-direction: column;
+}
+.ForWho hr{
+  width:100%;
+}
+
+.ForWho ul{
+  padding-right: 0;
+}
+.ForWho ul p{
+  padding-right: 2em;
+}
+.ForWho li{
+  background: url("http://www.personal-fitness-trainer.co.il/wp-content/themes/modernize/images/list/check.png") no-repeat right;
+  list-style-type:none;
+}
