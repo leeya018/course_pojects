@@ -16,8 +16,8 @@ class NavBar extends Component {
           <div>
           <Links/>
           <Switch>
-            <Route exact path="/main" component={< Main />}/>
-            <Route path="/about" component={< About />}/>
+            <Route exact path="/about" render={()=>< Main />}/>
+            <Route path="/" render={()=>< About />}/>
             <Route component={() => <h1>Oops.. page not found</h1>}/>
           </Switch>
           </div>

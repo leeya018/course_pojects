@@ -1,4 +1,16 @@
 .links{
   display: flex;
-  background-color: gray;
+  justify-content: space-between;
+  background-color:rgb(86.3%, 86.3%, 86.3%);
+}
+
+.links>a{
+  text-decoration:none;
+  padding:1em;
+  font-weight: bold;
+  color: rgb(42.4%, 45.6%, 42.4%);
+}
+
+.links>a:hover{
+  color: black;
 }

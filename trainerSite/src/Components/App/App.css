@@ -10,10 +10,15 @@ body {
 
 }
 
-.pageContainer{
+.middleContainer{
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
-  width:60%;  
+  
+}
+
+.colContainer{
+  display: flex;
+  flex-direction: column;
+  width:60%;
   
 }
