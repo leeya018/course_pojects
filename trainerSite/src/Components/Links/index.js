@@ -12,7 +12,7 @@ class Links extends Component {
   render() {
     return (
       <div className="links">
-        <Link to={`main`}>
+        <Link to={``}>
           <div>ראשי</div>
         </Link>
         <Link to={`about`}>
@@ -24,13 +24,13 @@ class Links extends Component {
         <Link to={`forwho`}>
           <div>למי זה מתאים</div>
         </Link>
-        <Link to={``}>
+        <Link to={`practiceProgram`}>
           <div>תוכנית אימונים</div>
         </Link>
-        <Link to={`about`}>
+        <Link to={`tips`}>
           <div>טיפים</div>
         </Link>
-        <Link to={`about`}>
+        <Link to={`contact`}>
           <div>צור קשר</div>
         </Link>
       </div>

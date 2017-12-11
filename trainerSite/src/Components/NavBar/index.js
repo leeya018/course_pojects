@@ -7,6 +7,10 @@ import About from '../About';
 import WhyWe from '../WhyWe';
 import ForWho from '../ForWho';
 import PracticeProgram from '../PracticeProgram';
+import Tips from '../Tips';
+import Contact from '../Contact';
+import Email from '../Email';
+
 
 
 
@@ -14,18 +18,23 @@ import PracticeProgram from '../PracticeProgram';
 
 class NavBar extends Component {
 
-  render() {``
+  render() {
     return (
       <div className="NavBar">
         <Router>
           <div>
           <Links/>
           <Switch>
-            <Route  path="/main" render={()=>< Main />}/>
-            <Route path="/about" render={()=>< About />}/>
+            <Route  exact path="/" render={()=>< Main />}/>
+            <Route  path="/about" render={()=>< About />}/>
             <Route  path="/whywe" render={()=>< WhyWe />}/>
             <Route  path="/forwho" render={()=>< ForWho />}/>
-            <Route exact path="/" render={()=>< PracticeProgram />}/>
+            <Route  path="/practiceProgram" render={()=>< PracticeProgram />}/>
+            <Route  path="/tips" render={()=>< Tips />}/>
+            <Route  path="/contact" render={()=>< Contact />}/>
+            <Route  path="/email" render={()=>< Email />}/>
+            
+            
             {/* practiceProgram */}
 
             
