@@ -1,7 +1,6 @@
+import 'antd/lib/carousel/style/css';
 import React, {Component} from 'react';
 import {Carousel} from 'antd';
-import 'antd/lib/carousel/style/css';
-
 import './ImageCarusel.css';
 
 class ImageCarusel extends Component{
@@ -16,11 +15,11 @@ class ImageCarusel extends Component{
   render(){
     return (
       <Carousel afterChange={this.onChange}>
-        <div><h3>1</h3></div>
-         <div><h3>2</h3></div>
-        <div><h3>3</h3></div>
-        <div><h3>4</h3></div>
-      </Carousel>
+    <div><h3>1</h3></div>
+    <div><h3>2</h3></div>
+    <div><h3>3</h3></div>
+    <div><h3>4</h3></div>
+  </Carousel>
         
     )
   }

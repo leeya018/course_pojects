@@ -10,6 +10,7 @@ import PracticeProgram from '../PracticeProgram';
 import Tips from '../Tips';
 import Contact from '../Contact';
 import Email from '../Email';
+import Program from '../Program';
 
 
 
@@ -33,6 +34,9 @@ class NavBar extends Component {
             <Route  path="/tips" render={()=>< Tips />}/>
             <Route  path="/contact" render={()=>< Contact />}/>
             <Route  path="/email" render={()=>< Email />}/>
+            <Route  path="/program/:name" render={({match})=>< Program match={match} />}/>
+            
+            
             
             
             {/* practiceProgram */}
