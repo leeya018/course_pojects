@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   background-color:rgb(86.3%, 86.3%, 86.3%);
+  /* position: fixed;
+  z-index: 9999;
+  width: 60em;  */
 }
 
 .links>a{

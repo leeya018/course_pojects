@@ -23,7 +23,7 @@ class NavBar extends Component {
           <div>
             <Links/>
             <div style={{
-              color: "white"
+              color: "white",  padding:"2em"
             }}>
               <Switch >
                 <Route exact path="/" render={() =>< Main />}/>

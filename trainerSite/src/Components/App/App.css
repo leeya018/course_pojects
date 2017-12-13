@@ -24,6 +24,6 @@ body {
 .colContainer{
   display: flex;
   flex-direction: column;
-  width:60%;
+  width:60em;
   
 }

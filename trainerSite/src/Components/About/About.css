@@ -7,6 +7,10 @@
   display: flex;
 }
 
+.aboutContent>div:nth-child(1){
+  padding-left: 1em;
+}
+
 
 .aboutContent>div:nth-child(1){
   flex: 2
@@ -35,3 +39,17 @@
 }
 
 
+
+
+@media only screen and (max-width:768px){
+  .aboutContent{
+    display: flex;
+    flex-direction:column;
+  }
+
+  .aboutContent>div:nth-child(2){
+    width:200px;
+    height: 200px;
+  }
+  
+}
