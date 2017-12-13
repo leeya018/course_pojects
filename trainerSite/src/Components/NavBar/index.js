@@ -12,9 +12,6 @@ import Contact from '../Contact';
 import Email from '../Email';
 import Program from '../Program';
 
-
-
-
 // import './NavBar.css';
 
 class NavBar extends Component {
@@ -24,26 +21,28 @@ class NavBar extends Component {
       <div className="NavBar">
         <Router>
           <div>
-          <Links/>
-          <Switch>
-            <Route  exact path="/" render={()=>< Main />}/>
-            <Route  path="/about" render={()=>< About />}/>
-            <Route  path="/whywe" render={()=>< WhyWe />}/>
-            <Route  path="/forwho" render={()=>< ForWho />}/>
-            <Route  path="/practiceProgram" render={()=>< PracticeProgram />}/>
-            <Route  path="/tips" render={()=>< Tips />}/>
-            <Route  path="/contact" render={()=>< Contact />}/>
-            <Route  path="/email" render={()=>< Email />}/>
-            <Route  path="/program/:name" render={({match})=>< Program match={match} />}/>
-            
-            
-            
-            
-            {/* practiceProgram */}
+            <Links/>
+            <div style={{
+              color: "white"
+            }}>
+              <Switch >
+                <Route exact path="/" render={() =>< Main />}/>
+                <Route path="/about" render={() =>< About />}/>
+                <Route path="/whywe" render={() =>< WhyWe />}/>
+                <Route path="/forwho" render={() =>< ForWho />}/>
+                <Route path="/practiceProgram" render={() =>< PracticeProgram />}/>
+                <Route path="/tips" render={() =>< Tips />}/>
+                <Route path="/contact" render={() =>< Contact />}/>
+                <Route path="/email" render={() =>< Email />}/>
+                <Route
+                  path="/program/:name"
+                  render={({match}) =>< Program match = {
+                  match
+                } />}/>
 
-            
-            <Route component={() => <h1>Oops.. page not found</h1>}/>
-          </Switch>
+                <Route component={() => <h1>Oops.. page not found</h1>}/>
+              </Switch>
+            </div>
           </div>
         </Router>
       </div>

@@ -1,14 +1,50 @@
-/* @import 'antd/dist/antd.css'; */
-
-/* For demo */
-.ant-carousel .slick-slide {
-  text-align: center;
-  height: 160px;
-  line-height: 160px;
-  background: #364d79;
-  overflow: hidden;
+.carusel{
+  display: grid;
+  grid-template-areas: "main main main main main"
+              "img1 img2 img3 img4 img5";
+  grid-template-rows: 300px 100px;
+  grid-template-columns: 18% 18% 18% 18% 18%;
+  grid-gap: 2.5%;
+  
 }
 
-.ant-carousel .slick-slide h3 {
-  color: #fff;
+.carusel>img{
+  width:100%;
+}
+.carusel>img:nth-child(1){
+  grid-area: main;
+  height: 280px;
+}
+
+.carusel>img:nth-child(n+2):hover{
+  transition-duration: 5s;
+  transform:rotateY(360deg);
+}
+
+.carusel>img:nth-child(2){
+  grid-area: img1;
+  height: 150px;
+  
+}
+.carusel>img:nth-child(3){
+  grid-area: img2;
+  height: 150px;
+}
+.carusel>img:nth-child(4){
+  grid-area: img3;
+  height: 150px;
+}
+.carusel>img:nth-child(5){
+  grid-area: img4;
+  height: 150px;
+}
+
+.carusel>img:nth-child(6){
+  grid-area: img5;
+  height: 150px;
+}
+
+.caruselContainer>h2{
+  padding:2em;
+  text-align: center;
 }

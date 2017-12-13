@@ -5,24 +5,26 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Header from '../Header'
 import SecondHeader from '../SecondHeader'
 import NavBar from '../NavBar'
+import Footer from '../Footer'
 
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-     <LocaleProvider locale={enUS}>
-      <div className="app">
+      <LocaleProvider locale={enUS}>
+        <div className="app">
           <Header/>
           <div className="middleContainer">
-          <div className="colContainer">
-            <SecondHeader/>
-            <NavBar/>
+            <div className="colContainer">
+              <SecondHeader/>
+              <NavBar/>
+              <Footer/>
+            </div>
           </div>
         </div>
-      </div> 
-    </LocaleProvider>
-        )
+      </LocaleProvider>
+    )
   }
 }
 
