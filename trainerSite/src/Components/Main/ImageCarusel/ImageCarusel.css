@@ -15,7 +15,10 @@
   grid-area: main;
   height: 280px;
 }
-
+.carusel>img:nth-child(n+2){
+    height: 150px;
+  }
+    
 .carusel>img:nth-child(n+2):hover{
   transition-duration: 5s;
   transform:rotateY(360deg);
@@ -23,28 +26,32 @@
 
 .carusel>img:nth-child(2){
   grid-area: img1;
-  height: 150px;
   
 }
 .carusel>img:nth-child(3){
   grid-area: img2;
-  height: 150px;
 }
 .carusel>img:nth-child(4){
   grid-area: img3;
-  height: 150px;
 }
 .carusel>img:nth-child(5){
   grid-area: img4;
-  height: 150px;
 }
 
 .carusel>img:nth-child(6){
   grid-area: img5;
-  height: 150px;
 }
 
 .caruselContainer>h2{
-  padding:2em;
+  padding:4em;
   text-align: center;
+  font-weight:bold; 
+}
+
+
+
+@media only screen and (max-width:376px){
+  .carusel>img:nth-child(n+2){
+    height: 70px;
+  }
 }
