@@ -1,16 +1,7 @@
 import React, {Component} from 'react';
 import {LocaleProvider} from 'antd';
 import enUS from 'antd/lib/locale-provider/en_US';
-// import * as Scroll from 'react-scroll';
-// import {
-//   Link,
-//   DirectLink,
-//   Element,
-//   Events,
-//   animateScroll as scroll,
-//   scrollSpy,
-//   scroller
-// } from 'react-scroll'
+
 import ReactDOM from 'react-dom';
 import ScrollEvent from 'react-onscroll';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';

@@ -28,3 +28,15 @@
   color:white;
   text-decoration:none ;  
 }
+
+
+@media only screen and (max-width:376px){
+  .header{
+    flex-direction: column;
+    height: 60px;
+  }
+  .header>div{
+    display: flex;
+    justify-content: center;
+  }
+}

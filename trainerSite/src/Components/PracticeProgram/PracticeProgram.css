@@ -11,13 +11,7 @@
   height: 200px;
   padding-top:5px;
 }
-/* .PracticeProgram>div>a>div{
-  background-image: url("https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/312477_10151182168706364_695230681_n.jpg?oh=75406aae855cea63d53f2ed28b00fcae&oe=5A9509D1");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width:100%;
-  height: 200px;
-} */
+
 
 
 .PracticeProgram>div>h2{
@@ -31,11 +25,6 @@
 
 
 
-
-
-
-
-
 @media only screen and (max-width:768px){
   .PracticeProgram{
     display: grid;
@@ -46,7 +35,13 @@
 }
 
 
-
+@media only screen and (max-width:376px){
+  .PracticeProgram{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  }
+}
 
 
 
