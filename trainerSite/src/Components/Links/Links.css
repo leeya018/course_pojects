@@ -2,9 +2,7 @@
   display: flex;
   justify-content: space-between;
   background-color:rgb(86.3%, 86.3%, 86.3%);
-  /* position: fixed;
-  z-index: 9999;
-  width: 60em;  */
+
 }
 
 .links>a{
@@ -16,4 +14,13 @@
 
 .links>a:hover{
   color: black;
+  font-size: 16px;
+  padding-top: 6px;
+}
+
+
+@media only screen and (max-width:768px){
+  .links{
+    display: none;
+  }
 }

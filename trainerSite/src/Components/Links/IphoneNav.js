@@ -4,7 +4,7 @@ import {Menu, Icon} from 'antd';
 import {Link} from 'react-router-dom';
 import Main from '../Main';
 import About from '../About';
-import "./MenuNav.css";
+import './IphoneNav.css'
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
@@ -16,20 +16,21 @@ const practiceProgram = "practiceProgram"
 const tips = "tips"
 const contact = "contact"
 
-class MenuNav extends React.Component {
+class IphoneNav extends React.Component {
   constructor() {
     super()
-    this.updateUrl = this
-      .updateUrl
-      .bind(this)
+
     this.state = {
-      url: ""
+      url: "",
+      display: 'none'
+    
     }
   }
   handleClick = (e) => {
     console.log('click ', e);
   }
-  updateUrl(path) {
+  updateUrl =(path)=> {
+    
     let url = window.location.href
     url = url.slice(21, url.length)
     if ((url.split('/').length - 1) > 1) {
@@ -39,65 +40,72 @@ class MenuNav extends React.Component {
     }
     return url
   }
+
+
+
+  toggleDisplay = () => {
+    let {display} = this.state
+    this.setState({
+      display:(display==="block")?"none":"block"
+    });
+  }
   render() {
-    let {url} = this.state
+    let {display} = this.state
+    
     return (
-      <Menu className="menuNav"
+      <div className="iphoneNav" style={{ width: 256 }}>
+        <div className="burger" onClick={this.toggleDisplay}></div>
+        <Menu className="menuNav"
         onClick={this.handleClick}
         style={{
-        width: 256
+        width: 256,
+        display:display
       }}
         defaultSelectedKeys={['1']}
         defaultOpenKeys={['sub1']}
         mode="inline">
 
-        <SubMenu
-          key="sub1"
-          title={< span > <Icon type="setting"/> < span >בחר </span></span >}>
-          <Menu.Item key="2">
-            <Link to={""}>
+          <Menu.Item key="2" >
+            <Link to={""} onClick={this.toggleDisplay}>
               <div>ראשי</div>
             </Link>
           </Menu.Item>
           <Menu.Item key="3">
-            <Link to={this.updateUrl(about)}>
+            <Link to={this.updateUrl(about)} onClick={this.toggleDisplay}>
               <div>אודות</div>
             </Link>
           </Menu.Item>
           <Menu.Item key="4">
-            <Link to={this.updateUrl(whywe)}>
+            <Link to={this.updateUrl(whywe)} onClick={this.toggleDisplay}>
               <div>למה אנחנו</div>
             </Link>
           </Menu.Item>
           <Menu.Item key="5">
-            <Link to={this.updateUrl(forwho)}>
+            <Link to={this.updateUrl(forwho)} onClick={this.toggleDisplay}>
               <div>למי זה מתאים</div>
             </Link>
           </Menu.Item>
-
           <Menu.Item key="6">
-
-            <Link to={this.updateUrl(practiceProgram)}>
+            <Link to={this.updateUrl(practiceProgram)} onClick={this.toggleDisplay}>
               <div>תוכנית אימונים</div>
             </Link>
           </Menu.Item>
           <Menu.Item key="7">
-            <Link to={this.updateUrl(tips)}>
+            <Link to={this.updateUrl(tips)} onClick={this.toggleDisplay}>
               <div>טיפים</div>
             </Link>
           </Menu.Item>
-
           <Menu.Item key="8">
-
-            <Link to={this.updateUrl(contact)}>
+            <Link to={this.updateUrl(contact)} onClick={this.toggleDisplay}>
               <div>צור קשר</div>
             </Link>
           </Menu.Item>
-        </SubMenu>
       </Menu>
 
+      </div>
     );
   }
 }
 
-export default MenuNav;
+
+export default IphoneNav;

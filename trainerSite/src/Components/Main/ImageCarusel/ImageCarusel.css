@@ -1,22 +1,23 @@
 .carusel{
   display: grid;
   grid-template-areas: "main main main main main"
+                        ". . . . ."
               "img1 img2 img3 img4 img5";
-  grid-template-rows: 300px 100px;
-  grid-template-columns: 18% 18% 18% 18% 18%;
-  grid-gap: 2.5%;
+   grid-template-rows: 100% 10px 100%;
+  /* grid-template-columns: 18% 18% 18% 18% 18%;  */
+  grid-gap: 0.1%;
   
 }
+/* 1.489 */
 
-.carusel>img{
-  width:100%;
-}
 .carusel>img:nth-child(1){
   grid-area: main;
-  height: 280px;
+  width:840px;
+  height: 564px;
 }
 .carusel>img:nth-child(n+2){
-    height: 150px;
+  width:165px;
+  height: 110px;
   }
     
 .carusel>img:nth-child(n+2):hover{
@@ -54,4 +55,15 @@
   .carusel>img:nth-child(n+2){
     height: 70px;
   }
+
+  .carusel>img:nth-child(1){
+    grid-area: main;
+    width:300px;
+    height: 200px;
+  }
+  .carusel>img:nth-child(n+2){
+    width:59px;
+    height: 40px;
+    }
+      
 }

@@ -11,20 +11,17 @@ import Tips from '../Tips';
 import Contact from '../Contact';
 import Email from '../Email';
 import Program from '../Program';
+import './NavBar.css';
 
-// import './NavBar.css';
 
 class NavBar extends Component {
 
   render() {
     return (
-      <div className="NavBar">
-        <Router>
+      <div className="navBar">
           <div>
-            <Links/>
-            <div style={{
-              color: "white",  padding:"2em"
-            }}>
+            <Links />
+            <div className="navContent">
               <Switch >
                 <Route exact path="/" render={() =>< Main />}/>
                 <Route path="/about" render={() =>< About />}/>
@@ -44,7 +41,6 @@ class NavBar extends Component {
               </Switch>
             </div>
           </div>
-        </Router>
       </div>
 
     );

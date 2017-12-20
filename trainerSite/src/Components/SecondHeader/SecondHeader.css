@@ -6,16 +6,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  background:url("../App/imageedit_2_2134698737.png"); 
+  
 }
 .secondHeader>div{
   margin:1em;
 }
-.secondHeader>div:nth-child(1){
+.secondHeader>div:nth-child(2){
   color:white;
   font-weight: bold;
 }
-.secondHeader>div:nth-child(2){
+.secondHeader>.redBox{
   background-color: rgb(85.5%, 8.3%, 24.9%);
   width:200px;
   height: 100px;
@@ -27,15 +28,40 @@
   
 }
 
-.secondHeader>div:nth-child(2)>div>div:nth-child(1){
+.secondHeader>.redBox >div>div:nth-child(1){
   font-size: 25px;
   text-align: center;
 }
-.secondHeader>div:nth-child(2)>div{
-  display: flex;
-  flex-direction: column;
+
+.secondHeader>div:nth-child(2)>div:nth-child(2){
+  text-align: center;
 }
 
-.secondHeader>div:nth-child(1)>div:nth-child(2){
+
+
+
+
+@media only screen and (max-width:768px){
+
+
+  .secondHeader{
+    position: sticky;
+    top: 0px;
+    height: 80px; 
+  
+  }
+.secondHeader>div:nth-child(2){
+  display: none;
+}
+.secondHeader>.redBox{
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  
+}
+.redBox>div{
   text-align: center;
+  width:600px;
+}
+
 }

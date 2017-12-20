@@ -23,6 +23,7 @@ class Links extends Component {
   }
 
   updateUrl(path){
+    window.scrollTo(0, 0);
     let url  = window.location.href
     url = url.slice(21,url.length)
     if((url.split('/').length-1 )> 1){

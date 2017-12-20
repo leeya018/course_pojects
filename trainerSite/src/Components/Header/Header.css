@@ -5,7 +5,8 @@
   vertical-align:middle;  
   display: flex;
   justify-content: space-between;
-
+  /* position: sticky; */
+  /* top:0px;   */
 }
 
 .header>div{
