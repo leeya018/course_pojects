@@ -1,18 +1,6 @@
 {
   "movies": [
     {
-      "id": 4,
-      "title": "Saving Private Ryan",
-      "year": 1998,
-      "director": "Steven Spielberg",
-      "cast": [
-        "Matt Damon",
-        "Tom Hanks"
-      ],
-      "imageUrl": "http://t2.gstatic.com/images?q=tbn:ANd9GcR0lDhR_dXAKTm9wysp3nWu6kP0V5skJBVbCNC_Q8urAWcr4iF_",
-      "imdbUrl": "http://www.imdb.com/title/tt0120815/"
-    },
-    {
       "id": 6,
       "title": "Amelie",
       "year": 2001,
