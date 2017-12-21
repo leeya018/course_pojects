@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"cd server && json-server -p 3009 --watch db.json\" \"cd client && npm start\""
     },
+    "devDependencies": {
+      "concurrently": "^3.5.0"
+    },
     
   "author": "",
   "license": "ISC"
