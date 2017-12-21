@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"cd server && json-server -p 3008 --watch db.json\" \"cd client && npm start\""
+    "start": "concurrently \"cd server && json-server -p 3009 --watch db.json\" \"cd client && npm start\""
     },
     
   "author": "",

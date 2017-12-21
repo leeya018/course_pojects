@@ -1,13 +1,10 @@
-const port =3008
+const PORT =3009
+const HOST='http://ec2-18-217-200-204.us-east-2.compute.amazonaws.com'
 
 
-async function getBooks1(){
-    let response = await fetch('http://s3.amazonaws.com/sundaysky-mock/books/listOfBooks.json')
-    return await response.json()
-}
 
 async function getBooks(){
-    let response = await fetch(`http://localhost:${port}/books`)
+    let response = await fetch(`${HOST}:${PORT}/books`)
     return await response.json()
 }
 

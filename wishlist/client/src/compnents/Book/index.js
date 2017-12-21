@@ -47,11 +47,11 @@ class Book extends Component {
   }
   updateArrows(ind) {
     let { books } = this.props;
-    this.$leftArrow.style.display = ind === 0 ? 'none' : 'block';
-    this.$rightArrow.style.display = ind === books.length - 1 ? 'none' : 'block';
+    this.$leftArrow.style.color = ind === 0 ? 'white' : 'black';
+    this.$rightArrow.style.color = ind === books.length - 1 ? 'white' : 'black';
   }
   componentDidMount() {
-    this.$leftArrow.style.display = 'none';
+    this.$leftArrow.style.color = 'black';
   }
 
   render() {

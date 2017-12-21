@@ -9,20 +9,15 @@ body{
 }
 .appSubContainer{
   display: flex;
-  padding:8em;
+  justify-content: space-between;
+  padding: 8em;
   background-color: #D0D0D0;
-  padding: 4em 2em 0em 18em;
   
 }
 
-.appSubContainer>div{
-  margin: 1em;
-  
-  
-}
+
 .bookItem{
   background-color: white;
-  
   flex: 2;
   
 }
