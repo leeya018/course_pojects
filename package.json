@@ -4,12 +4,12 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"cd imdb && npm start\""
+    "start": "concurrently \"cd imdb && npm start\" \"cd bookapp && npm start\" \"cd wishlist && npm start\""
     },
     "devDependencies": {
       "concurrently": "^3.5.0"
     },
     
-  "author": "",
+  "author": "lee yahav",
   "license": "ISC"
 }
