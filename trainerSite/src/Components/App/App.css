@@ -3,8 +3,14 @@ body {
   padding: 0;
   font-family: sans-serif;
   background:url("imageedit_2_2134698737.png"); 
-  background-repeat: repeat;
+  /* background:url("david-marcu-5296.jpg");  */
+  background-repeat: no-repeat;
   background-size: cover;
+  width:1520px;
+  height:634px; 
+  background-attachment: fixed;
+  background-position: center top;
+   
 }
 
 h1{
@@ -32,7 +38,13 @@ h2,h3{
   
 }
 
-@media only screen and (max-width:376px){
+@media only screen and (max-width:768px){
+  body{
+  background-attachment: fixed;
+  
+    background-repeat: repeat;
+  }
+  
   .app{
     width:375px;
   }

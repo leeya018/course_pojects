@@ -8,7 +8,7 @@ getRedBox=()=>{
   let box1 = <div><div>Seed</div><div>Personal straining</div></div>
   let box2 = <div>Seed - Personal straining</div>
   
-  return (window.innerWidth >500)?box1:box2;
+  return (window.innerWidth >769)?box1:box2;
 }
   render() {
     return (

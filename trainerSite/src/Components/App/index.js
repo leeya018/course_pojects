@@ -20,8 +20,7 @@ class App extends Component {
       .bind(this)
   }
   componentDidMount() {
-    // window.addEventListener('scroll', this.handleScroll);
-    // window.onscroll = this.handleScroll(e)
+
 
   }
   handleScroll=()=> {

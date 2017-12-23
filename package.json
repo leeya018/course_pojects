@@ -1,23 +1,16 @@
 {
-  "name": "d",
+  "name": "allApps",
   "version": "1.0.0",
-  "description": "/home/leeya/Desktop/gitHub/.gitignore",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leeya018/course_pojects.git"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd imdb && npm start\" \"cd bookapp && npm start\" \"cd wishlist && npm start\" "
+    },
+    "devDependencies": {
+      "concurrently": "^3.5.0"
+    },
+    
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/leeya018/course_pojects/issues"
-  },
-  "homepage": "https://github.com/leeya018/course_pojects#readme",
-  "scripts": {
-    "forever" : "forever start -c "npm start" ./    && forever start www/www-server.js && forever start upload/upload-server.js && forever start static/static-server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-}
+  "license": "ISC"
 }

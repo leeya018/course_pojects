@@ -12,7 +12,7 @@ window.onload = function () {
     var socket = io.connect();
 
     // var socket = io.connect('http://localhost:3004');
-    createLoginEmitter(socket);
+createLoginEmitter(socket);
     createLoginEmitterEnter(socket);
 
 
