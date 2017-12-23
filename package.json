@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"cd imdb && cd server && json-server -p 3003 --watch db.json\" \"cd imdb && cd client && npm start\""
+    "start": "concurrently \"cd imdb && cd server && json-server -p 3003 --watch db.json\" \"cd imdb && cd client && npm start\" \"cd bookapp && cd server && json-server -p 3003 --watch db.json\" \"cd bookapp && cd client && npm start\""
     },
     "devDependencies": {
       "concurrently": "^3.5.0"
