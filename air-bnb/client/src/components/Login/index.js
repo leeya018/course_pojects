@@ -24,7 +24,6 @@ class Login extends Component {
                 let { token, user } = data.data
                 if (token) {
                     this.props.updateLoginStatus(true)
-                    debugger
                     this.props.updateUser(user)
                     localStorage['bnb-token'] = token
                     localStorage['bnb-user'] = JSON.stringify(user)

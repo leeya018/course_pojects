@@ -8,10 +8,9 @@ import './ReviewForm.css'
 export default class ReviewForm extends Component {
     constructor(props) {
         super(props)
-        let user = JSON.parse(localStorage.getItem('bnb-user'))
-        let imageUrl = user.imageUrl
+        debugger
         this.state = {
-            title: '', name: '', content: '', userImageUrl: imageUrl, rating: 0
+            title: '', name: '', content: '', rating: 0
         }
         this.addPost = this.addPost.bind(this)
         this.updateVal = this.updateVal.bind(this)
@@ -31,7 +30,7 @@ export default class ReviewForm extends Component {
     }
 
     addPost() {
-        const { title, name, content, userImageUrl, rating } = { ...this.state }
+        const { title, name, content, rating } = { ...this.state }
         if (name && name && content && rating !== 0) {
             const state = { ...this.state, date: dateFormat(new Date(), 'shortDate') }
             const review = { ...state }
@@ -46,11 +45,11 @@ export default class ReviewForm extends Component {
     }
 
     render() {
-        const { title, name, content, userImageUrl, rating, date } = this.state;
+        const { title, name, content, rating, date } = this.state;
         return (
             <div className="formReviewMain">
                 <div className="formReview">
-                    <div><h2>Add Post</h2></div>
+                    <div><h2>Add Post</h2></div>    
                     <div><input className="formReviewElem" type="text" name="title" placeholder="title" onChange={this.updateVal} value={title} /></div>
                     <div><input className="formReviewElem" type="text" name="name" placeholder="name" onChange={this.updateVal} value={name} /></div>
                     <div className="descArec"><textarea className="formReviewElem" name="content" rows="7" cols="50" type="text" placeholder="content" onChange={this.updateVal} value={content} /></div>

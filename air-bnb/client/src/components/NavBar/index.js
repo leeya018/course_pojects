@@ -31,7 +31,6 @@ class NavBar extends React.Component {
     }
 
     updateUser(user) {
-        debugger
         this.setState({ user })
     }
 
@@ -79,7 +78,6 @@ class NavBar extends React.Component {
 
     render() {
         let { filteredList, originalList, markers, isLogged, user } = this.state
-        debugger
         let styleUrl = this.getUserStyle()
         let styleUrlDefault = { "backgroundImage": "url('https://cdn0.iconfinder.com/data/icons/PRACTIKA/256/user.png')" }
 

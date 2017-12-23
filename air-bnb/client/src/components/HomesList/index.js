@@ -7,9 +7,9 @@ import './HomesList.css';
 class HomesList extends React.Component {
     constructor(props) {
         super();
-        if (!props.isLogged) {
-            props.history.push('/login')
-        }
+        // if (!props.isLogged) {
+        //     props.history.push('/login')
+        // }
     }
 
     getLocations() {

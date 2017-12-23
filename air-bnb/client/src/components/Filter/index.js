@@ -78,8 +78,6 @@ class Filter extends Component {
         let { fromDate, toDate } = this.state
         let occupancy = home.occupancy
         for (let date of occupancy) {
-            debugger
-
             if (!moment(fromDate).isBetween(date.fromDate, date.toDate, 'day', []) || !moment(toDate).isBetween(date.fromDate, date.toDate, 'day', [])) {
 
                 return false
@@ -91,7 +89,6 @@ class Filter extends Component {
 
 
     convertStrDate(date) {
-        debugger
         let dateArr = this.formatDate(date)
         return `${dateArr[0]}-${dateArr[1]}-${dateArr[2]}`
     }

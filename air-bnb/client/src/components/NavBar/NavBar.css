@@ -44,19 +44,6 @@ hr{
     display:block;
 }
 
-@media only screen and (max-width:1600px){
-    li{
-        padding: 2%;
-    }
-    
-    .yourImg{
-        display:none;
-    }
-
-    .nav{
-        flex-direction: column;
-    }
-}
 
 @media only screen and (max-width:1025px){
     .mainFilter{
