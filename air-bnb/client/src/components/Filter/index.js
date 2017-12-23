@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import DatePicker from 'react-datepicker';
 import moment from 'moment'
 import './Filter.css'
+
+const HOST ='ec2-18-217-200-204.us-east-2.compute.amazonaws.com';
 class Filter extends Component {
     constructor(props) {
         super()
@@ -106,7 +108,7 @@ class Filter extends Component {
         let { fromDate, toDate } = this.state
         return (
             <div className="mainFilter">
-                {window.location.href == 'http://localhost:3000/' &&
+                {window.location.href == '${HOST}/' &&
                     <div className="filter">
                         <div><input type="text" placeholder="city" name='city' onChange={this.filterCity} /></div>
                         <div><input type="text" placeholder="from price" name='fromPrice' onChange={this.updateFromPrice} /></div>
@@ -124,7 +126,7 @@ class Filter extends Component {
                         <button onClick={this.filterByDate}>apply</button>
                     </div>
                 }
-                {window.location.href.includes('http://localhost:3000/home') &&
+                {window.location.href.includes(`${HOST}/home`) &&
                     <div className="searchBar">
                         <input type="text" name="search" placeholder="search" />
                     </div>
