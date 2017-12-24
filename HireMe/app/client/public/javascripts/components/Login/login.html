@@ -1,7 +1,15 @@
-<div ng-show="!vm.logedIn">
-    <h1>Login</h1>
-    <p>user :</p><input type="text"  ng-model="userName" autofocus>
-    <p>pass :</p><input type="text"  ng-model="pass" autofocus>
-    <button  ng-click="vm.login(userName,pass)">Login</button>
+<div class="login" ng-show="!vm.logedIn">
+    <div>
+        credentials : (user:1, pass:1)
+    </div>
+    <div>
+        <p>user :</p>
+        <input type="text" ng-model="userName" autofocus>
+    </div>
+    <div>
+        <p>pass :</p>
+        <input type="text" ng-model="pass">
+    </div>
+    <button ng-click="vm.login(userName,pass)">Login</button>
     <h1>{{errMsg}}</h1>
-</div>  
+</div>

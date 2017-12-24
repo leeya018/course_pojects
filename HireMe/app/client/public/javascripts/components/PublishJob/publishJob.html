@@ -1,30 +1,24 @@
-<div>
-    <h1>new jobs pub</h1>
+<div class="pubJob">
     <div>
-
-        <p>name :</p><input type="text" ng-model="job.jobName">
-        <p>description:</p><input type="text" ng-model="job.description">
-        <!--<p>locatoin:</p><input type="text" ng-model="job.locationName">-->
-        <p>:<input id="address" type="text" ng-model="job.locationName" placeholder="location"></p>
-
-        <!--<location></location>-->
-
-
-
-        <select multiple ng-init="vm.getSkills()" ng-model="selectedSkill" ng-selected="Angular" ng-options="skill as skill.skillName for skill in vm.skills">
-   </select>
-
-        <button ng-click="vm.addSkillsToTextArea(selectedSkill)">add skill</button>
-        <textarea ng-disabled="true" id="areaSkills" rows="10" cols="10"></textarea>
-
-
-
-
-
-        <button ng-click="vm.publishJob()">publish job</button>
-        <h1>{{msg}}</h1>
-
-
+        <p>job name:</p>
+        <input type="text" ng-model="job.jobName">
+    </div>
+    <div>
+        <p>description:</p>
+        <input type="text" ng-model="job.description">
+    </div>
+    <div>
+        <p>location:</p>
+        <input id="address" type="text" ng-model="job.locationName" placeholder="location">
 
     </div>
+
+    <select multiple ng-init="vm.getSkills()" ng-model="selectedSkill" ng-selected="Angular" ng-options="skill as skill.skillName for skill in vm.skills">
+    </select>
+
+    <button ng-click="vm.addSkillsToTextArea(selectedSkill)">add skill</button>
+    <textarea ng-disabled="true" id="areaSkills" rows="10" cols="10"></textarea>
+
+    <button ng-click="vm.publishJob()">publish job</button>
+    <h1>{{msg}}</h1>
 </div>

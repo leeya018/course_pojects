@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="skills">
-        <h3>Skills:</h3>
+        <h4>Skills:</h4>
         <select multiple ng-init="vm.getSkills()" ng-model="selectedSkill" ng-selected="Angular" ng-options="skill as skill.skillName for skill in vm.skills">
         </select>
         <button ng-click="vm.addSkillsToTextArea(selectedSkill)">add skill</button>

@@ -1,7 +1,6 @@
 
 <div id="nav">
   <div id="navbar">
-
     <ul>
       <li> <a href="#!login" ng-show="showLogin" ng-click="vm.closeJobs()">login</a></li>
       <li><a href="#!register" ng-show="showLogin" ng-click="vm.closeJobs()">register</a></li>
@@ -10,19 +9,9 @@
       <li><a href="#!myJobs" ng-show="showLogout" ng-click="">my jobs</a></li>
       <li><a href="#!agent" ng-show="showLogout" ng-click="">agent</a></li>
       <li><a href="#!myApplyJobs" ng-show="showLogout" ng-click="" >my applied jobs</a></li>
-      
-      <!--<a href="#!map" ng-show="showLogout" ng-click="">MAP</a>-->
-
-
       <li><a href="#!" ng-click="">home</a></li>
-
-
     </ul>
-
-  </div>
-  <div id="headLine">
-    <h3>Hire Me , wellcome : {{userName}}</h3>
-    
+    <p>Hire Me<p ng-if="userName">wellcome : {{userName}}</p></p>
   </div>
 
 </div>

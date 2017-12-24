@@ -2,7 +2,6 @@
   padding-top: 4em;
   font-size: 2.1em;
   padding-left: 4%;
-  display: flex;
 }
 
 #myProfile input {
@@ -12,15 +11,17 @@
 #myProfile p {
   font-size: 28px;
   margin: 0;
-  width:5em;
+  width: 5em;
 }
 
-.profileDetails>div {
+.profileDetails > div {
   display: flex;
   justify-content: space-between;
-  padding:9px;
+  padding: 9px;
+  width: 9em;
 }
 
-#myProfile > .skills {
-  padding-left: 5em;
+#myProfile h4 {
+  margin: 0;
+  font-size: 29px;
 }

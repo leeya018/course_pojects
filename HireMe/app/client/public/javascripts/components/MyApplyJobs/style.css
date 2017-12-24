@@ -1,45 +1,28 @@
-
-#map1{
-    width:400px;
-    height: 400px
+#map1 {
+  width: 400px;
+  height: 400px;
 }
 
-
-
-
-#jobs{
-    grid-area:jobs;
+#jobs {
+  grid-area: jobs;
 }
 
-
-#jobDetails{
-
-    margin: 0 20px 0 20px;
-    padding: 0 10px 0 10px;
-    /*top right bottom left*/
-    grid-area:jobDetails;
-    font-size: 22px;
-    /*position: fixed;    */
+#jobDetails {
+  margin: 0 20px 0 20px;
+  padding: 0 10px 0 10px;
+  grid-area: jobDetails;
+  font-size: 22px;
 }
-/*
-#filter{
-    top:400px;
-  position: sticky;
-}*/
-#jobDetailsContent{
-    /*top:15vw;*/
-    
+
+#jobDetailsContent {
   position: sticky;
 }
 
-    #jobsData{
-         position: relative;
-        top: 4em;       
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "jobs jobDetails";
-
-        /*align-items:start;*/
-    }
+#jobsData {
+  position: relative;
+  top: 4em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: 'jobs jobDetails';
+}

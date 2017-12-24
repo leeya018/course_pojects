@@ -1,10 +1,6 @@
 (function () {
     'use strict';
 
-    // Usage:
-    // 
-    // Creates:
-    // 
 
     angular
         .module('jobsModule')

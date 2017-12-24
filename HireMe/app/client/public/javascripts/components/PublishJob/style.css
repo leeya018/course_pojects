@@ -1,0 +1,22 @@
+.pubJob {
+  position: relative;
+  top: 5em;
+  margin-left: 4em;
+}
+.pubJob>div{
+  display: flex;
+  justify-content: space-between;
+  padding: 9px;
+  width: 16em;
+}
+
+.pubJob input {
+  border-radius: 10px;
+}
+.pubJob p {
+  font-size: 28px;
+  margin: 0;
+  width: 5em;
+  padding-right: 1px;
+}
+

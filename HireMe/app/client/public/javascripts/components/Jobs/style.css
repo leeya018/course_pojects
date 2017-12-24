@@ -3,7 +3,7 @@ h1 {
 }
 
 #filter {
-  top: 85px;
+  top: 50px;
   font-size: 27px;
   position: fixed;
   background-color: rgba(75.3%, 75.3%, 75.3%, 0.46);
@@ -18,8 +18,10 @@ h1 {
 }
 #filterPick > li {
   font-size: 20px;
-
   border: 1px solid black;
+}
+#filterPick > div {
+    display: flex;
 }
 #addSkill {
   display: flex;
@@ -97,4 +99,10 @@ h1 {
   background-size: cover;
   width: 2em;
   height: 2em;
+}
+
+
+#jobDetailsContent p{
+    margin-top:0;
+    font-weight: bold;
 }
