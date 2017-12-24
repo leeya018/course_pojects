@@ -3,7 +3,7 @@ import DatePicker from 'react-datepicker';
 import moment from 'moment'
 import './Filter.css'
 
-const HOST ='ec2-18-217-200-204.us-east-2.compute.amazonaws.com';
+const HOST ='ec2-18-217-224-7.us-east-2.compute.amazonaws.com';
 class Filter extends Component {
     constructor(props) {
         super()
