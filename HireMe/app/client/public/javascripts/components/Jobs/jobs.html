@@ -1,22 +1,29 @@
 <div ng-show="showJobs" ng-init="vm.getUserDetails()">
     <div id="filter">
         <div>
-            <span>filter:</span>
             <ul id="filterPick" ng-click="vm.resetFilters()">
-                <li class="filterLi" ng-click="vm.nameFilterClick()">name</li>
-                <li class="filterLi" ng-click="vm.locationFilterClick()">location</li>
-                <li class="filterLi" ng-click="vm.skillFilterClick()">skills</li>
-                <li class="filterLi" ng-click="vm.distanceFilterClick()">distance</li>
+                <div>
+                    <li class="filterLi" ng-click="vm.nameFilterClick()">name</li>
+                    <li class="filterLi" ng-click="vm.locationFilterClick()">location</li>
+                    <li class="filterLi" ng-click="vm.skillFilterClick()">skills</li>
+                    <li class="filterLi" ng-click="vm.distanceFilterClick()">distance</li>
+                </div>
+                <div class="closeFilter" ng-click="vm.closeFilter()">
+                    
+                </div>
 
-                <li id="endLi"></li>
             </ul>
 
         </div>
         <div ng-show="filterName==='nameFilter'">
-            <p>job name : <input ng-model="searchText.jobName" placeholder="job name" autofocus></p>
+            <p>job name :
+                <input ng-model="searchText.jobName" placeholder="job name" autofocus>
+            </p>
         </div>
         <div ng-show="filterName==='locationFilter'">
-            <p> location : <input ng-model="searchText.locationName" placeholder="location" autofocus></p>
+            <p> location :
+                <input ng-model="searchText.locationName" placeholder="location" autofocus>
+            </p>
         </div>
         <div ng-show="filterName==='skillsFilter'">
             <div id="skillFilter">
@@ -39,7 +46,6 @@
             <div>
                 <input class="distScale" id="distScale" ng-model="limDist" type="range" min="0.1" max="1000" step="1">
                 <p class="distScale">{{limDist -0.1}} km</p>
-                <!--<p>distance : <input type="number" ng-model="limDist" autofocus></p>-->
             </div>
         </div>
 

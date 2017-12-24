@@ -1,9 +1,26 @@
 #myProfile {
-    font-size: 2.1em;
-        padding-left: 4%;
+  padding-top: 4em;
+  font-size: 2.1em;
+  padding-left: 4%;
+  display: flex;
 }
 
 #myProfile input {
-    height: 2em;
-    border-radius: 1px;
+  border-radius: 10px;
+  height: 2em;
+}
+#myProfile p {
+  font-size: 28px;
+  margin: 0;
+  width:5em;
+}
+
+.profileDetails>div {
+  display: flex;
+  justify-content: space-between;
+  padding:9px;
+}
+
+#myProfile > .skills {
+  padding-left: 5em;
 }

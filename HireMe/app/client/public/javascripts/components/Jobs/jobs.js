@@ -226,6 +226,11 @@
 
         }
 
+        vm.closeFilter = function () {
+            $scope.filterName = 'closeFilter';
+            document.getElementById('jobsData').style.top='10em';
+
+        }
         vm.locationFilterClick = function () {
             $scope.filterName = 'locationFilter';
             document.getElementById('jobsData').style.top='15em';
@@ -234,7 +239,7 @@
 
         vm.skillFilterClick = function () {
             $scope.filterName = 'skillsFilter';
-            document.getElementById('jobsData').style.top='30em';
+            document.getElementById('jobsData').style.top='24em';
 
         }
 

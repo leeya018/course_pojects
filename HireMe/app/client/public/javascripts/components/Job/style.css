@@ -1,35 +1,41 @@
-
-    button {
-        background-color: #4CAF50;
-        /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 19px;
-        border-radius: 10px;
-    }
-
-    button:hover {
-        color: black
-    }
-
-#applied{
-    color: yellow;
-    background-color: gray;
-    font-size: 133%;
-    width: 16%;
-    padding: 1%;
+#job {
+  padding: 1px;
 }
 
-#jobTitle{
-    border: 3px solid black;
-    /*grid-area:jobTitle*/
-
+.jobBut {
+  display: flex;
+  justify-content: space-between;
+}
+#jobTitle > h2 {
+  margin: 0;
+}
+.jobBut > button {
+  align-self: self-end;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  height: 52px;
+  font-size: 19px;
+  border-radius: 10px;
 }
 
-#job:hover{
-    background-color: gray;
+button:hover {
+  color: black;
+}
+
+#applied {
+  color: rgb(20.5%, 33.3%, 16.5%);
+  font-size: 26px;
+  width: 16%;
+  padding: 1%;
+  font-weight: bold;
+}
+
+#jobTitle {
+  border: 3px solid black;
+  padding: 13px;
+}
+
+#job:hover {
+  background-color: rgba(75.3%, 75.3%, 75.3%, 0.46);
 }

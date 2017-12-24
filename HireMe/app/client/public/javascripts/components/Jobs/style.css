@@ -1,105 +1,100 @@
-h1{
-    color:green
+h1 {
+  color: green;
 }
 
-#filter{
-    top: 85px;
-    font-size: 27px;
-    position: fixed;
-    background-color: gray;
-    width: 100%;
-    z-index: 1;
-}   
-
-
-#filterPick{
-    background-color: white;
-
-}
-#filterPick>li{
-    font-size:20px;
-
-    border:1px solid black;
-}
-#addSkill{
-    display:flex;
-    flex-direction: column;
-    padding-right: 2em;
+#filter {
+  top: 85px;
+  font-size: 27px;
+  position: fixed;
+  background-color: rgba(75.3%, 75.3%, 75.3%, 0.46);
+  width: 100%;
+  z-index: 1;
 }
 
-#searchBtn{
-    align-self: flex-end;
-    padding-bottom: 10px;
-    
+#filterPick {
+  background-color: rgba(100%, 98%, 98%, 0);
+  display: flex;
+  justify-content: space-between;
+}
+#filterPick > li {
+  font-size: 20px;
+
+  border: 1px solid black;
+}
+#addSkill {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2em;
 }
 
-
-#map1{
-    width:400px;
-    height: 400px
+#searchBtn {
+  align-self: flex-end;
+  padding-bottom: 10px;
 }
 
-
-
-
-#jobs{
-    grid-area:jobs;
+#map1 {
+  width: 400px;
+  height: 400px;
 }
 
+#jobs {
+  grid-area: jobs;
+}
 
-#jobDetails{
-
-    margin: 0 20px 0 20px;
-    padding: 0 10px 0 10px;
-    /*top right bottom left*/
-    grid-area:jobDetails;
-    font-size: 22px;
-    /*position: fixed;    */
+#jobDetails {
+  margin: 0 20px 0 20px;
+  padding: 0 10px 0 10px;
+  /*top right bottom left*/
+  grid-area: jobDetails;
+  font-size: 22px;
+  /*position: fixed;    */
 }
 /*
 #filter{
     top:400px;
   position: sticky;
 }*/
-#jobDetailsContent{
-    /*top:15vw;*/
-    
+#jobDetailsContent {
+  /*top:15vw;*/
+
   position: sticky;
 }
 
-    #jobsData{
-         position: relative;
-        top: 4em;       
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "jobs jobDetails";
+#jobsData {
+  position: relative;
+  top: 4em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: 'jobs jobDetails';
 
-        /*align-items:start;*/
-    }
+  /*align-items:start;*/
+}
 
-#skillFilter{
+#skillFilter {
+  display: flex;
+  flex-direction: row;
+}
+
+.filterLi {
     display: flex;
-    flex-direction: row
-}
-
-
-#endLi{
-    width:100%;
-    background-color: gray;
-}
-
-.filterLi:hover{
-    background-color: gray;
-}
-
-.filterLi{
+    align-items: center;
     font-size: 1em;
     padding-right: 1em;
     padding-left: 1em;
+  }
+  
+.filterLi:hover {
+  background-color: gray;
 }
 
-.distScale{
-    display: inline-block;
+.distScale {
+  display: inline-block;
+}
+
+.closeFilter {
+  background-image: url('https://cdn3.iconfinder.com/data/icons/status/100/close_4-512.png');
+  background-size: cover;
+  width: 2em;
+  height: 2em;
 }

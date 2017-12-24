@@ -1,18 +1,38 @@
 <div id="myProfile">
-    <h2>My Profile</h2>
-    <p>first name : <input type="text" ng-model="user.firstName" autofocus></p>
-    <p>E-mail : <input type="text" ng-model="user.email"></p>
-    <p>description : <input type="text" ng-model="user.description"></p>
-    <p>user : <input type="text" ng-model="user.userName"></p>
-    <p>location:<input id="address" type="text" ng-model="user.locationName" placeholder="location"></p>
-
-    <p>pass : <input type="text" ng-model="user.pass"></p>
-    <h2>Skills:</h1>
+    <div class="profileDetails">
+        <div>
+            <p>first name :</p>
+            <input type="text" ng-model="user.firstName" autofocus>
+        </div>
+        <div>
+            <p>E-mail :</p>
+            <input type="text" ng-model="user.email">
+        </div>
+        <div>
+            <p>description :</p>
+            <input type="text" ng-model="user.description">
+        </div>
+        <div>
+            <p>user name :</p>
+            <input type="text" ng-model="user.userName">
+        </div>
+        <div>
+            <p>location :</p>
+            <input type="text" id="address" ng-model="user.locationName" placeholder="location">
+        </div>
+        <div>
+            <p>pass :</p>
+            <input type="text" ng-model="user.pass">
+        </div>
+    </div>
+    <div class="skills">
+        <h3>Skills:</h3>
         <select multiple ng-init="vm.getSkills()" ng-model="selectedSkill" ng-selected="Angular" ng-options="skill as skill.skillName for skill in vm.skills">
-   </select>
-
+        </select>
         <button ng-click="vm.addSkillsToTextArea(selectedSkill)">add skill</button>
         <textarea ng-disabled="true" id="areaSkills" rows="10" cols="10"></textarea>
         <button ng-click="vm.updateDetails()">Update Details</button>
         <h1>{{updateMsg}}</h1>
+    </div>
+
 </div>
