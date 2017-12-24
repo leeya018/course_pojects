@@ -1,0 +1,39 @@
+db.jobs.save([{ "jobName" : "facebook delveloper", "pub_date" : ISODate("2016-05-18T16:00:00Z"), "pub_id" : 1, "description" : "developer of facebook components in React tech", "locationName" : "Poland", "lon" : 31.3213213, "lat" : 34.12312, "skills" : [ 1,2], "jobApplicants" : [ ] },
+{ "jobName" : "RedHat programmer", "pub_date" : ISODate("2015-06-18T16:00:00Z"), "pub_id" : 1, "description" : "we need a hard worker with a codeing mentalety which can code 24/7", "locationName" : "Russia", "lon" : 31.98798, "lat" : 34.1121212, "skills" : [ 5, 1 ], "jobApplicants" : [ ]}
+ ,{ "jobName" : "db Developer", "pub_date" : ISODate("2017-02-18T16:00:00Z"), "pub_id" : 3, "description" : "for a good company needed a 5 years experience programmer", "locationName" : "Poland", "lon" : 31.7877, "lat" : 34.3333, "skills" : [ 3 ], "jobApplicants" : [] },
+{ "jobName" : "fb Developer", "pub_date" : ISODate("2017-02-18T16:00:00Z"), "pub_id" : 3, "description" : "for a good company needed a 5 years experience programmer", "locationName" : "kurchi", "lon" : 31.555555, "lat" : 34.7864, "skills" : [ 3, 4 ], "jobApplicants" : [ ] }])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{ "_id" : 1, "jobName" : "facebook delveloper", "pub_date" : ISODate("2016-05-18T16:00:00Z"), "pub_id" : 1, "description" : "developer of facebook components in React tech", "locationName" : "Poland", "lon" : 21.3213213, "lat" : 15.432432423, "skills" : [ 2, 1 ], "jobApplicants" : [ 7, 7, 7, 7, 7, 7, 7, 7, null, 7, 7, 7, null, null, null ] }
+{ "_id" : 2, "jobName" : "RedHat programmer", "pub_date" : ISODate("2015-06-18T16:00:00Z"), "pub_id" : 1, "description" : "we need a hard worker with a codeing mentalety which can code 24/7", "locationName" : "Russia", "lon" : 24.3213213, "lat" : 23.432432423, "skills" : [ 5, 1 ], "jobApplicants" : [ 7, 7, 7, 7 ] }
+{ "_id" : 3, "jobName" : "db Developer", "pub_date" : ISODate("2017-02-18T16:00:00Z"), "pub_id" : 3, "description" : "for a good company needed a 5 years experience programmer", "locationName" : "Poland", "lon" : 24.3213223, "lat" : 13.432432423, "skills" : [ 3 ], "jobApplicants" : [ 7, 7, 7, 7, 7, 7 ] }
+{ "_id" : 4, "jobName" : "fb Developer", "pub_date" : ISODate("2017-02-18T16:00:00Z"), "pub_id" : 3, "description" : "for a good company needed a 5 years experience programmer", "locationName" : "kurchi", "lon" : 14.3213223, "lat" : 13.432432423, "skills" : [ 3, 4 ], "jobApplicants" : [ 7, 7, 7, 7 ] }
+{ "_id" : 5, "jobName" : "rt Developer", "pub_date" : ISODate("2017-02-18T16:00:00Z"), "pub_id" : 2, "description" : "for a good company needed a 5 years experience programmer", "locationName" : "jupo", "lon" : 44.3213223, "lat" : 13.432432423, "skills" : [ 3, 5, 1 ], "jobApplicants" : [ 7, 7 ] }
+{ "_id" : 6, "jobName" : "web Developer", "pub_date" : ISODate("2017-02-18T16:00:00Z"), "pub_id" : 3, "description" : "for a good company needed a 5 years experience programmer", "locationName" : "Popo", "lon" : 34.3213223, "lat" : 13.432432423, "skills" : [ 2, 3, 4 ], "jobApplicants" : [ 7, 7, 7 ] }
+{ "_id" : 7, "jobName" : "bulma Developer", "pub_date" : ISODate("2017-02-18T16:00:00Z"), "pub_id" : 1, "description" : "for a good company needed a 5 years experience programmer", "locationName" : "wakko", "lon" : 14.3213223, "lat" : 13.432432423, "skills" : [ 3, 5 ], "jobApplicants" : [ 7 ] }
+{ "_id" : ObjectId("59bd0ae928f4042ed48317e4"), "jobName" : "angular developer", "pub_date" : "2017-09-16", "pub_id" : 7, "description" : "full time job with angular promise tech", "locationName" : "Moldova", "lon" : null, "lat" : null, "skills" : [ 2, 4 ], "jobApplicants" : [ ] }
+{ "_id" : ObjectId("59bd0b0e28f4042ed48317e5"), "jobName" : "costa", "pub_date" : "2017-09-16", "pub_id" : 7, "description" : "shsuhshdecd", "locationName" : "Moldova", "lon" : null, "lat" : null, "skills" : [ 2, 4 ], "jobApplicants" : [ ] }
+{ "_id" : ObjectId("59bd0b2228f4042ed48317e6"), "jobName" : "angular developer", "pub_date" : "2017-09-16", "pub_id" : 7, "description" : "full time job with angular promise tech", "locationName" : "Moldova", "lon" : null, "lat" : null, "skills" : [ 2, 4 ], "jobApplicants" : [ ] }
+{ "_id" : ObjectId("59bd0b2728f4042ed48317e7"), "jobName" : "angular developer", "pub_date" : "2017-09-16", "pub_id" : 7, "description" : "full time job with angular promise tech", "locationName" : "Moldova", "lon" : null, "lat" : null, "skills" : [ 2, 4 ], "jobApplicants" : [ ] }
+{ "_id" : ObjectId("59bd0b2f28f4042ed48317e8"), "jobName" : "angular developer", "pub_date" : "2017-09-16", "pub_id" : 7, "description" : "full time job with angular promise tech", "locationName" : "Moldova", "lon" : null, "lat" : null, "skills" : [ 2, 4 ], "jobApplicants" : [ ] }
+{ "_id" : ObjectId("59bd0b3328f4042ed48317e9"), "jobName" : "angular developer", "pub_date" : "2017-09-16", "pub_id" : 7, "description" : "full time job with angular promise tech", "locationName" : "Moldova", "lon" : null, "lat" : null, "skills" : [ 2, 4 ], "jobApplicants" : [ ] }
+{ "_id" : ObjectId("59bd0b7928f4042ed48317ea"), "jobName" : "angular developer", "pub_date" : "2017-09-16", "pub_id" : 7, "description" : "full time job with angular promise tech", "locationName" : "Moldova", "lon" : null, "lat" : null, "skills" : [ 2, 4 ], "jobApplicants" : [ ] }
+{ "_id" : ObjectId("59bd24d38deef82f00960fb2"), "jobName" : "angular developer", "pub_date" : "2017-09-16", "pub_id" : 7, "description" : "full time job with angular promise tech", "locationName" : "Moldova", "lon" : null, "lat" : null, "skills" : [ 2, 4 ], "jobApplicants" : [ ] }
+{ "_id" : ObjectId("59bd2690c3ad6f2d8c93ce22"), "jobName" : "angular developer", "pub_date" : "2017-09-16", "pub_id" : 7, "description" : "full time job with angular promise tech", "locationName" : "Moldova", "lon" : null, "lat" : null, "skills" : [ 2, 4 ], "jobApplicants" : [ ] }
+{ "_id" : ObjectId("59bd311e00add908247ee0f7"), "jobName" : "angular developer", "pub_date" : "2017-09-16", "pub_id" : 7, "description" : "full time job with angular promise tech", "locationName" : "Moldova", "lon" : null, "lat" : null, "skills" : [ 2, 4 ], "jobApplicants" : [ ] }
+{ "_id" : ObjectId("59bd32c7507fef2850b5d495"), "jobName" : "angular developer", "pub_date" : "2017-09-16", "pub_id" : 7, "description" : "full time job with angular promise tech", "locationName" : "Moldova", "lon" : null, "lat" : null, "skills" : [ 2, 4 ], "jobApplicants" : [ ] }
+{ "_id" : ObjectId("59bd3d8059bc6d043cc09904"), "jobName" : "fennec developer", "pub_date" : "2017-09-16", "pub_id" : 7, "description" : "full time job with angular promise tech", "locationName" : "Moldova", "lon" : null, "lat" : null, "skills" : [ 2, 4 ], "jobApplicants" : [ ] }
+{ "_id" : ObjectId("59bd8bc7daee050648022519"), "jobName" : "angular developer", "pub_date" : "2017-09-16", "pub_id" : 7, "description" : "full time job with angular promise tech", "locationName" : "Moldova", "lon" : null, "lat" : null, "skills" : [ 2, 4 ], "jobApplicants" : [ ] }

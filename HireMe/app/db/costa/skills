@@ -1,0 +1,9 @@
+
+
+
+
+db.skills.save([{ "_id" : 1, "skillName" : "Agular" },
+{ "_id" : 2, "skillName" : "React" },
+{ "_id" : 3, "skillName" : "Bootstrap" },
+{ "_id" : 4, "skillName" : "MongoDB" },
+{ "_id" : 5, "skillReactName" : "Javascript" }])

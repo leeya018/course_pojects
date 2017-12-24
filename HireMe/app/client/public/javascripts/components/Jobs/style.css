@@ -3,7 +3,8 @@ h1{
 }
 
 #filter{
-    font-size: 194%;
+    top: 85px;
+    font-size: 27px;
     position: fixed;
     background-color: gray;
     width: 100%;

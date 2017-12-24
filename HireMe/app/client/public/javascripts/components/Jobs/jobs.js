@@ -62,8 +62,8 @@
                 (response) => {
                     $scope.jobs = response.data;
 
-                    $scope.limJobs = $scope.jobs.length
-                    vm.initFiveJobs();
+                    // $scope.limJobs = $scope.jobs.length
+                    // vm.initFiveJobs();
 
 
                 }
@@ -222,25 +222,25 @@
 
         vm.nameFilterClick = function () {
             $scope.filterName = 'nameFilter';
-            document.getElementById('jobsData').style.top='10em';
+            document.getElementById('jobsData').style.top='15em';
 
         }
 
         vm.locationFilterClick = function () {
             $scope.filterName = 'locationFilter';
-            document.getElementById('jobsData').style.top='10em';
+            document.getElementById('jobsData').style.top='15em';
 
         }
 
         vm.skillFilterClick = function () {
             $scope.filterName = 'skillsFilter';
-            document.getElementById('jobsData').style.top='19em';
+            document.getElementById('jobsData').style.top='30em';
 
         }
 
         vm.distanceFilterClick = function () {
             $scope.filterName = 'distanceFilter';
-            document.getElementById('jobsData').style.top='10em';
+            document.getElementById('jobsData').style.top='15em';
 
         }
 

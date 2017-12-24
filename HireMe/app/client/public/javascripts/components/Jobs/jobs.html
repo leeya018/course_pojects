@@ -53,7 +53,8 @@
 
     <div id="jobsData">
         <div id="jobs">
-            <div ng-repeat="job in jobs |filter:searchText | filter:distFilter(limDist)">
+            <div ng-repeat="job in jobs  |filter:searchText |filter:distFilter(limDist)">
+                <!-- <div>{{job.jobName}}</div> -->
                 <job job="job"></job>
             </div>
         </div>

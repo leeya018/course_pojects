@@ -1,0 +1,51 @@
+
+
+db.users.save([{ "firstName" : "Lee", "email" : "1", "description" : "A fucking andsom man with hand of an amazing programmer, can do evrything he wants", "locationName" : "Israel", "lon" : 21.321321, "lat" : 43.423432, "userName" : "leeya", "pass" : "1", "skills" : [ 1, 2 ], "agent" : [ ] },
+{ "firstName" : "Costa", "email" : "costa@shush.walla.com", "description" : "I came from cold Russia, we has to drink a lot of Vodka to survive the cold inorder to use the keyboard", "locationName" : "Mosko", "lon" : 23.321321, "lat" : 13.423432, "userName" : "costantin", "pass" : "2", "skills" : [ 3 ], "agent" : [ ] },
+{ "firstName" : "Mahmud", "email" : "Mahmud@dizem.gmail.com", "description" : "I am a security developer I had a job on faceush ", "locationName" : "Israel", "lon" : 13.321321, "lat" : 13.423432, "userName" : "mahmudizem", "pass" : "3", "skills" : [ 5 ], "agent" : [ ] }])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{ "_id" : 1, "firstName" : "Lee", "email" : "leeyahav018@gmail.com", "description" : "A fucking andsom man with hand of an amazing programmer, can do evrything he wants", "lcationName" : "Israel", "lon" : 21.321321, "lat" : 43.423432, "userName" : "leeya", "pass" : "1", "skills" : [ 1, 2 ], "agent" : [ ], "jobApplied" : [ ] }
+{ "_id" : 2, "firstName" : "Costa", "email" : "costa@shush.walla.com", "description" : "I came from cold Russia, we has to drink a lot of Vodka to survive the cold inorder to use the keyboard", "lcationName" : "Mosko", "lon" : 23.321321, "lat" : 13.423432, "userName" : "costantin", "pass" : "2", "skills" : [ 3 ], "agent" : [ ], "jobApplied" : [ ] }
+{ "_id" : 3, "firstName" : "Mahmud", "email" : "Mahmud@dizem.gmail.com", "description" : "I am a security developer I had a job on faceush ", "lcationName" : "Israel", "lon" : 13.321321, "lat" : 13.423432, "userName" : "mahmudizem", "pass" : "3", "skills" : [ 5 ], "agent" : [ ], "jobApplied" : [ ] }
+{ "_id" : 4, "firstName" : "Asaf", "email" : "asaf@asaf.com", "description" : "I am a security developer I had a job on faceush ", "lcationName" : "Israel", "lon" : 13.321321, "lat" : 13.423432, "userName" : "mahmudizem", "pass" : "3", "skills" : [ 3 ], "agent" : [ ], "jobApplied" : [ ] }
+{ "_id" : 5, "firstName" : "Gabi", "email" : "gabi@dizem.gmail.com", "description" : "I am a security developer I had a job on faceush ", "lcationName" : "Israel", "lon" : 13.321321, "lat" : 13.423432, "userName" : "mahmudizem", "pass" : "1", "skills" : [ 1 ], "agent" : [ ], "jobApplied" : [ ] }
+{ "_id" : 6, "firstName" : "Benyamin", "email" : "a@gmail.com", "description" : "I am a security developer I had a job on faceush ", "lcationName" : "Israel", "lon" : 13.321321, "lat" : 13.423432, "userName" : "mahmudizem", "pass" : "1", "skills" : [ 5, 4, 2 ], "agent" : [ ], "jobApplied" : [ ] }
+{ "_id" : 7, "firstName" : "Ronni", "email" : "s@s.com", "description" : "I am a security developer I had a job on faceush ", "lcationName" : "Israel", "lon" : 13.321321, "lat" : 13.423432, "userName" : "costa", "pass" : "2", "skills" : [ 1, 2, 3 ] }
+{ "_id" : ObjectId("59bd4304c73ba8095467b414") }
+{ "_id" : ObjectId("59bd43e7a69f0a2e40be28f7") }
+{ "_id" : ObjectId("59be705cd9807b046084f578"), "firstName" : "a", "email" : "s", "description" : "d", "lcationName" : "Russia", "lon" : 21.3423423, "lat" : 21.332434324, "userName" : "a", "pass" : "1", "skills" : [ { "_id" : 1, "skillName" : "Agular" } ], "agent" : [ ] }
+{ "_id" : ObjectId("59beadce144a682070165c23"), "firstName" : "costa", "email" : "q", "description" : "djaskdajsk asdhjadsjh asdads", "lcationName" : "Russia", "lon" : 21.3423423, "lat" : 21.332434324, "userName" : "costa", "pass" : "q", "skills" : [ { "_id" : 1, "skillName" : "Agular" }, { "_id" : 2, "skillName" : "React" }, { "_id" : 3, "skillName" : "Bootstrap" }, { "_id" : 4, "skillName" : "MongoDB" } ] }
+{ "_id" : ObjectId("59bee67d900bc126f80f3af8"), "firstName" : "11", "email" : "11", "description" : "11", "lcationName" : "Russia", "lon" : 21.3423423, "lat" : 21.332434324, "userName" : "costa", "pass" : "1", "skills" : [ { "_id" : 4, "skillName" : "MongoDB" }, { "_id" : 3, "skillName" : "Bootstrap" }, { "_id" : 2, "skillName" : "React" }, { "_id" : 1, "skillName" : "Agular" } ], "agent" : [ ] }
+{ "_id" : ObjectId("59c4eb997d862d17e0fb37c0"), "firstName" : "fennec", "email" : "f", "description" : "f", "lcationName" : "Israel", "lon" : 22.3423423, "lat" : 22.332434324, "userName" : "fennec", "pass" : "f", "skills" : [ { "_id" : 1, "skillName" : "Agular" }, { "_id" : 2, "skillName" : "React" }, { "_id" : 3, "skillName" : "Bootstrap" }, { "_id" : 4, "skillName" : "MongoDB" }, { "_id" : 5, "skillReactName" : "Javascript" } ], "agent" : [ ] }
+{ "_id" : ObjectId("59c5f992811f6c20b49a094d"), "firstName" : "john", "email" : "r", "description" : "doh", "lcationName" : "Russia", "lon" : 21.3423423, "lat" : 21.332434324, "userName" : "john", "pass" : "e", "skills" : [ { "_id" : 1, "skillName" : "Agular" }, { "_id" : 2, "skillName" : "React" }, { "_id" : 3, "skillName" : "Bootstrap" }, { "_id" : 4, "skillName" : "MongoDB" } ], "agent" : [ ] }
+{ "_id" : ObjectId("59c79f8ef4acfd1e94726da6"), "firstName" : "tyty", "email" : "tyty", "description" : "tyty", "lcationName" : "Russia", "lon" : 21.3423423, "lat" : 21.332434324, "userName" : "ty", "pass" : "ty", "skills" : [ { "_id" : 1, "skillName" : "Agular" }, { "_id" : 2, "skillName" : "React" }, { "_id" : 3, "skillName" : "Bootstrap" }, { "_id" : 4, "skillName" : "MongoDB" }, { "_id" : 5, "skillReactName" : "Javascript" } ], "agent" : [ ] }
+{ "_id" : ObjectId("59c7a027f8163a339840be11"), "firstName" : "qwq", "email" : "qwq", "description" : "qwq", "lcationName" : "Russia", "lon" : 21.3423423, "lat" : 21.332434324, "userName" : "qwq", "pass" : "qwq", "skills" : [ { "_id" : 1, "skillName" : "Agular" } ], "agent" : [ ] }
+{ "_id" : ObjectId("59c7a0a06c3dad28f43efa2d"), "firstName" : "wew", "email" : "wew", "description" : "wew", "lcationName" : "Poland", "lon" : 23.3423423, "lat" : 23.332434324, "userName" : "wew", "pass" : "wew", "skills" : [ { "_id" : 1, "skillName" : "Agular" }, { "_id" : 2, "skillName" : "React" } ], "agent" : [ ] }
+{ "_id" : ObjectId("59c7a12855f73c1d1c109770"), "firstName" : "qeqe", "email" : "qeqe", "description" : "qeqe", "lcationName" : "Russia", "lon" : 21.3423423, "lat" : 21.332434324, "userName" : "qeqe", "pass" : "qeqe", "skills" : [ { "_id" : 2, "skillName" : "React" }, { "_id" : 1, "skillName" : "Agular" } ] }
+{ "_id" : ObjectId("59c7a38855f73c1d1c109771"), "firstName" : "ad", "email" : "ad", "description" : "ad", "lcationName" : "Russia", "lon" : 21.3423423, "lat" : 21.332434324, "userName" : "ad", "pass" : "ad", "skills" : [ { "_id" : 1, "skillName" : "Agular" }, { "_id" : 2, "skillName" : "React" } ], "agent" : [ ] }
+{ "_id" : ObjectId("59c7a77c7dbcbe29945a4c0c"), "firstName" : "ada", "email" : "ada", "description" : "ada", "lcationName" : "Russia", "lon" : 21.3423423, "lat" : 21.332434324, "userName" : "ada", "pass" : "ada", "skills" : [ { "_id" : 1, "skillName" : "Agular" }, { "_id" : 2, "skillName" : "React" }, { "_id" : 3, "skillName" : "Bootstrap" } ], "agent" : [ ] }

@@ -7,8 +7,12 @@
       margin-top: 0px;
        z-index: 1;
   }
-
+#headLine>h3{
+  margin:0;
+}
   ul {
+    height: 45px;
+    font-size: 18px;
     list-style-type: none;
     margin: 0;
     padding: 0;
