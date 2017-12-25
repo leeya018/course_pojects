@@ -1,0 +1,64 @@
+.secondHeader {
+  border: 1px solid black;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('http://i.imgur.com/77V0BMF.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 153px;
+}
+
+.secondHeader > div {
+  margin: 1em;
+}
+.secondHeader > div:nth-child(2) {
+  color: white;
+  font-weight: bold;
+  font-size: 44px;
+  font-family: 'Great Vibes', cursive;
+}
+
+.secondHeader > div:nth-child(2) > div:nth-child(2) {
+  text-align: center;
+}
+
+/* //// */
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-logo:hover {
+  animation: App-logo-spin infinite 2s linear;
+  height: 80px;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 768px) {
+  .secondHeader {
+    position: sticky;
+    top: 0px;
+    height: 80px;
+  }
+  .secondHeader > div:nth-child(2) {
+    display: none;
+  }
+  .secondHeader > .reactIcon {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+  }
+  .reactIcon > div {
+    text-align: center;
+    width: 600px;
+  }
+}

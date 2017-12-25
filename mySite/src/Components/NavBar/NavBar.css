@@ -1,0 +1,20 @@
+.navBar{
+  position: sticky;
+  top: 0px;
+} 
+
+.navContent{
+  color: white;
+}
+
+
+
+
+@media only screen and (max-width:768px){
+  .navContent{
+    padding:2em;
+  }
+  .navBar{
+    position: static;
+  } 
+}

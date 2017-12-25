@@ -1,0 +1,14 @@
+.program{
+  display: flex;
+  flex-direction: column;
+}
+
+.program>img{
+  width:100%;
+  height: 300px;
+}
+
+.program>div{
+  width:100%;
+}
+

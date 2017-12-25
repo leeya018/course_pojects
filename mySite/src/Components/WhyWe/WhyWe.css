@@ -1,0 +1,29 @@
+.whyWe{
+  display: flex;
+  flex-direction: column;
+}
+.whyWe hr{
+  width:100%;
+}
+
+.whyWe>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.whyWe>div>h1:nth-child(2){
+  color: red;
+}
+
+.whyWe ul{
+  padding-right: 0;
+}
+.whyWe ul p{
+  padding-right: 2em;
+}
+.whyWe li{
+  background: url("http://www.personal-fitness-trainer.co.il/wp-content/themes/modernize/images/list/check.png") no-repeat right;
+  list-style-type:none;
+}

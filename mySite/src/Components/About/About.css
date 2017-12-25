@@ -1,0 +1,55 @@
+.about{
+  display: flex;
+  flex-direction: column;
+}
+  
+.aboutContent{
+  display: flex;
+}
+
+.aboutContent>div:nth-child(1){
+  padding-left: 1em;
+}
+
+
+.aboutContent>div:nth-child(1){
+  flex: 2
+}
+.aboutContent>div:nth-child(2){
+  flex: 1
+}
+.aboutContent>div:nth-child(1) li{
+  background: url("http://www.personal-fitness-trainer.co.il/wp-content/themes/modernize/images/list/check.png") no-repeat right;
+  list-style-type:none;
+}
+.aboutContent>div:nth-child(1)>ul p{
+  padding-right: 2em;
+}
+.aboutContent>div:nth-child(1)>ul{
+  padding-right: 0;
+}
+
+.aboutContent>div:nth-child(2){
+  width:500px;
+  height: 500px;
+  background: url("https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/312477_10151182168706364_695230681_n.jpg?oh=75406aae855cea63d53f2ed28b00fcae&oe=5A9509D1");
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+
+
+
+@media only screen and (max-width:768px){
+  .aboutContent{
+    display: flex;
+    flex-direction:column;
+  }
+
+  .aboutContent>div:nth-child(2){
+    width:200px;
+    height: 200px;
+  }
+  
+}
