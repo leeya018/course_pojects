@@ -1,5 +1,5 @@
 const PORT=3003;
-const HOST='http://ec2-18-217-200-204.us-east-2.compute.amazonaws.com'
+const HOST='http://ec2-18-217-212-139.us-east-2.compute.amazonaws.com'
 
 class Api {
     constructor() {
