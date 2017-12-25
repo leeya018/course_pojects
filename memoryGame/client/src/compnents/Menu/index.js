@@ -76,7 +76,7 @@ class Menu extends Component {
             </Link>
             <ReactFlagsSelect defaultCountry="US" onSelect={value => (countryCode = value)} />
           </MenuS>
-          <Signature>kfskjafjkdsahkjhsakj </Signature>
+          {/* <Signature>kfskjafjkdsahkjhsakj </Signature> */}
         </MenuContainer>
     );
   }
