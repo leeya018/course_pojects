@@ -1,8 +1,8 @@
-
-
 db.users.save([{ "firstName" : "Lee", "email" : "1", "description" : "A fucking andsom man with hand of an amazing programmer, can do evrything he wants", "locationName" : "Israel", "lon" : 21.321321, "lat" : 43.423432, "userName" : "leeya", "pass" : "1", "skills" : [ 1, 2 ], "agent" : [ ] },
 { "firstName" : "Costa", "email" : "costa@shush.walla.com", "description" : "I came from cold Russia, we has to drink a lot of Vodka to survive the cold inorder to use the keyboard", "locationName" : "Mosko", "lon" : 23.321321, "lat" : 13.423432, "userName" : "costantin", "pass" : "2", "skills" : [ 3 ], "agent" : [ ] },
 { "firstName" : "Mahmud", "email" : "Mahmud@dizem.gmail.com", "description" : "I am a security developer I had a job on faceush ", "locationName" : "Israel", "lon" : 13.321321, "lat" : 13.423432, "userName" : "mahmudizem", "pass" : "3", "skills" : [ 5 ], "agent" : [ ] }])
+
+
 
 
 
