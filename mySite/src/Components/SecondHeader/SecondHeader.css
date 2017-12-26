@@ -8,6 +8,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 153px;
+  position: sticky;
+  top: 28px;
+  z-index: 1;
 }
 
 .secondHeader > div {
@@ -20,12 +23,29 @@
   font-family: 'Great Vibes', cursive;
 }
 
-.secondHeader > div:nth-child(2) > div:nth-child(2) {
-  text-align: center;
+.secondHeader > div:nth-child(2):hover {
+  animation: rainbow-react infinite 8s linear;
+} 
+
+@keyframes rainbow-react {
+  0% {
+    color:green;
+  }
+  25% {
+    color: black;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color:red;
+  }
+  100% {
+    color:white;
+  }
 }
 
 /* //// */
-
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -37,10 +57,13 @@
   height: 80px;
 }
 
-
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media only screen and (max-width: 768px) {

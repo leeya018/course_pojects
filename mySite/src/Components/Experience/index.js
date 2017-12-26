@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import './WhyWe.css'
-class WhyWe extends Component {
+import './Experience.css'
+class Experience extends Component {
 
   render() {
     return (
-      <div className="whyWe">
+      <div className="experience">
         <h2>למה אנחנו</h2>
         <hr/>
         <p>הצוות הדינמי שלנו מאמן בשיטה חדשנית ומאתגרת ובעלת בקרת איכות ומשמעת גבוהה,
@@ -53,4 +53,4 @@ class WhyWe extends Component {
   }
 }
 
-export default WhyWe;
+export default Experience;

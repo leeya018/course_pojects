@@ -1,55 +1,78 @@
-.about{
+.about {
   display: flex;
-  flex-direction: column;
-}
+  color:white;
+  font-weight: bold;
+  font-size: 16px;
   
-.aboutContent{
+}
+.aboutContent p{
+  padding-top:10px;
+}
+.aboutContent {
   display: flex;
 }
 
-.aboutContent>div:nth-child(1){
+.aboutContent > div:nth-child(1) {
   padding-left: 1em;
 }
 
-
-.aboutContent>div:nth-child(1){
-  flex: 2
+.aboutContent > div:nth-child(1) {  
+  flex: 2;
 }
-.aboutContent>div:nth-child(2){
-  flex: 1
+.aboutContent > div:nth-child(2)  {
+  flex: 1;
 }
-.aboutContent>div:nth-child(1) li{
-  background: url("http://www.personal-fitness-trainer.co.il/wp-content/themes/modernize/images/list/check.png") no-repeat right;
-  list-style-type:none;
+.aboutContent > div:nth-child(1) li {
+  background: url('http://www.personal-fitness-trainer.co.il/wp-content/themes/modernize/images/list/check.png')
+    no-repeat right;
+  list-style-type: none;
 }
-.aboutContent>div:nth-child(1)>ul p{
+.aboutContent > div:nth-child(1) > ul p {
   padding-right: 2em;
 }
-.aboutContent>div:nth-child(1)>ul{
+.aboutContent > div:nth-child(1) > ul {
   padding-right: 0;
 }
 
-.aboutContent>div:nth-child(2){
-  width:500px;
+.aboutContent > div:nth-child(2) {
+  width: 500px;
   height: 500px;
-  background: url("https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/312477_10151182168706364_695230681_n.jpg?oh=75406aae855cea63d53f2ed28b00fcae&oe=5A9509D1");
+  background: url(me.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+   background-size: contain;
+  /* border-radius: 50%; */
+}
+
+.fa-heart {
+  color: rgb(89.4%, 6.2%, 39.7%);
+  padding: 9px 9px 0 8px;
   
 }
 
+.fa-heart:hover {
+  animation: heart-bit infinite 0.3s linear;
+  
+}
 
-
-
-@media only screen and (max-width:768px){
-  .aboutContent{
+@keyframes heart-bit{
+  from{
+    padding: 9px 9px 0 8px;
+    
+  }
+  to{
+    padding: 9px;
+    font-size: 41px;
+    
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutContent {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
   }
 
-  .aboutContent>div:nth-child(2){
-    width:200px;
+  .aboutContent > div:nth-child(2) {
+    width: 200px;
     height: 200px;
   }
-  
 }

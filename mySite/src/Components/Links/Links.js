@@ -6,7 +6,7 @@ import './Links.css';
 
 
 const about = "about"
-const whywe = "whywe"
+const experience = "experience"
 const forwho = "forwho"
 const practiceProgram = "practiceProgram"
 const tips = "tips"
@@ -42,7 +42,7 @@ class Links extends Component {
         <Link to={this.updateUrl(about)} >
           <div>about</div>
         </Link>
-        <Link to={this.updateUrl(whywe)} >
+        <Link to={this.updateUrl(experience)} >
           <div>my experience</div>
         </Link>
         <Link to={this.updateUrl(forwho)} >

@@ -4,7 +4,7 @@ import Links from '../Links';
 
 import Main from '../Main';
 import About from '../About';
-import WhyWe from '../WhyWe';
+import Experience from '../Experience';
 import ForWho from '../ForWho';
 import PracticeProgram from '../PracticeProgram';
 import Tips from '../Tips';
@@ -25,7 +25,7 @@ class NavBar extends Component {
               <Switch >
                 <Route exact path="/" render={() =>< Main />}/>
                 <Route path="/about" render={() =>< About />}/>
-                <Route path="/whywe" render={() =>< WhyWe />}/>
+                <Route path="/experience" render={() =>< Experience />}/>
                 <Route path="/forwho" render={() =>< ForWho />}/>
                 <Route path="/practiceProgram" render={() =>< PracticeProgram />}/>
                 <Route path="/tips" render={() =>< Tips />}/>

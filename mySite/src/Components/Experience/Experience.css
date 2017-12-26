@@ -1,0 +1,30 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+.experience hr {
+  width: 100%;
+}
+
+.experience > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.experience > div > h1:nth-child(2) {
+  color: red;
+}
+
+.experience ul {
+  padding-right: 0;
+}
+.experience ul p {
+  padding-right: 2em;
+}
+.experience li {
+  background: url('http://www.personal-fitness-trainer.co.il/wp-content/themes/modernize/images/list/check.png')
+    no-repeat right;
+  list-style-type: none;
+}

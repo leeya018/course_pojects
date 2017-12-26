@@ -10,7 +10,7 @@ const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
 const about = "about"
-const whywe = "whywe"
+const experience = "experience"
 const forwho = "forwho"
 const practiceProgram = "practiceProgram"
 const tips = "tips"
@@ -76,7 +76,7 @@ class IphoneNav extends React.Component {
             </Link>
           </Menu.Item>
           <Menu.Item key="4">
-            <Link to={this.updateUrl(whywe)} onClick={this.toggleDisplay}>
+            <Link to={this.updateUrl(experience)} onClick={this.toggleDisplay}>
               <div>למה אנחנו</div>
             </Link>
           </Menu.Item>
