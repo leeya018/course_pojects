@@ -1,7 +1,7 @@
 let programs = {
-  "afterBirth": {
-    src: "http://www.slate.com/content/dam/slate/blogs/xx_factor/2017/06/22/XX-170622-preg" +
-        "nant%20belly.jpg.CROP.promo-xlarge2.jpg",
+  "battleShip": {
+    srcGif: "img/giphy.gif",
+    srcImg: "img/giphy.png",
         title1:" לידה",
         title2:"אימוני כושר לחיזוק וחיטוב הגוף לנשים אחרי לידה.",
         par1:`שים רבות מחכות שתסתיים תקופת המשכב לאחר לידה כדי להתחיל ולחזור לגזרה ולהוריד

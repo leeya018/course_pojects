@@ -9,17 +9,15 @@ body {
   height: 634px;
   background-attachment: fixed;
   background-position: center top;
+  ;
+}
+
+h3,h5{
+  color:white
 }
 
 
 
-h1 {
-  color: orange;
-}
-h2,
-h3 {
-  color: rgb(60.1%, 19.7%, 19.7%);
-}
 
 .middleContainer {
   display: flex;

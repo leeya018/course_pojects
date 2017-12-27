@@ -1,0 +1,19 @@
+.education {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.education > div {
+  display: flex;
+}
+
+.education h3 {
+  font-weight: bold;
+}
+.education > div:nth-child(1)>h3 {
+  padding-right: 70px
+}
+.education > div:nth-child(2)>h3 {
+  padding-right: 30px
+}

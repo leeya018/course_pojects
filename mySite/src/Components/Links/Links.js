@@ -7,8 +7,8 @@ import './Links.css';
 
 const about = "about"
 const experience = "experience"
-const forwho = "forwho"
-const practiceProgram = "practiceProgram"
+const education = "education"
+const myProjects = "myProjects"
 const tips = "tips"
 const  contact = "contact"
 
@@ -40,15 +40,15 @@ class Links extends Component {
           <div>none</div>
         </Link>
         <Link to={this.updateUrl(about)} >
-          <div>about</div>
+          <div>about me</div>
         </Link>
         <Link to={this.updateUrl(experience)} >
           <div>my experience</div>
         </Link>
-        <Link to={this.updateUrl(forwho)} >
-          <div>what I love</div>
+        <Link to={this.updateUrl(education)} >
+          <div>My Education</div>
         </Link>
-        <Link to={this.updateUrl(practiceProgram)}>
+        <Link to={this.updateUrl(myProjects)}>
           <div>my projects</div>
         </Link>
         <Link to={this.updateUrl(tips)} >

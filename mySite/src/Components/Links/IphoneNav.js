@@ -11,8 +11,8 @@ const MenuItemGroup = Menu.ItemGroup;
 
 const about = "about"
 const experience = "experience"
-const forwho = "forwho"
-const practiceProgram = "practiceProgram"
+const education = "education"
+const myProjects = "myProjects"
 const tips = "tips"
 const contact = "contact"
 
@@ -81,12 +81,12 @@ class IphoneNav extends React.Component {
             </Link>
           </Menu.Item>
           <Menu.Item key="5">
-            <Link to={this.updateUrl(forwho)} onClick={this.toggleDisplay}>
+            <Link to={this.updateUrl(education)} onClick={this.toggleDisplay}>
               <div>למי זה מתאים</div>
             </Link>
           </Menu.Item>
           <Menu.Item key="6">
-            <Link to={this.updateUrl(practiceProgram)} onClick={this.toggleDisplay}>
+            <Link to={this.updateUrl(myProjects)} onClick={this.toggleDisplay}>
               <div>תוכנית אימונים</div>
             </Link>
           </Menu.Item>

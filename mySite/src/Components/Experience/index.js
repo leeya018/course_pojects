@@ -1,54 +1,33 @@
-import React, {Component} from 'react';
-import './Experience.css'
+import React, { Component } from 'react';
+import './Experience.css';
 class Experience extends Component {
-
   render() {
     return (
       <div className="experience">
-        <h2>למה אנחנו</h2>
-        <hr/>
-        <p>הצוות הדינמי שלנו מאמן בשיטה חדשנית ומאתגרת ובעלת בקרת איכות ומשמעת גבוהה,
-          מפגשים אישיים אחד על אחד או קבוצות קטנות יעזור לך לשפר סיבולת לב ראה, כלי הדם,
-          חיזוק השרירים/סיבולת, גמישות (הגדלת טווחי תנועה ), פריקת מתח ולחצים. שווי משקל,
-          קואורדינציה, ירידה במשקל באופן טבעי ומבוקר</p>
         <div>
-          <h1>תנו לנו להראות לכם כמה כיף יצירתי וממכר יכול להיות אימון כושר…</h1>
-          <h1>התקשרו עכשיו 054-2226958</h1>
-
+          <h3>2017</h3>
+          <div>
+            restaurant web app which include 4 months of work in Agile methodologies and include 10 developers team
+          </div>
         </div>
-        <h1>סוגי אימון:</h1>
-        <p>(HDAD, PDD, ADD) אימוני כושר לילדים ונוער הסובלים מקשים הנובעים בעיות קשב
-          וריכוז, בעיות התנהגות מוגבלויות: אימון גופני מותאם ונכון הוא תת תחום של אימון
-          כללי. זוהי תוכנית עבודה אישית המיועדת לילדים ובני נוער הזקוקים להכוונה צמודה,
-          סבלנות גדולה והרבה הבנה. אנו מאמינים שחינוך גופני מותאם מספק ביטחון, סיפקו אישי
-          וקבלה עצמית.</p>
-        <h1>:התוכנית כוללת</h1>
-        <ul>
-          <li>
-            <p>כושר כללי
-            </p>
-          </li>
-          <li>
-            <p>מאמנת כושר בכירה</p>
-          </li>
-          <li>
-            <p>אימון קטינים</p>
-          </li>
-          <li>
-            <p>מדריכת מדריכת אירובי ועיצוב הגוף</p>
-          </li>
-          <li>
-            <p>תזונה נכונה</p>
-          </li>
-          <li>
-            <p>אימוני קרוספיט</p>
-          </li>
-          <li>
-            <p>מדריכת שחייה</p>
-          </li>
-        </ul>
+        <div>
+          <h3>2015-2017</h3>
+          <div>
+            <h3>Mobile developer - Amdocs LTD.</h3>
+            <h3>The projects included:</h3>
+            <ul>
+              <li> Bell Canada- BackEnd development: WebServices/ADTs/Wsdls</li>
+              <li> Singtel\Optus - FrontEnd development: Widgets (JavaScript, Bootstrap, UXF framework)</li>
+              <li> USCC- FrontEnd development: HTML5, CSS3, JavaScript. </li>
+              <li> Optus RIM- Full Stack development: Widgets (JavaScript, UXF framework) + RESTfull web services</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>2012-2015</h3>
+          <div> Students programming mentor- Academic college SCE.</div>
+        </div>
       </div>
-
     );
   }
 }

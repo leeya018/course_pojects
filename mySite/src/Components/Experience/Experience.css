@@ -1,30 +1,34 @@
 .experience {
   display: flex;
   flex-direction: column;
-}
-.experience hr {
-  width: 100%;
+  color:white
 }
 
 .experience > div {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+.experience h3 {
   font-weight: bold;
 }
-
-.experience > div > h1:nth-child(2) {
-  color: red;
+  
+.experience > div:nth-child(1)>h3 {
+  padding-right: 70px
+}
+.experience > div:nth-child(2)>h3 {
+  padding-right: 30px;
+}
+.experience > div:nth-child(3)>h3 {
+  padding-right: 30px
 }
 
-.experience ul {
-  padding-right: 0;
+.experience li{
+  background: url("http://www.personal-fitness-trainer.co.il/wp-content/themes/modernize/images/list/check.png") no-repeat ;
+  list-style-type:none;
+  padding-left: 32px;
 }
-.experience ul p {
-  padding-right: 2em;
+.experience > div:nth-child(1)>div {
+  font-size: 15px;
 }
-.experience li {
-  background: url('http://www.personal-fitness-trainer.co.il/wp-content/themes/modernize/images/list/check.png')
-    no-repeat right;
-  list-style-type: none;
+.experience > div:nth-child(3)>div {
+  font-size: 15px;
 }

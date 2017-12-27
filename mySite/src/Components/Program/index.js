@@ -3,10 +3,11 @@ import './Program.css'
 import progData from './programsData.js'
 export default ({match})=> {
   console.log(progData[match.params.name])
+  debugger
   let prog  =progData[match.params.name]
     return (
       <div className="program">
-        <img src={prog.src} alt=""/>
+        <img src={prog.srcImg} alt=""/>
         <h2>{prog.title1}</h2>
         <hr/>
         <h1>{prog.title2}</h1>

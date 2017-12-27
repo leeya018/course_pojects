@@ -5,8 +5,8 @@ import Links from '../Links';
 import Main from '../Main';
 import About from '../About';
 import Experience from '../Experience';
-import ForWho from '../ForWho';
-import PracticeProgram from '../PracticeProgram';
+import Education from '../Education';
+import MyProjects from '../MyProjects';
 import Tips from '../Tips';
 import Contact from '../Contact';
 import Email from '../Email';
@@ -26,8 +26,8 @@ class NavBar extends Component {
                 <Route exact path="/" render={() =>< Main />}/>
                 <Route path="/about" render={() =>< About />}/>
                 <Route path="/experience" render={() =>< Experience />}/>
-                <Route path="/forwho" render={() =>< ForWho />}/>
-                <Route path="/practiceProgram" render={() =>< PracticeProgram />}/>
+                <Route path="/education" render={() =>< Education />}/>
+                <Route path="/myProjects" render={() =>< MyProjects />}/>
                 <Route path="/tips" render={() =>< Tips />}/>
                 <Route path="/contact" render={() =>< Contact />}/>
                 <Route path="/email" render={() =>< Email />}/>

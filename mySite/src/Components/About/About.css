@@ -50,19 +50,21 @@
 }
 
 .fa-heart:hover {
-  animation: heart-bit infinite 0.3s linear;
+  animation: heart-bit infinite 1.2s linear;
   
 }
 
 @keyframes heart-bit{
-  from{
+  0%{
     padding: 9px 9px 0 8px;
-    
   }
-  to{
+  50%{
     padding: 9px;
     font-size: 41px;
     
+  }
+  100%{
+    padding: 9px 9px 0 8px;
   }
 }
 @media only screen and (max-width: 768px) {
