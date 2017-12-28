@@ -17,7 +17,10 @@ class myProjects extends Component {
         <ProjectItem itemName={"hireMe"}></ProjectItem>
         <ProjectItem itemName={"imdb"}></ProjectItem>
         <ProjectItem itemName={"memoryGame"}></ProjectItem>
-        {<ProjectItem itemName={"muncher"}></ProjectItem> }
+        <ProjectItem itemName={"muncher"}></ProjectItem> 
+        <ProjectItem itemName={"trainer"}></ProjectItem> 
+
+        
 
         
         

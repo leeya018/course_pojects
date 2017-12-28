@@ -3,6 +3,8 @@
   grid-template-columns: 32% 32% 32%;
   grid-gap: 1.6%;
   width:100%;
+  padding-top: 30px;
+  
 }
 
 

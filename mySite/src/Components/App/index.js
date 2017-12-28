@@ -24,7 +24,6 @@ class App extends Component {
 
   }
   handleScroll=()=> {
-    debugger
    let s  = document.documentElement.scrollTop
     console.log(s)
   }

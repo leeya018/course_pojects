@@ -9,7 +9,6 @@
 }
 
 .education h3 {
-  font-weight: bold;
 }
 .education > div:nth-child(1)>h3 {
   padding-right: 70px

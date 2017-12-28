@@ -8,7 +8,8 @@ export default ({ match }) => {
   let prog = progData[match.params.name];
   return (
     <div className="program">
-      {<img src={prog.srcGif} alt="" />}
+      {/* <img src="img/bnb.png" alt="picsfsdfds"/> */}
+      <img src="img/bnb.png" alt=""/>
       <h2>{prog.title}</h2>
       <hr />
       <a href={prog.ref}>go to site</a>

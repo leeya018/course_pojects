@@ -9,11 +9,12 @@ body {
   height: 634px;
   background-attachment: fixed;
   background-position: center top;
-  ;
+  font-weight: bold;
 }
 
-h3,h5{
-  color:white
+h3,h5,h2{
+  color:white;
+  font-weight: bold;
 }
 
 

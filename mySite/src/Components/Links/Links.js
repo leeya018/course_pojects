@@ -37,9 +37,6 @@ class Links extends Component {
     return (
       <div className="links">
         <Link to={""} >
-          <div>none</div>
-        </Link>
-        <Link to={this.updateUrl(about)} >
           <div>about me</div>
         </Link>
         <Link to={this.updateUrl(experience)} >
@@ -51,9 +48,9 @@ class Links extends Component {
         <Link to={this.updateUrl(myProjects)}>
           <div>my projects</div>
         </Link>
-        <Link to={this.updateUrl(tips)} >
+        {/* <Link to={this.updateUrl(tips)} >
           <div>none</div>
-        </Link>
+        </Link> */}
         <Link to={this.updateUrl(contact)} >
           <div>contact</div>
         </Link>

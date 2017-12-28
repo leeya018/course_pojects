@@ -23,8 +23,7 @@ class NavBar extends Component {
             <Links />
             <div className="navContent">
               <Switch >
-                <Route exact path="/" render={() =>< Main />}/>
-                <Route path="/about" render={() =>< About />}/>
+                <Route exact path="/" render={() =>< About />}/>
                 <Route path="/experience" render={() =>< Experience />}/>
                 <Route path="/education" render={() =>< Education />}/>
                 <Route path="/myProjects" render={() =>< MyProjects />}/>

@@ -1,8 +1,9 @@
 .about {
   display: flex;
+  flex-direction: column;
   color:white;
-  font-weight: bold;
   font-size: 16px;
+  padding-top: 30px;
   
 }
 .aboutContent p{
@@ -10,6 +11,7 @@
 }
 .aboutContent {
   display: flex;
+  height: 17em;
 }
 
 .aboutContent > div:nth-child(1) {
@@ -53,6 +55,13 @@
   animation: heart-bit infinite 1.2s linear;
   
 }
+.army>div{
+  display: flex;
+}
+.army>div>h3{
+  padding-right: 70px;
+}
+  
 
 @keyframes heart-bit{
   0%{

@@ -1,6 +1,7 @@
 .program{
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
 }
 
 .program>img{
@@ -18,7 +19,8 @@
   padding-left: 32px;
 }
 
-program a{
-  color: black;
-  font-weight: bold;
+.program a{
+  color: red;
+  text-decoration-line: underline;
+  font-size: 21px;
 }
