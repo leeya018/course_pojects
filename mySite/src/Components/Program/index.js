@@ -18,7 +18,7 @@ class Program extends Component {
     let prog = progData[match.params.name];
     return (
       <div className="program">
-        <img src="img/bnb.gif" alt="" />
+        {/* {<img src="img/bnb.gif" alt="" />} */}
         <h2>{prog.title}</h2>
         <hr />
         <a href={prog.ref} target="_blank">

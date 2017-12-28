@@ -33,7 +33,9 @@ class ProjectItem extends Component {
     return (
         <div>
           <Link to={`program/${itemName}`}>
-            <img src={src} onMouseOver={this.showGif} onMouseOut={this.showImg} alt="" />
+            <img src={src}  alt="" />
+            {/* <img src={src} onMouseOver={this.showGif} onMouseOut={this.showImg} alt="" /> */}
+            
           </Link>
           <h2>{progData[itemName].title}</h2>
         </div>

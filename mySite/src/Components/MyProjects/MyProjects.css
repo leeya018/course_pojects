@@ -11,6 +11,7 @@
 .myProjects>div>a>img{
   height: 200px;
   padding-top:5px;
+  width:100%;
 }
 
 
