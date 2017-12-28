@@ -5,20 +5,17 @@ body {
   background-image: url('https://www.research.bayer.com/img/kacheln-hp-shp/31/schlaganfall.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1520px;
-  height: 634px;
   background-attachment: fixed;
   background-position: center top;
   font-weight: bold;
 }
 
-h3,h5,h2{
-  color:white;
+h3,
+h5,
+h2 {
+  color: white;
   font-weight: bold;
 }
-
-
-
 
 .middleContainer {
   display: flex;
@@ -31,12 +28,9 @@ h3,h5,h2{
   width: 70%;
 }
 
-/* /// */
-
 .App {
   width: 100%;
   opacity: 1;
-  /* text-align: center; */
 }
 
 @media only screen and (max-width: 768px) {
@@ -47,12 +41,9 @@ h3,h5,h2{
   }
 
   .app {
-    width: 375px;
+    width: 100%;
   }
   .colContainer {
-    width: 375px;
+    width: 100%;
   }
 }
-
-
-

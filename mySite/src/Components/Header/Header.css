@@ -30,7 +30,7 @@
   text-decoration: none;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 768px) {
   .header {
     flex-direction: column;
     height: 26px;

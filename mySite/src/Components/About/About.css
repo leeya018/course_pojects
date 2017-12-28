@@ -17,13 +17,6 @@
 .aboutContent > div:nth-child(1) {
   padding-left: 1em;
 }
-/* 
-.aboutContent > div:nth-child(1) {  
-  flex: 2;
-}
-.aboutContent > div:nth-child(2)  {
-  flex: 1;
-} */
 .aboutContent > div:nth-child(1) li {
   background: url('http://www.personal-fitness-trainer.co.il/wp-content/themes/modernize/images/list/check.png')
     no-repeat right;
@@ -42,7 +35,6 @@
   background: url(me.jpg);
   background-repeat: no-repeat;
    background-size: contain;
-  /* border-radius: 50%; */
 }
 
 .fa-heart {
@@ -84,11 +76,18 @@
   .aboutContent {
     display: flex;
     flex-direction: column;
+    height: 32em;
   }
-
+.army{
+  padding-top:3em;
+}
   
   .aboutContent > div:nth-child(2) {
+
+    background: url(me.jpg);
     width: 200px;
-    height: 200px;
+    height: 182px;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
