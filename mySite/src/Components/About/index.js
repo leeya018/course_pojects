@@ -28,11 +28,7 @@ class About extends Component {
               <i className="fa fa-2x fa-heart" aria-hidden="true" onMouseOver={this.startBits} onMouseOut={this.stopBits}/>
               <br />,something you cannot explain with words.
             </p>
-            {/* <audio controls>
-              <source src="voice/heartbeat.mp3" type="audio/mpeg" />
-            </audio> */}
           </div>
-          {/* <img src="me.jpg" alt="image hew"/> */}
           <div />
         </div>
       </div>

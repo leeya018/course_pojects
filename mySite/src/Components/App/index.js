@@ -39,7 +39,7 @@ class App extends Component {
                 <SecondHeader/>
                 
                 <NavBar/>
-                <Footer/>
+                {/* <Footer/> */}
               </div>
             </div>
           </div>

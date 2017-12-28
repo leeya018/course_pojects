@@ -12,3 +12,13 @@
   width:100%;
 }
 
+.program li{
+  background: url("http://www.personal-fitness-trainer.co.il/wp-content/themes/modernize/images/list/check.png") no-repeat ;
+  list-style-type:none;
+  padding-left: 32px;
+}
+
+program a{
+  color: black;
+  font-weight: bold;
+}
