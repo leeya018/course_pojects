@@ -41,9 +41,9 @@ h2 {
   }
 
   .app {
-    width: 375px;
+    width: 100%;
   }
   .colContainer {
-    width: 375px;
+    width: 100%;
   }
 }
