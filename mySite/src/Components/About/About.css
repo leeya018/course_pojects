@@ -17,13 +17,13 @@
 .aboutContent > div:nth-child(1) {
   padding-left: 1em;
 }
-
+/* 
 .aboutContent > div:nth-child(1) {  
   flex: 2;
 }
 .aboutContent > div:nth-child(2)  {
   flex: 1;
-}
+} */
 .aboutContent > div:nth-child(1) li {
   background: url('http://www.personal-fitness-trainer.co.il/wp-content/themes/modernize/images/list/check.png')
     no-repeat right;
@@ -77,11 +77,16 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
   .aboutContent {
     display: flex;
     flex-direction: column;
   }
 
+  
   .aboutContent > div:nth-child(2) {
     width: 200px;
     height: 200px;

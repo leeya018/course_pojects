@@ -32,3 +32,18 @@
 .experience > div:nth-child(3)>div {
   font-size: 15px;
 }
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .experience ul {
+    padding: 0;
+  }
+  
+  .experience > div:nth-child(1)>h3 {
+    padding-right: 35px
+  }
+}

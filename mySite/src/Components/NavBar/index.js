@@ -32,7 +32,7 @@ class NavBar extends Component {
                 <Route path="/email" render={() =>< Email />}/>
                 <Route
                   path="/program/:name"
-                  render={({match}) =>< Program match = {
+                  render={({match}) =><Program match = {
                   match
                 } />}/>
 

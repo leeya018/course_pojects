@@ -11,8 +11,21 @@
 .education h3 {
 }
 .education > div:nth-child(1)>h3 {
-  padding-right: 70px
+  padding-right: 35px
 }
 .education > div:nth-child(2)>h3 {
   padding-right: 30px
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .education > div:nth-child(1)>h3 {
+    padding-right: 31px
+  }
+
+
 }

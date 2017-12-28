@@ -9,6 +9,9 @@ class ProjectItem extends Component {
     super(props)
     let {itemName} = props
     this.state = { src:progData[itemName].srcImg };
+
+
+    
   }
 
   

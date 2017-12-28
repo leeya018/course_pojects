@@ -9,12 +9,12 @@ import './IphoneNav.css'
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
-const about = "about"
-const experience = "experience"
-const education = "education"
-const myProjects = "myProjects"
-const tips = "tips"
-const contact = "contact"
+const about = 'about';
+const experience = 'experience';
+const education = 'education';
+const myProjects = 'myProjects';
+const tips = 'tips';
+const contact = 'contact';
 
 class IphoneNav extends React.Component {
   constructor() {
@@ -64,33 +64,32 @@ class IphoneNav extends React.Component {
         defaultSelectedKeys={['1']}
         defaultOpenKeys={['sub1']}
         mode="inline">
-
           <Menu.Item key="2" >
             <Link to={""} onClick={this.toggleDisplay}>
-              <div>ראשי</div>
+              <div>About me</div>
             </Link>
           </Menu.Item>
           <Menu.Item key="3">
-            <Link to={this.updateUrl(about)} onClick={this.toggleDisplay}>
-              <div>אודות</div>
+            <Link to={this.updateUrl(experience)} onClick={this.toggleDisplay}>
+              <div>My Experience</div>
             </Link>
           </Menu.Item>
           <Menu.Item key="4">
-            <Link to={this.updateUrl(experience)} onClick={this.toggleDisplay}>
-              <div>למה אנחנו</div>
+            <Link to={this.updateUrl(education)} onClick={this.toggleDisplay}>
+              <div>My Education</div>
             </Link>
           </Menu.Item>
           <Menu.Item key="5">
-            <Link to={this.updateUrl(education)} onClick={this.toggleDisplay}>
-              <div>למי זה מתאים</div>
+            <Link to={this.updateUrl(myProjects)} onClick={this.toggleDisplay}>
+              <div>My Projects</div>
             </Link>
           </Menu.Item>
           <Menu.Item key="6">
-            <Link to={this.updateUrl(myProjects)} onClick={this.toggleDisplay}>
-              <div>תוכנית אימונים</div>
+            <Link to={this.updateUrl(contact)} onClick={this.toggleDisplay}>
+              <div>Contact</div>
             </Link>
           </Menu.Item>
-          <Menu.Item key="7">
+          {/* <Menu.Item key="7">
             <Link to={this.updateUrl(tips)} onClick={this.toggleDisplay}>
               <div>טיפים</div>
             </Link>
@@ -98,8 +97,8 @@ class IphoneNav extends React.Component {
           <Menu.Item key="8">
             <Link to={this.updateUrl(contact)} onClick={this.toggleDisplay}>
               <div>צור קשר</div>
-            </Link>
-          </Menu.Item>
+            </Link> */}
+          {/* </Menu.Item> */}
       </Menu>
 
       </div>

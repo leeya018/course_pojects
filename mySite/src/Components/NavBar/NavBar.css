@@ -1,9 +1,9 @@
 .navBar{
-  position: sticky;
-  top: 0px;
-  
+
   
 } 
+.navBar>div>div{
+}
 
 .navContent{
   color: white;

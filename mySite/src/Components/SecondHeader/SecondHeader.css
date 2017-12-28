@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 153px;
+
   position: sticky;
   top: 28px;
   z-index: 1;
@@ -24,11 +25,11 @@
 
 .secondHeader > div:nth-child(2):hover {
   animation: rainbow-react infinite 8s linear;
-} 
+}
 
 @keyframes rainbow-react {
   0% {
-    color:green;
+    color: green;
   }
   25% {
     color: purple;
@@ -37,10 +38,10 @@
     color: yellow;
   }
   75% {
-    color:red;
+    color: red;
   }
   100% {
-    color:white;
+    color: white;
   }
 }
 
@@ -67,9 +68,10 @@
 
 @media only screen and (max-width: 768px) {
   .secondHeader {
-    position: sticky;
+    background: url(secondHeader.png);
+    background-position: center;
     top: 0px;
-    height: 80px;
+    height: 65px;
   }
   .secondHeader > div:nth-child(2) {
     display: none;
@@ -78,6 +80,9 @@
     display: flex;
     justify-content: center;
     height: 40px;
+    position: relative;
+    bottom: 18px;
+    left: 30px;
   }
   .reactIcon > div {
     text-align: center;
