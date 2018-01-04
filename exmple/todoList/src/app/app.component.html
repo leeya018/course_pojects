@@ -1,0 +1,17 @@
+<div class="app-container">
+  <div>
+    <div class="head">
+      <h1>{{title}}</h1>
+      <div class="headCircles">
+        <div>
+          <span>{{items.length}}</span>
+        </div>
+        <div>
+          <span>{{futureTasks}}</span>
+        </div>
+      </div>
+
+    </div>
+    <app-list [items]="items"></app-list>
+  </div>
+</div>
