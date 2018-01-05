@@ -1,11 +1,10 @@
 .app {
   display: flex;
   width: 100%;
-  height: 718px;
 }
 .left-menu {
   flex: 1;
-  background-color: rgb(10.6%, 11.8%, 37.8%);
+  background-color: rgb(1.5%, 3.5%, 24.1%);
 }
 
 .right-side {
@@ -18,15 +17,26 @@
 .nav {
   flex: 1;
   background-color: white;
-
 }
 .graphs {
-  flex: 4;
-  background-color: red;
+  flex: 5;
+  /* height:350px; */
 
+  display: flex;
+  flex-direction: column;
+}
+
+.graphs > div:nth-child(1) {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 1em 2em 1em 3em;
+}
+.graphs > div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
 }
 .list-container {
+  /* height:380px; */
   flex: 5;
   /* background-color: orange; */
-
 }

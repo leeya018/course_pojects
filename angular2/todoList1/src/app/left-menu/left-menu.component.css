@@ -12,3 +12,8 @@ li {
   padding-top: 3em;
   display: flex;
 }
+
+.fa {
+  color: blue;
+  padding:0 13px 0 11px;
+}
