@@ -1,0 +1,19 @@
+<div class="list">
+  <div>
+    <h4>{{title}}</h4>
+    <div class="headCircles">
+      <div>
+        <span>{{items.length}}</span>
+      </div>
+      <div *ngIf="futureTasks">
+        <span>{{futureTasks}}</span>
+      </div>
+    </div>
+
+  </div>
+  <ul>
+    <li *ngFor="let item of items">
+      <app-list-item [item]="item"></app-list-item>
+    </li>
+  </ul>
+</div>

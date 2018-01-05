@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height:63px;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  background-image: url('https://lh3.googleusercontent.com/-48vLRXxCn6U/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT7S5uN-8zbv9Fx0qGVWpDITSQf3Rg/s64-c-mo/photo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  background-color: rgb(25.6%, 27.7%, 73%);
+  border-radius: 10%;
+  width: 7em;
+}

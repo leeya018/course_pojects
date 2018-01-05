@@ -1,0 +1,9 @@
+.list-container {
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: center; */
+  padding-top: 35px;
+}
+.list-container>div{
+  width:16em;
+}

@@ -1,0 +1,42 @@
+.list {
+  width: 16em;
+  border: 1px solid black;
+  background-color: white;
+}
+.list > div {
+  display: flex;
+  justify-content: center;
+}
+
+.list > div:nth-child(1) {
+  justify-content: space-between;
+  align-items: center;
+}
+.headCircles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headCircles > div {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.headCircles > div:nth-child(1) {
+  background-color: rgb(82%, 29.4%, 29.4%);
+}
+.headCircles > div:nth-child(2) {
+  background-color: blue;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+span {
+  padding-top: 13px;
+}
