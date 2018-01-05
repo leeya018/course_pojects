@@ -1,7 +1,10 @@
 <div class="item">
   <div class="imageContainer">
-    <div class="image">
+    <div class="image" *ngIf="!item.src">
       <span *ngIf="item">{{item.title.charAt(0)}}</span>
+    </div>
+    <div class="pic" *ngIf="item.src" [ngStyle]="{'background-image': 'url(' +item.src + ')'}">
+
     </div>
   </div>
   <div class="description">

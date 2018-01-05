@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  /* height:63px; */
+  height: 100%;
 }
 
 .header > div {
@@ -22,10 +22,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
   height: 2em;
-  background-color: rgb(25.6%, 27.7%, 73%);
-  border-radius: 10%;
-  width: 7em;
+  background-color:blue;
+  color: white;
+  border-radius: 25px;
+  width: 9em;
 }
 
 

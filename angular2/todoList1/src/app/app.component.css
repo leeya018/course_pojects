@@ -5,6 +5,8 @@
 .left-menu {
   flex: 1;
   background-color: rgb(1.5%, 3.5%, 24.1%);
+  height:100vh;
+
 }
 
 .right-side {
