@@ -1,8 +1,8 @@
 <!-- <app-lists-container></app-lists-container> -->
 <div class="app">
-  <app-left-menu class="left-menu"></app-left-menu>
+  <app-left-menu [style.display]= "toggle"  class="left-menu"></app-left-menu>
   <div class="right-side">
-    <app-header class="nav"></app-header>
+    <app-header  (notify)='onNotify($event)' class="nav"></app-header>
     <div class="graphs">
       <div>Hello Johan</div>
       <div>
@@ -10,6 +10,6 @@
         <app-flat-graph></app-flat-graph>
       </div>
     </div>
-    <app-lists-container class="list-container"></app-lists-container>
+    <app-lists-container class="list-container" ></app-lists-container>
   </div>
 </div>

@@ -9,5 +9,12 @@ import moment from 'moment/src/moment';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  toggle: string
+  padding:string="0"
 
+  onNotify(message:string):void {
+    this.toggle = (this.toggle === "none") ? "block" : "none";
+    this.padding = (this.padding === "0")?"3":"0";
+
+  }
 }

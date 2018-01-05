@@ -5,13 +5,11 @@
 .left-menu {
   flex: 1;
   background-color: rgb(1.5%, 3.5%, 24.1%);
-  height:100vh;
-
+  height: 100vh;
 }
 
 .right-side {
   flex: 5;
-  /* background-color: blue; */
   display: flex;
   flex-direction: column;
 }
@@ -38,7 +36,6 @@
   justify-content: space-around;
 }
 .list-container {
-  /* height:380px; */
   flex: 5;
-  /* background-color: orange; */
+  padding: 3em;
 }
