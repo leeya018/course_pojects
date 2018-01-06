@@ -20,8 +20,6 @@
 }
 .graphs {
   flex: 5;
-  /* height:350px; */
-
   display: flex;
   flex-direction: column;
 }

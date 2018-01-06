@@ -7,10 +7,10 @@
   justify-content: center;
 }
 
-.list > div:nth-child(1)>h4,div {
-  padding:1px;
+.list > div:nth-child(1) > h4,
+div {
+  padding: 1px;
 }
-
 
 .list > div:nth-child(1) {
   justify-content: space-between;
@@ -28,7 +28,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  margin:3px;
+  margin: 3px;
 }
 .headCircles > div:nth-child(1) {
   background-color: rgb(82%, 29.4%, 29.4%);

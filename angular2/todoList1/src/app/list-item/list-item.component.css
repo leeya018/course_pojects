@@ -2,7 +2,7 @@
   display: flex;
   border: 1px solid black;
   align-items: center;
-  height:60px;
+  height: 60px;
 }
 .imageContainer {
   flex: 1;
@@ -19,7 +19,7 @@
   justify-content: center;
   align-content: center;
 }
-.pic{
+.pic {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
@@ -29,22 +29,18 @@
 .description {
   flex: 2;
 }
-.description > p:nth-child(2) {
-  /* color: rgb(96%, 38.2%, 38.2%); */
-}
-.description > p:nth-child(1) {
-  font-weight:bold;
-  font-size: 10px;
 
+.description > p:nth-child(1) {
+  font-weight: bold;
+  font-size: 10px;
 }
 span {
   font-size: 20px;
   vertical-align: middle;
   color: white;
-  padding-top:15px;
+  padding-top: 15px;
 }
 
-
 .item:hover {
-  background-color:rgb(86.3%, 86.3%, 86.3%)
+  background-color: rgb(86.3%, 86.3%, 86.3%);
 }

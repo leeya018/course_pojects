@@ -2,6 +2,6 @@
   display: flex;
   justify-content: space-around;
 }
-.list-container>div{
-  width:16em;
+.list-container > div {
+  width: 16em;
 }

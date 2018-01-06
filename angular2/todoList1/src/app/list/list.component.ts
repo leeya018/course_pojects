@@ -14,9 +14,6 @@ export class ListComponent implements OnInit {
   futureTasks:number
 
   constructor() {
-
-
-
   }
   ngOnInit() {
     this.updateFutureTasks()

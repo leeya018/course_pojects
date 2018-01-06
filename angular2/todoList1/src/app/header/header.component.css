@@ -24,14 +24,12 @@
   align-items: center;
   font-weight: bold;
   height: 2em;
-  background-color:blue;
+  background-color: blue;
   color: white;
   border-radius: 25px;
   width: 9em;
 }
 
-
-
 .fa {
-  padding:0 13px 0 11px;
+  padding: 0 13px 0 11px;
 }
