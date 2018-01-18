@@ -1,0 +1,29 @@
+<div class="container flex">
+
+  <div class="flex isRow header">
+    <h3>Tasks</h3>
+    <div class="flex isRow">
+      <div class="messages">
+        <span>5</span>
+      </div>
+      <div class="messages red">
+        <span>2</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex isRow task" *ngFor="let task of tasks">
+    <div class="flex isRow">
+      <div class="taskLetter">
+        <span>{{task.letter}}</span>
+      </div>
+      <div class="content">
+        <h4>{{task.description}}</h4>
+        <p class="flex isRow time {{task.delay}}">
+          <i class="material-icons">access_time</i>{{task.days}}</p>
+      </div>
+    </div>
+    <i class="material-icons dots">more_vert</i>
+  </div>
+
+</div>

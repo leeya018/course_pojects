@@ -1,0 +1,30 @@
+.menu {
+
+    background: #0e2138;
+    color: white;
+}
+
+.minHeight {
+  min-height: 100%;
+}
+
+.header {
+  height: 80px;
+  padding: 0 75px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d4dae4;
+}
+
+.layout {
+  padding: 0 75px;
+  background: #f5f7fa;
+  flex-grow: 1;
+}
+
+.moved {
+  transition: all 3s linear;
+  margin-left: -250px;
+  top: 0;
+  bottom: 0;
+}

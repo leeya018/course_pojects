@@ -1,0 +1,880 @@
+{
+  "books": [
+    {
+      "kind": "books#volumes",
+      "totalItems": 696,
+      "items": [
+        {
+          "kind": "books#volume",
+          "id": "mATFyeVI7IUC",
+          "etag": "AxAMwm0WDnI",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/mATFyeVI7IUC",
+          "volumeInfo": {
+            "title": "I, Asimov",
+            "subtitle": "A Memoir",
+            "authors": [
+              "Isaac Asimov"
+            ],
+            "publisher": "Bantam",
+            "publishedDate": "2009-12-23",
+            "description": "Arguably the greatest science fiction writer who ever lived, Isaac Asimov also possessed one of the most brilliant and original minds of our time. His accessible style and far-reaching interests in subjects ranging from science to humor to history earned him the nickname “the Great Explainer.” I. Asimov is his personal story—vivid, open, and honest—as only Asimov himself could tell it. Here is the story of the paradoxical genius who wrote of travel to the stars yet refused to fly in airplanes; who imagined alien universes and vast galactic civilizations while staying home to write; who compulsively authored more than 470 books yet still found the time to share his ideas with some of the great minds of our century. Here are his wide-ranging thoughts and sharp-eyed observations on everything from religion to politics, love and divorce, friendship and Hollywood, fame and mortality. Here, too, is a riveting behind-the-scenes look at the varied personalities—Campbell, Ellison, Heinlein, Clarke, del Rey, Silverberg, and others—who along with Asimov helped shape science fiction. As unique and irrepressible as the man himself, I. Asimov is the candid memoir of an incomparable talent who entertained readers for nearly half a century and whose work will surely endure into the future he so vividly envisioned.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9780307573537"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "0307573532"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": true
+            },
+            "pageCount": 592,
+            "printType": "BOOK",
+            "categories": [
+              "Biography & Autobiography"
+            ],
+            "averageRating": 4.5,
+            "ratingsCount": 4,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "0.4.4.0.preview.3",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=mATFyeVI7IUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=mATFyeVI7IUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=mATFyeVI7IUC&printsec=frontcover&dq=Isaac+Asimov&hl=&cd=1&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=mATFyeVI7IUC&source=gbs_api",
+            "canonicalVolumeLink": "https://market.android.com/details?id=book-mATFyeVI7IUC"
+          },
+          "saleInfo": {
+            "country": "IL",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+              "amount": 31,
+              "currencyCode": "ILS"
+            },
+            "retailPrice": {
+              "amount": 31,
+              "currencyCode": "ILS"
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=mATFyeVI7IUC&rdid=book-mATFyeVI7IUC&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amountInMicros": 31000000,
+                  "currencyCode": "ILS"
+                },
+                "retailPrice": {
+                  "amountInMicros": 31000000,
+                  "currencyCode": "ILS"
+                }
+              }
+            ]
+          },
+          "accessInfo": {
+            "country": "IL",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+            "epub": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/I_Asimov-sample-epub.acsm?id=mATFyeVI7IUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/I_Asimov-sample-pdf.acsm?id=mATFyeVI7IUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=mATFyeVI7IUC&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Here is the story of the paradoxical genius who wrote of travel to the stars yet refused to fly in airplanes; who imagined alien universes and vast galactic civilizations while staying home to write; who compulsively authored more than 470 ..."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "2vnbMzYXBQsC",
+          "etag": "gAU+ipuvlSI",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/2vnbMzYXBQsC",
+          "volumeInfo": {
+            "title": "I, Robot",
+            "authors": [
+              "Isaac Asimov"
+            ],
+            "publisher": "Spectra",
+            "publishedDate": "2004-06-01",
+            "description": "The three laws of Robotics: 1) A robot may not injure a human being or, through inaction, allow a human being to come to harm 2) A robot must obey orders givein to it by human beings except where such orders would conflict with the First Law. 3) A robot must protect its own existence as long as such protection does not conflict with the First or Second Law. With these three, simple directives, Isaac Asimov changed our perception of robots forever when he formulated the laws governing their behavior. In I, Robot, Asimov chronicles the development of the robot through a series of interlinked stories: from its primitive origins in the present to its ultimate perfection in the not-so-distant future--a future in which humanity itself may be rendered obsolete. Here are stories of robots gone mad, of mind-read robots, and robots with a sense of humor. Of robot politicians, and robots who secretly run the world--all told with the dramatic blend of science fact and science fiction that has become Asmiov's trademark.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_10",
+                "identifier": "0553900331"
+              },
+              {
+                "type": "ISBN_13",
+                "identifier": "9780553900330"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": true
+            },
+            "pageCount": 304,
+            "printType": "BOOK",
+            "categories": [
+              "Fiction"
+            ],
+            "averageRating": 4,
+            "ratingsCount": 176,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "1.6.3.0.preview.3",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=2vnbMzYXBQsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=2vnbMzYXBQsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=2vnbMzYXBQsC&printsec=frontcover&dq=Isaac+Asimov&hl=&cd=2&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=2vnbMzYXBQsC&source=gbs_api",
+            "canonicalVolumeLink": "https://market.android.com/details?id=book-2vnbMzYXBQsC"
+          },
+          "saleInfo": {
+            "country": "IL",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+              "amount": 28,
+              "currencyCode": "ILS"
+            },
+            "retailPrice": {
+              "amount": 28,
+              "currencyCode": "ILS"
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=2vnbMzYXBQsC&rdid=book-2vnbMzYXBQsC&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amountInMicros": 28000000,
+                  "currencyCode": "ILS"
+                },
+                "retailPrice": {
+                  "amountInMicros": 28000000,
+                  "currencyCode": "ILS"
+                }
+              }
+            ]
+          },
+          "accessInfo": {
+            "country": "IL",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+            "epub": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/I_Robot-sample-epub.acsm?id=2vnbMzYXBQsC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/I_Robot-sample-pdf.acsm?id=2vnbMzYXBQsC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=2vnbMzYXBQsC&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Here are stories of robots gone mad, of mind-read robots, and robots with a sense of humor."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "IwywDY4P6gsC",
+          "etag": "At5okXoNpd4",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/IwywDY4P6gsC",
+          "volumeInfo": {
+            "title": "Foundation",
+            "authors": [
+              "Isaac Asimov"
+            ],
+            "publisher": "Spectra",
+            "publishedDate": "2004-06-01",
+            "description": "For twelve thousand years the Galactic Empire has ruled supreme. Now it is dying. But only Hari Sheldon, creator of the revolutionary science of psychohistory, can see into the future--to a dark age of ignorance, barbarism, and warfare that will last thirty thousand years. To preserve knowledge and save mankind, Seldon gathers the best minds in the Empire--both scientists and scholars--and brings them to a bleak planet at the edge of the Galaxy to serve as a beacon of hope for a fututre generations. He calls his sanctuary the Foundation. But soon the fledgling Foundation finds itself at the mercy of corrupt warlords rising in the wake of the receding Empire. Mankind's last best hope is faced with an agonizing choice: submit to the barbarians and be overrun--or fight them and be destroyed.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_10",
+                "identifier": "055390034X"
+              },
+              {
+                "type": "ISBN_13",
+                "identifier": "9780553900347"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": true
+            },
+            "pageCount": 320,
+            "printType": "BOOK",
+            "categories": [
+              "Fiction"
+            ],
+            "averageRating": 3.5,
+            "ratingsCount": 3404,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "2.8.5.0.preview.3",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=IwywDY4P6gsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=IwywDY4P6gsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=IwywDY4P6gsC&printsec=frontcover&dq=Isaac+Asimov&hl=&cd=3&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=IwywDY4P6gsC&source=gbs_api",
+            "canonicalVolumeLink": "https://market.android.com/details?id=book-IwywDY4P6gsC"
+          },
+          "saleInfo": {
+            "country": "IL",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+              "amount": 28,
+              "currencyCode": "ILS"
+            },
+            "retailPrice": {
+              "amount": 28,
+              "currencyCode": "ILS"
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=IwywDY4P6gsC&rdid=book-IwywDY4P6gsC&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amountInMicros": 28000000,
+                  "currencyCode": "ILS"
+                },
+                "retailPrice": {
+                  "amountInMicros": 28000000,
+                  "currencyCode": "ILS"
+                }
+              }
+            ]
+          },
+          "accessInfo": {
+            "country": "IL",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+            "epub": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/Foundation-sample-epub.acsm?id=IwywDY4P6gsC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/Foundation-sample-pdf.acsm?id=IwywDY4P6gsC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=IwywDY4P6gsC&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "He calls his sanctuary the Foundation. But soon the fledgling Foundation finds itself at the mercy of corrupt warlords rising in the wake of the receding Empire."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "_l2_4tOgBa8C",
+          "etag": "80oHQxlprgs",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/_l2_4tOgBa8C",
+          "volumeInfo": {
+            "title": "Nightfall",
+            "authors": [
+              "Isaac Asimov",
+              "Robert Silverberg"
+            ],
+            "publisher": "Spectra",
+            "publishedDate": "2011-11-09",
+            "description": "These two renowned writers have invented a world not unlike our own--a world on the edge of chaos, torn between the madness of religious fanaticism and the stubborn denial of scientists. Only a handful of people on the planet Lagash are prepared to face the truth--that their six suns are setting all at once for the first time in 2,000 years, signaling the end of civilization!",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_10",
+                "identifier": "0307792390"
+              },
+              {
+                "type": "ISBN_13",
+                "identifier": "9780307792396"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": false
+            },
+            "pageCount": 352,
+            "printType": "BOOK",
+            "categories": [
+              "Fiction"
+            ],
+            "averageRating": 4,
+            "ratingsCount": 40,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "0.12.7.0.preview.2",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=_l2_4tOgBa8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=_l2_4tOgBa8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=_l2_4tOgBa8C&printsec=frontcover&dq=Isaac+Asimov&hl=&cd=4&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=_l2_4tOgBa8C&source=gbs_api",
+            "canonicalVolumeLink": "https://market.android.com/details?id=book-_l2_4tOgBa8C"
+          },
+          "saleInfo": {
+            "country": "IL",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+              "amount": 28,
+              "currencyCode": "ILS"
+            },
+            "retailPrice": {
+              "amount": 28,
+              "currencyCode": "ILS"
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=_l2_4tOgBa8C&rdid=book-_l2_4tOgBa8C&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amountInMicros": 28000000,
+                  "currencyCode": "ILS"
+                },
+                "retailPrice": {
+                  "amountInMicros": 28000000,
+                  "currencyCode": "ILS"
+                }
+              }
+            ]
+          },
+          "accessInfo": {
+            "country": "IL",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+            "epub": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/Nightfall-sample-epub.acsm?id=_l2_4tOgBa8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=_l2_4tOgBa8C&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "These two renowned writers have invented a world not unlike our own--a world on the edge of chaos, torn between the madness of religious fanaticism and the stubborn denial of scientists."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "I7XcN13YmLQC",
+          "etag": "KBkqTlZFcVA",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/I7XcN13YmLQC",
+          "volumeInfo": {
+            "title": "The Stars, Like Dust",
+            "authors": [
+              "Isaac Asimov"
+            ],
+            "publisher": "Tor Books",
+            "publishedDate": "2008-11-25",
+            "description": "From science fiction grand master Isaac Asimov comes a stand-alone novel set in his renown galactic empire Biron Farrell was young and naïve, but he was growing up fast. A radiation bomb planted in his dorm room changed him from an innocent student at the University of Earth to a marked man, fleeing desperately from an unknown assassin. He soon discovers that, many light-years away, his father, the highly respected Rancher of Widemos, has been murdered. Stunned, grief-stricken, and outraged, Biron is determined to uncover the reasons behind his father's death, and becomes entangled in an intricate saga of rebellion, political intrigue, and espionage. The mystery takes him deep into space where he finds himself in a relentless struggle with the power-mad despots of Tyrann. Now it is not just a case of life or death for Biron, but a question of freedom for the galaxy. “This little novel will transport you back to a simpler time, when story lines we are jaded towards today were fresh and intoxicating, and that gosh-wow! sense of wonder covered science fiction like a layer of fine, gold dust.” —SFReviews.net At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781429945837"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "1429945834"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": false
+            },
+            "pageCount": 240,
+            "printType": "BOOK",
+            "categories": [
+              "Fiction"
+            ],
+            "averageRating": 2.5,
+            "ratingsCount": 26,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "1.4.5.0.preview.2",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=I7XcN13YmLQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=I7XcN13YmLQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=I7XcN13YmLQC&printsec=frontcover&dq=Isaac+Asimov&hl=&cd=5&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=I7XcN13YmLQC&source=gbs_api",
+            "canonicalVolumeLink": "https://market.android.com/details?id=book-I7XcN13YmLQC"
+          },
+          "saleInfo": {
+            "country": "IL",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+              "amount": 46,
+              "currencyCode": "ILS"
+            },
+            "retailPrice": {
+              "amount": 46,
+              "currencyCode": "ILS"
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=I7XcN13YmLQC&rdid=book-I7XcN13YmLQC&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amountInMicros": 46000000,
+                  "currencyCode": "ILS"
+                },
+                "retailPrice": {
+                  "amountInMicros": 46000000,
+                  "currencyCode": "ILS"
+                }
+              }
+            ]
+          },
+          "accessInfo": {
+            "country": "IL",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=I7XcN13YmLQC&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "From science fiction grand master Isaac Asimov comes a stand-alone novel set in his renown galactic empire Biron Farrell was young and naïve, but he was growing up fast."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "8HCwAAAAIAAJ",
+          "etag": "sasnDqV5zU0",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/8HCwAAAAIAAJ",
+          "volumeInfo": {
+            "title": "Isaac Asimov",
+            "authors": [
+              "Joseph D. Olander",
+              "Martin Harry Greenberg"
+            ],
+            "publisher": "New York : Taplinger Publishing Company",
+            "publishedDate": "1977",
+            "description": "An evaluation of the literary achievements of the renowned biochemist, popularizer of science, and science-fiction writer illuminates the scope of his creativity and his concerns",
+            "industryIdentifiers": [
+              {
+                "type": "OTHER",
+                "identifier": "UCSC:32106002087564"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 247,
+            "printType": "BOOK",
+            "categories": [
+              "Literary Criticism"
+            ],
+            "averageRating": 4,
+            "ratingsCount": 1,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=8HCwAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=8HCwAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=8HCwAAAAIAAJ&q=Isaac+Asimov&dq=Isaac+Asimov&hl=&cd=6&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=8HCwAAAAIAAJ&dq=Isaac+Asimov&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Isaac_Asimov.html?hl=&id=8HCwAAAAIAAJ"
+          },
+          "saleInfo": {
+            "country": "IL",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "IL",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=8HCwAAAAIAAJ&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "An evaluation of the literary achievements of the renowned biochemist, popularizer of science, and science-fiction writer illuminates the scope of his creativity and his concerns"
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "nFdOG5JxWZoC",
+          "etag": "AMNvEVqKK6g",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/nFdOG5JxWZoC",
+          "volumeInfo": {
+            "title": "Isaac Asimov's Treasury of Humor",
+            "subtitle": "A Lifetime Collection of Favorite Jokes, Anecdotes, and Limericks with Copious Notes on how to Tell Them and why",
+            "authors": [
+              "Isaac Asimov"
+            ],
+            "publisher": "Houghton Mifflin Harcourt",
+            "publishedDate": "1991",
+            "description": "640 jokes, anecdotes, and limericks, complete with notes on how to tell them, from America's leading renaissance man.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_10",
+                "identifier": "0395572266"
+              },
+              {
+                "type": "ISBN_13",
+                "identifier": "9780395572269"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": true
+            },
+            "pageCount": 431,
+            "printType": "BOOK",
+            "categories": [
+              "Humor"
+            ],
+            "averageRating": 3,
+            "ratingsCount": 2,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "0.0.1.0.preview.1",
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=nFdOG5JxWZoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=nFdOG5JxWZoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=nFdOG5JxWZoC&printsec=frontcover&dq=Isaac+Asimov&hl=&cd=7&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=nFdOG5JxWZoC&dq=Isaac+Asimov&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Isaac_Asimov_s_Treasury_of_Humor.html?hl=&id=nFdOG5JxWZoC"
+          },
+          "saleInfo": {
+            "country": "IL",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "IL",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=nFdOG5JxWZoC&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "640 jokes, anecdotes, and limericks, complete with notes on how to tell them, from America&#39;s leading renaissance man."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "PJMFcwNn5s4C",
+          "etag": "iQTO142F3t8",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/PJMFcwNn5s4C",
+          "volumeInfo": {
+            "title": "The End of Eternity",
+            "authors": [
+              "Isaac Asimov"
+            ],
+            "publisher": "Tor Books",
+            "publishedDate": "2010-01-05",
+            "description": "One of Isaac Asimov's SF masterpieces, this stand-alone novel is a monument of the flowering of SF in the twentieth century. It is widely regarded as Asimov's single best SF novel. Andrew Harlan is an Eternal, a member of the elite of the future. One of the few who live in Eternity, a location outside of place and time, Harlan's job is to create carefully controlled and enacted Reality Changes. These Changes are small, exactingly calculated shifts in the course of history, made for the benefit of humankind. Though each Change has been made for the greater good, there are also always costs. During one of his assignments, Harlan meets and falls in love with Noÿs Lambent, a woman who lives in real time and space. Then Harlan learns that Noÿs will cease to exist after the next Change, and he risks everything to sneak her into Eternity. Unfortunately, they are caught. Harlan's punishment? His next assignment: Kill the woman he loves before the paradox they have created results in the destruction of Eternity. At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_10",
+                "identifier": "1429970944"
+              },
+              {
+                "type": "ISBN_13",
+                "identifier": "9781429970945"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": false
+            },
+            "pageCount": 256,
+            "printType": "BOOK",
+            "categories": [
+              "Fiction"
+            ],
+            "averageRating": 4,
+            "ratingsCount": 27,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "0.5.4.0.preview.2",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=PJMFcwNn5s4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=PJMFcwNn5s4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=PJMFcwNn5s4C&printsec=frontcover&dq=Isaac+Asimov&hl=&cd=8&source=gbs_api",
+            "infoLink": "https://play.google.com/store/books/details?id=PJMFcwNn5s4C&source=gbs_api",
+            "canonicalVolumeLink": "https://market.android.com/details?id=book-PJMFcwNn5s4C"
+          },
+          "saleInfo": {
+            "country": "IL",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+              "amount": 46,
+              "currencyCode": "ILS"
+            },
+            "retailPrice": {
+              "amount": 46,
+              "currencyCode": "ILS"
+            },
+            "buyLink": "https://play.google.com/store/books/details?id=PJMFcwNn5s4C&rdid=book-PJMFcwNn5s4C&rdot=1&source=gbs_api",
+            "offers": [
+              {
+                "finskyOfferType": 1,
+                "listPrice": {
+                  "amountInMicros": 46000000,
+                  "currencyCode": "ILS"
+                },
+                "retailPrice": {
+                  "amountInMicros": 46000000,
+                  "currencyCode": "ILS"
+                }
+              }
+            ]
+          },
+          "accessInfo": {
+            "country": "IL",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=PJMFcwNn5s4C&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "One of Isaac Asimov&#39;s SF masterpieces, this stand-alone novel is a monument of the flowering of SF in the twentieth century. It is widely regarded as Asimov&#39;s single best SF novel."
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "lyGFAAAAIAAJ",
+          "etag": "O2kU7XPS/Qw",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/lyGFAAAAIAAJ",
+          "volumeInfo": {
+            "title": "Isaac Asimov",
+            "authors": [
+              "William F. Touponce"
+            ],
+            "publisher": "Twayne Pub",
+            "publishedDate": "1991",
+            "description": "Looks at Asimov's life, and discusses his fiction and nonfiction works, dealing mostly with his Robotic and Foundation stories",
+            "industryIdentifiers": [
+              {
+                "type": "OTHER",
+                "identifier": "UCAL:B4495390"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 122,
+            "printType": "BOOK",
+            "categories": [
+              "Literary Criticism"
+            ],
+            "averageRating": 3,
+            "ratingsCount": 1,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "0.0.1.0.preview.0",
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=lyGFAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=lyGFAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=lyGFAAAAIAAJ&q=Isaac+Asimov&dq=Isaac+Asimov&hl=&cd=9&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=lyGFAAAAIAAJ&dq=Isaac+Asimov&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Isaac_Asimov.html?hl=&id=lyGFAAAAIAAJ"
+          },
+          "saleInfo": {
+            "country": "IL",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "IL",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=lyGFAAAAIAAJ&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Looks at Asimov&#39;s life, and discusses his fiction and nonfiction works, dealing mostly with his Robotic and Foundation stories"
+          }
+        },
+        {
+          "kind": "books#volume",
+          "id": "AnxMPwAACAAJ",
+          "etag": "BZlI/1E1vGw",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/AnxMPwAACAAJ",
+          "volumeInfo": {
+            "title": "Isaac Asimov's Book of Facts",
+            "authors": [
+              "Isaac Asimov"
+            ],
+            "publisher": "Gramercy Books",
+            "publishedDate": "1991-09-23",
+            "description": "Collects three thousand astounding, unusual, educational, and entertaining facts that touch upon nearly every major area of human interest",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_10",
+                "identifier": "0517065037"
+              },
+              {
+                "type": "ISBN_13",
+                "identifier": "9780517065037"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 504,
+            "printType": "BOOK",
+            "categories": [
+              "Reference"
+            ],
+            "averageRating": 5,
+            "ratingsCount": 1,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=AnxMPwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=AnxMPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=AnxMPwAACAAJ&dq=Isaac+Asimov&hl=&cd=10&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=AnxMPwAACAAJ&dq=Isaac+Asimov&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Isaac_Asimov_s_Book_of_Facts.html?hl=&id=AnxMPwAACAAJ"
+          },
+          "saleInfo": {
+            "country": "IL",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "IL",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=AnxMPwAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Collects three thousand astounding, unusual, educational, and entertaining facts that touch upon nearly every major area of human interest"
+          }
+        }
+      ],
+      "id": 1
+    }
+  ]
+}

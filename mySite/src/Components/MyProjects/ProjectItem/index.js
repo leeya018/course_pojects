@@ -41,6 +41,7 @@ class ProjectItem extends Component {
         </div>
     );
   }
+  
 }
 
 export default ProjectItem;

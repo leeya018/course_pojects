@@ -1,0 +1,83 @@
+.container {
+  width: 24vw;
+  min-height: 400px;
+  border: 1px solid #d2d9e3;
+  background: white;
+  margin: 0 25px 25px 0;
+}
+
+.header {
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.task {
+  height: 90px;
+  border: 1px solid #e3e7ed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.time {
+  align-items: center;
+}
+
+.time .material-icons {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.messages {
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background: #2a89fe;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.taskLetter {
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background: #2a89fe;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.header .image {
+  padding: 5px 10px;
+}
+
+.red {
+  background: #ff207d;
+}
+
+.delay {
+  color: #ff659f;
+}
+
+.dots {
+  font-size: 2.2em;
+  cursor: pointer;
+  color: #7d92ad;
+}
+
+@media (max-width: 1350px) {
+  .container {
+    width: 50vw;
+  }
+}

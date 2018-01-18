@@ -24,7 +24,7 @@ class Api {
         let options = {
             method: 'POST',
             headers: headers,
-            body: JSON.stringify(movie)
+        body: JSON.stringify(movie)
         }
         let response = fetch(`${HOST}:${PORT}/movies`, options).then((res) =>
             console.log(res)

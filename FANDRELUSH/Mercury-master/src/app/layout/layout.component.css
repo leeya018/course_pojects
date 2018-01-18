@@ -1,0 +1,53 @@
+img {
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.rightImage {
+  height: 35vh;
+  width: 45vw;
+}
+
+.leftImage {
+  margin-right: 25px;
+  height: 35vh;
+  width: 30vw;
+}
+
+a {
+  border: none;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chartContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 10px 10px 10px 0;
+}
+
+@media (max-width: 1350px) {
+  .rightImage {
+    height: auto;
+    width: 65vw;
+  }
+
+  .leftImage {
+    height: auto;
+    width: 65vw;
+  }
+
+  .infoContainer {
+    flex-direction: column;
+  }
+  .chartContainer {
+    flex-direction: column;
+  }
+}
